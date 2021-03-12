@@ -1,0 +1,19 @@
+﻿@using SeventyeightDigital.CKEditor4_Wysiwyg;
+
+@model ComponentViewModel<CKEditor4_WysiwygWidgetProperties>
+
+@if (Context.Kentico().PageBuilder().EditMode)
+{
+    Html.RenderPartial("InlineEditors/TableView_WysiwygInlineEditor", new CKEditor4_WysiwygViewModel
+    {
+        PropertyName = nameof(Model.Properties.Html),
+        Html = Model.Properties.Html
+    });
+}
+else
+{
+    if (Model.Properties.Html != "" && Model.Properties.Html != null)
+    {
+        @Html.Kentico().ResolveUrls(Model.Properties.Html)
+    }
+}

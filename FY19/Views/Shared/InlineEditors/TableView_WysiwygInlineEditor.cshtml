@@ -1,0 +1,92 @@
+﻿@model SeventyeightDigital.CKEditor4_Wysiwyg.CKEditor4_WysiwygViewModel
+
+@using (Html.Kentico().BeginInlineEditor("ckeditor", Model.PropertyName,
+    new
+    {
+        @class = "inline-editor ckeditor-" + Model.myID.ToString(),
+        @id = "editor" + Model.myID.ToString(),
+        @contenteditable = true,
+        data_divid = Model.myID.ToString()
+    }))
+{
+    if (Model != null && !String.IsNullOrEmpty(Model.Html))
+    {
+        @Html.Raw(Model.Html.Replace('~', ' '))
+    }
+
+    else
+    {
+        <div>
+            <table class="table table001">
+                <tbody>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Head</th>
+                        <th>Head</th>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table><table class="table table001">
+                <tbody>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Head</th>
+                        <th>Head</th>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table><table class="table table001">
+                <tbody>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Head</th>
+                        <th>Head</th>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    }
+}

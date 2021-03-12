@@ -1,0 +1,400 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using FY19.Models.Widgets
+@using FY19.Models.InlineEditors
+@using System.Text.RegularExpressions;
+@model ComponentViewModel<KMJ_AnchorLinkListProperties>
+
+@functions
+{
+    private static string HtmlToPlainText(string html)
+    {
+        const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'
+        const string stripFormatting = @"<[^>]*(>|$)";//match any character between '<' and '>', even when end tag is missing
+        const string lineBreak = @"<(br|BR)\s{0,1}\/{0,1}>";//matches: <br>,<br/>,<br />,<BR>,<BR/>,<BR />
+        var lineBreakRegex = new Regex(lineBreak, RegexOptions.Multiline);
+        var stripFormattingRegex = new Regex(stripFormatting, RegexOptions.Multiline);
+        var tagWhiteSpaceRegex = new Regex(tagWhiteSpace, RegexOptions.Multiline);
+
+        var text = html;
+        //Decode html specific characters
+        text = System.Net.WebUtility.HtmlDecode(text);
+        //Remove tag whitespace/line breaks
+        text = tagWhiteSpaceRegex.Replace(text, "><");
+        //Replace <br /> with line breaks
+        text = lineBreakRegex.Replace(text, Environment.NewLine);
+        //Strip formatting
+        text = stripFormattingRegex.Replace(text, string.Empty);
+
+        return text;
+    }
+}
+
+@{
+    string text1 = string.Empty, text2 = string.Empty, text3 = string.Empty, text4 = string.Empty, text5 = string.Empty, text6 = string.Empty, text7 = string.Empty, text8 = string.Empty, text9 = string.Empty, text10 = string.Empty;
+    string url1, url2, url3, url4, url5, url6, url7, url8, url9, url10;
+    string className = "anchorLinkClass";
+    string id = "anchorLinkId";
+
+    if (Model.Properties.Text1 != null)
+    {
+        text1 = HtmlToPlainText(Model.Properties.Text1.Replace("Label:", ""));
+    }
+    else
+    {
+        text1 = Model.Properties.Text1;
+    }
+    if (Model.Properties.Url1 != null)
+    {
+        url1 = HtmlToPlainText(Model.Properties.Url1.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url1 = Model.Properties.Url1;
+    }
+
+    if (Model.Properties.Text2 != null)
+    {
+        text2 = HtmlToPlainText(Model.Properties.Text2.Replace("Label:", ""));
+    }
+    else
+    {
+        text2 = Model.Properties.Text2;
+    }
+    if (Model.Properties.Url2 != null)
+    {
+        url2 = HtmlToPlainText(Model.Properties.Url2.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url2 = Model.Properties.Url2;
+    }
+
+
+    if (Model.Properties.Text3 != null)
+    {
+        text3 = HtmlToPlainText(Model.Properties.Text3.Replace("Label:", ""));
+    }
+    else
+    {
+        text3 = Model.Properties.Text3;
+    }
+    if (Model.Properties.Url3 != null)
+    {
+        url3 = HtmlToPlainText(Model.Properties.Url3.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url3 = Model.Properties.Url3;
+    }
+
+    if (Model.Properties.Text4 != null)
+    {
+        text4 = HtmlToPlainText(Model.Properties.Text4.Replace("Label:", ""));
+    }
+    else
+    {
+        text4 = Model.Properties.Text4;
+    }
+    if (Model.Properties.Url4 != null)
+    {
+        url4 = HtmlToPlainText(Model.Properties.Url4.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url4 = Model.Properties.Url4;
+    }
+
+    if (Model.Properties.Text5 != null)
+    {
+        text5 = HtmlToPlainText(Model.Properties.Text5.Replace("Label:", ""));
+    }
+    else
+    {
+        text5 = Model.Properties.Text5;
+    }
+    if (Model.Properties.Url5 != null)
+    {
+        url5 = HtmlToPlainText(Model.Properties.Url5.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url5 = Model.Properties.Url5;
+    }
+
+    if (Model.Properties.Text6 != null)
+    {
+        text6 = HtmlToPlainText(Model.Properties.Text6.Replace("Label:", ""));
+    }
+    else
+    {
+        text6 = Model.Properties.Text6;
+    }
+    if (Model.Properties.Url6 != null)
+    {
+        url6 = HtmlToPlainText(Model.Properties.Url6.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url6 = Model.Properties.Url6;
+    }
+
+    if (Model.Properties.Text7 != null)
+    {
+        text7 = HtmlToPlainText(Model.Properties.Text7.Replace("Label:", ""));
+    }
+    else
+    {
+        text7 = Model.Properties.Text7;
+    }
+    if (Model.Properties.Url7 != null)
+    {
+        url7 = HtmlToPlainText(Model.Properties.Url7.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url7 = Model.Properties.Url7;
+    }
+
+    if (Model.Properties.Text8 != null)
+    {
+        text8 = HtmlToPlainText(Model.Properties.Text8.Replace("Label:", ""));
+    }
+    else
+    {
+        text8 = Model.Properties.Text8;
+    }
+    if (Model.Properties.Url8 != null)
+    {
+        url8 = HtmlToPlainText(Model.Properties.Url8.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url8 = Model.Properties.Url8;
+    }
+
+    if (Model.Properties.Text9 != null)
+    {
+        text9 = HtmlToPlainText(Model.Properties.Text9.Replace("Label:", ""));
+    }
+    else
+    {
+        text9 = Model.Properties.Text9;
+    }
+    if (Model.Properties.Url9 != null)
+    {
+        url9 = HtmlToPlainText(Model.Properties.Url9.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url9 = Model.Properties.Url9;
+    }
+
+    if (Model.Properties.Text10 != null)
+    {
+        text10 = HtmlToPlainText(Model.Properties.Text10.Replace("Label:", ""));
+    }
+    else
+    {
+        text10 = Model.Properties.Text10;
+    }
+    if (Model.Properties.Url10 != null)
+    {
+        url10 = HtmlToPlainText(Model.Properties.Url10.Replace("URL: https://", ""));
+    }
+    else
+    {
+        url10 = Model.Properties.Url10;
+    }
+}
+
+@if (Context.Kentico().PageBuilder().EditMode)
+{
+    <div style="height: 50px; font-weight: bold">
+        <p>Anchor Link Lists Widget:</p>
+    </div>
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text1",
+        Text = "Label: &nbsp;" + text1,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url1",
+        Text = "URL: https://" + url1,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text2",
+        Text = "Label: &nbsp;" + text2,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url2",
+        Text = "URL: https://" + url2,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text3",
+        Text = "Label: &nbsp;" + text3,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url3",
+        Text = "URL: https://" + url3,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text4",
+        Text = "Label: &nbsp;" + text4,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url4",
+        Text = "URL: https://" + url4,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text5",
+        Text = "Label: &nbsp;" + text5,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url5",
+        Text = "URL: https://" + url5,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text6",
+        Text = "Label: &nbsp;" + text6,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url6",
+        Text = "URL: https://" + url6,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text7",
+        Text = "Label: &nbsp;" + text7,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url7",
+        Text = "URL: https://" + url7,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text8",
+        Text = "Label: &nbsp;" + text8,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url8",
+        Text = "URL: https://" + url8,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text9",
+        Text = "Label: &nbsp;" + text9,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url9",
+        Text = "URL: https://" + url9,
+        Class = className,
+        Id = id
+    });
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text10",
+        Text = "Label: &nbsp;" + text10,
+        Class = className,
+        Id = id
+    });
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Url10",
+        Text = "URL: https://" + url10,
+        Class = className,
+        Id = id
+    });
+}
+else
+{
+    <ul class="listInternalLink @className" id="@id">
+        <li>
+            <a href="https://@url1" target="_blank">@text1</a>
+        </li>
+        <li>
+            <a href="https://@url2" target="_blank">@text2</a>
+        </li>
+        <li>
+            <a href="https://@url3" target="_blank">@text3</a>
+        </li>
+        <li>
+            <a href="https://@url4" target="_blank">@text4</a>
+        </li>
+        <li>
+            <a href="https://@url5" target="_blank">@text5</a>
+        </li>
+        <li>
+            <a href="https://@url6" target="_blank">@text6</a>
+        </li>
+        <li>
+            <a href="https://@url7" target="_blank">@text7</a>
+        </li>
+        <li>
+            <a href="https://@url8" target="_blank">@text8</a>
+        </li>
+        <li>
+            <a href="https://@url9" target="_blank">@text9</a>
+        </li>
+        <li>
+            <a href="https://@url10" target="_blank">@text10</a>
+        </li>
+    </ul>
+}

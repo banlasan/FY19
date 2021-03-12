@@ -1,0 +1,33 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using FY19.Models.Widgets
+@using FY19.Models.InlineEditors
+@model ComponentViewModel<StaticTextModelProperties>
+
+
+@{
+    string htmlText = string.Empty;
+
+    if (Model.Properties.Text != null)
+    { htmlText = Model.Properties.Text; }
+    else { htmlText = Model.Properties.Text; }
+}
+
+@if (Context.Kentico().PageBuilder().EditMode)
+{
+    <div style="height: 50px; font-weight: bold">
+        <p>Static Text Widget</p>
+        <p>Input HTML code:</p>
+    </div>
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text",
+        Text = Model.Properties.Text,
+        Class = Model.Properties.Class,
+        Id = Model.Properties.Id
+    });
+}
+else
+{
+    @Html.Raw(HttpUtility.HtmlDecode(htmlText));
+}

@@ -1,0 +1,77 @@
+﻿@using CMS.MediaLibrary
+@using FY19.Models.Widgets
+@using FY19.Models.InlineEditors
+@model ComponentViewModel<KMJ_DownloadItemProperties>
+
+@{
+//string classEx = string.Empty;
+//if (Model.NewIcon == "Display")
+//{
+//    classEx = "catalog-row__col__img--new";
+//}
+
+//string styleAttribute = null;
+//if (Model.Properties.Image != null)
+//{
+//    styleAttribute = $"style=\"background-image: url('{Url.Content(MediaLibraryHelper.GetDirectUrl(Model.Properties.Image))}');\"";
+//}
+}
+
+@*@if (Context.Kentico().PageBuilder().EditMode)
+{
+    Html.RenderPartial("InlineEditors/ImageUploaderEditor", new ImageUploaderEditorViewModel
+    {
+        ImageType = ImageTypeEnum.MediaFile,
+        PropertyName = nameof(KMJ_DownloadItemProperties.Image),
+        HasImage = Model.Image != null,
+        MessagePosition = PanelPositionEnum.Top,
+        UseAbsolutePosition = true
+    });
+}*@
+
+<div class="catalog-row__col">
+    <a href="@Model.Properties.ButtonTarget" class="catalog-row__col__img" target="_blank"><img src="@Model.Properties.Image" alt="" class="center-block img-responsive"></a>
+    <p class="catalog-row__col__ttl">
+        @if (Context.Kentico().PageBuilder().EditMode)
+        {
+            Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+            {
+                PropertyName = nameof(KMJ_DownloadItemProperties.Text),
+                Text = Model.Properties.Text,
+                EnableFormatting = false
+            });
+        }
+        else
+        {
+            @Html.Raw(Model.Properties.Text)
+        }
+    </p>
+    <p class="catalog-row__col__txt">
+        @if (Context.Kentico().PageBuilder().EditMode)
+        {
+            Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+            {
+                PropertyName = nameof(KMJ_DownloadItemProperties.Text),
+                Text = Model.Properties.ButtonText,
+                EnableFormatting = false
+            });
+        }
+        else
+        {
+            @Html.Raw(Model.Properties.ButtonText)
+        }
+    </p>
+    <p class="catalog-row__col__btn">
+        <a href="@Model.Properties.ButtonTarget" target="_blank">ダウンロードはこちら</a>
+        @if (Context.Kentico().PageBuilder().EditMode)
+        {
+            Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+            {
+                PropertyName = nameof(KMJ_DownloadItemProperties.Text),
+                Text = Model.Properties.ButtonTarget,
+                EnableFormatting = false
+            });
+        }
+    </p>
+    <!--/catalog-row__col-->
+</div>
