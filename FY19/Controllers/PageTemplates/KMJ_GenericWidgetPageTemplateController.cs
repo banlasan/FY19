@@ -5,23 +5,23 @@ using FY19.Models.PageTemplates;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 using CMS.EventLog;
 
-[assembly: RegisterPageTemplate("FY19.KMJ_CommonPage", typeof(KMJ_CommonPageTemplateController), "Common Page Template", Description = "-", IconClass = "icon-doc-o")]
+[assembly: RegisterPageTemplate("FY19.KMJ_GenericWidgetPage", typeof(KMJ_GenericWidgetPageTemplateController), "Generic Widget Page Template", Description = "-", IconClass = "icon-doc-o")]
 
 namespace FY19.Controllers.PageTemplates
 {
-    public class KMJ_CommonPageTemplateController : PageTemplateController<KMJ_CommonPageProperties>
+    public class KMJ_GenericWidgetPageTemplateController : PageTemplateController<KMJ_CommonPageProperties>
     {
         public ActionResult Index()
         {
-            var KMJ_CommonPage = GetPage<General>();
+            var KMJ_GenericWidgetPage = GetPage<General>();
             var props = GetProperties();
 
             EventLogProvider.LogEvent(EventType.INFORMATION, "Template Props", "", eventDescription: "showTitle - " + props.ShowTitle.ToString());
 
-            if (KMJ_CommonPage == null)
+            if (KMJ_GenericWidgetPage == null)
                 return HttpNotFound();
 
-            return View("PageTemplates/KMJ_CommonPageView", KMJ_CommonPageTemplateViewModel.GetViewModel(KMJ_CommonPage, props));
+            return View("PageTemplates/KMJ_GenericWidgetPageView", KMJ_CommonPageTemplateViewModel.GetViewModel(KMJ_GenericWidgetPage, props));
         }
     }
 }

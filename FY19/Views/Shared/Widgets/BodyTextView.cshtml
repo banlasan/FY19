@@ -40,13 +40,6 @@
 
 @if (Context.Kentico().PageBuilder().EditMode)
 {
-    //Html.RenderPartial("InlineEditors/EditableText", new EditableTextViewModel
-    //{
-    //    PropertyName = "TextContent",
-    //    Text = bodyText
-    //    Class = "textRead " + Model.Properties.Class
-    //});
-
     Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
     {
         PropertyName = "TextContent",

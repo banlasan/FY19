@@ -3,14 +3,12 @@
 @using FY19.Models.PageTemplates
 @model KMJ_CommonPageTemplateViewModel
 
-@{
-    string title = string.Empty;
+@{ string title = string.Empty;
 
-    if (Model.props.ShowTitle)
-    {
-        title = "IT管理サービス IT-Guardians（ITガーディアンズ） | コニカミノルタ";
-    }
-}
+                if (Model.props.ShowTitle)
+                {
+                    title = "IT管理サービス IT-Guardians（ITガーディアンズ） | コニカミノルタ";
+                } }
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -211,14 +209,15 @@
             </div>
 
             @*BreadCrumbZone*@
-            <ul class="breadcrumb">
-                <li>
-                    <a href="https://www.youtube.com" target="_blank">TOP</a>
-                </li>
-                <li>
-                    <a href="https://www.google.com" target="_blank">It guardians</a>
-                </li>
-            </ul>
+            <div class="breadcrumb">
+                <ul>
+                    <li>
+                        <a href="/business/service/it-guardians/index.html">TOP</a>
+
+                    </li>
+                    <li>カタログダウンロード</li>
+                </ul>
+            </div>
 
             <div id="megaMenu">
                 <div></div><!-- Home -->
@@ -505,7 +504,9 @@
                     <div class="main">
                         @*//render here!*@
 
-                        @Html.Raw(Model.Text)
+                        @Html.Kentico().EditableArea("BreadCrumbsZone", defaultSectionIdentifier: null, allowedWidgets: new[] { "FY19.BreadCrumbs" });
+
+                        @Html.Kentico().EditableArea("ContentZone")
 
                         <div class="footer-btn">
 

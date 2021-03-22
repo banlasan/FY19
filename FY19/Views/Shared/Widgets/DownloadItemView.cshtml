@@ -1,36 +1,85 @@
 ﻿@using CMS.MediaLibrary
 @using FY19.Models.Widgets
 @using FY19.Models.InlineEditors
+@using System.Text.RegularExpressions;
+@using FY19.Helpers;
 @model ComponentViewModel<KMJ_DownloadItemProperties>
 
 @{
-//string classEx = string.Empty;
-//if (Model.NewIcon == "Display")
-//{
-//    classEx = "catalog-row__col__img--new";
-//}
+    //string classEx = string.Empty;
+    //if (Model.NewIcon == "Display")
+    //{
+    //    classEx = "catalog-row__col__img--new";
+    //}
 
-//string styleAttribute = null;
-//if (Model.Properties.Image != null)
-//{
-//    styleAttribute = $"style=\"background-image: url('{Url.Content(MediaLibraryHelper.GetDirectUrl(Model.Properties.Image))}');\"";
-//}
+    //string styleAttribute = null;
+    //if (Model.Properties.Image != null)
+    //{
+    //    styleAttribute = $"style=\"background-image: url('{Url.Content(MediaLibraryHelper.GetDirectUrl(Model.Properties.Image))}');\"";
+    //}
+
+    string buttonTarget = null;
+    if (Model.Properties.ButtonTarget != null)
+    {
+        buttonTarget = Model.Properties.ButtonTarget;
+    }
+}
+
+
+@functions
+{
+    private static string HtmlToPlainText(string html)
+    {
+        const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'
+        const string stripFormatting = @"<[^>]*(>|$)";//match any character between '<' and '>', even when end tag is missing
+        const string lineBreak = @"<(br|BR)\s{0,1}\/{0,1}>";//matches: <br>,<br/>,<br />,<BR>,<BR/>,<BR />
+        var lineBreakRegex = new Regex(lineBreak, RegexOptions.Multiline);
+        var stripFormattingRegex = new Regex(stripFormatting, RegexOptions.Multiline);
+        var tagWhiteSpaceRegex = new Regex(tagWhiteSpace, RegexOptions.Multiline);
+
+        var text = html;
+        //Decode html specific characters
+        text = System.Net.WebUtility.HtmlDecode(text);
+        //Remove tag whitespace/line breaks
+        text = tagWhiteSpaceRegex.Replace(text, "><");
+        //Replace <br /> with line breaks
+        text = lineBreakRegex.Replace(text, Environment.NewLine);
+        //Strip formatting
+        text = stripFormattingRegex.Replace(text, string.Empty);
+
+        return text;
+    }
 }
 
 @*@if (Context.Kentico().PageBuilder().EditMode)
-{
-    Html.RenderPartial("InlineEditors/ImageUploaderEditor", new ImageUploaderEditorViewModel
     {
-        ImageType = ImageTypeEnum.MediaFile,
-        PropertyName = nameof(KMJ_DownloadItemProperties.Image),
-        HasImage = Model.Image != null,
-        MessagePosition = PanelPositionEnum.Top,
-        UseAbsolutePosition = true
-    });
-}*@
+        Html.RenderPartial("InlineEditors/ImageUploaderEditor", new ImageUploaderEditorViewModel
+        {
+            ImageType = ImageTypeEnum.MediaFile,
+            PropertyName = nameof(KMJ_DownloadItemProperties.Image),
+            HasImage = Model.Image != null,
+            MessagePosition = PanelPositionEnum.Top,
+            UseAbsolutePosition = true
+        });
+    }*@
 
 <div class="catalog-row__col">
-    <a href="@Model.Properties.ButtonTarget" class="catalog-row__col__img" target="_blank"><img src="@Model.Properties.Image" alt="" class="center-block img-responsive"></a>
+    <a href="@Model.Properties.ButtonTarget" class="catalog-row__col__img" target="_blank">
+        @if (Context.Kentico().PageBuilder().EditMode)
+        {
+            Html.RenderPartial("InlineEditors/ImageUploaderEditor", new ImageUploaderEditorViewModel
+            {
+                PropertyName = nameof(ImageWidgetProperties.ImageGuid),
+                HasImage = Model.Properties.Image != null,
+            });
+        }
+        else
+        {
+            <img src="@Model.Properties.Image" alt="" class="center-block img-responsive">
+        }
+
+        @*@Html.AttachmentImage(Model.Properties.ImageAttachment, cssClassName: "img-responsive")*@
+    </a>
     <p class="catalog-row__col__ttl">
         @if (Context.Kentico().PageBuilder().EditMode)
         {
@@ -51,7 +100,7 @@
         {
             Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
             {
-                PropertyName = nameof(KMJ_DownloadItemProperties.Text),
+                PropertyName = nameof(KMJ_DownloadItemProperties.ButtonText),
                 Text = Model.Properties.ButtonText,
                 EnableFormatting = false
             });
@@ -62,16 +111,21 @@
         }
     </p>
     <p class="catalog-row__col__btn">
-        <a href="@Model.Properties.ButtonTarget" target="_blank">ダウンロードはこちら</a>
-        @if (Context.Kentico().PageBuilder().EditMode)
-        {
-            Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+        <a href="@Model.Properties.ButtonTarget" target="_blank">
+            @if (Context.Kentico().PageBuilder().EditMode)
             {
-                PropertyName = nameof(KMJ_DownloadItemProperties.Text),
-                Text = Model.Properties.ButtonTarget,
-                EnableFormatting = false
-            });
-        }
+                Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+                {
+                    PropertyName = nameof(KMJ_DownloadItemProperties.ButtonTarget),
+                    Text = Model.Properties.ButtonTarget,
+                    EnableFormatting = false
+                });
+            }
+            else
+            {
+                @HtmlToPlainText(buttonTarget)
+            }
+        </a>
     </p>
     <!--/catalog-row__col-->
 </div>

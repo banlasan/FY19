@@ -1,4 +1,5 @@
 ﻿using CMS.MediaLibrary;
+using CMS.DocumentEngine;
 
 namespace FY19.Models.Widgets
 {
@@ -12,6 +13,10 @@ namespace FY19.Models.Widgets
         /// </summary>
         public MediaFileInfo Image { get; set; }
 
+        /// <summary>
+        /// Image.
+        /// </summary>
+        public DocumentAttachment ImageAttachment { get; set; }
 
         /// <summary>
         /// Text.

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using Kentico.Components.Web.Mvc.FormComponents;
 using Kentico.Forms.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
+using CMS.DocumentEngine;
 
 namespace FY19.Models.Widgets
 {
@@ -25,6 +26,10 @@ namespace FY19.Models.Widgets
         [Required]
         public IList<MediaFilesSelectorItem> Image { get; set; }
 
+        /// <summary>
+        /// Image.
+        /// </summary>
+        public DocumentAttachment ImageAttachment { get; set; }
 
         /// <summary>
         /// Text to be displayed.

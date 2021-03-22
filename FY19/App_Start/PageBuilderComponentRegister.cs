@@ -20,7 +20,7 @@ using FY19.Controllers.PageTemplates;
 [assembly: RegisterWidget("FY19.AnchorList", "AnchorList", typeof(KMJ_AnchorLinkListProperties), "Widgets/AnchorLinkList", Description = "Link List", IconClass = "icon-list")]
 [assembly: RegisterWidget("FY19.LinkButton", "LinkButton", typeof(KMJ_LinkButtonProperties), "Widgets/LinkButtonView", Description = "Link Button", IconClass = "icon-list")]
 [assembly: RegisterWidget("FY19.HeadHTML", "HeadHTML", typeof(KMJ_HeadHTMLProperties), "Widgets/HeadHTMLView", Description = "HeadHTML", IconClass = "icon-l-header-text")]
-[assembly: RegisterWidget("FY19.FreeHTML", "Free HTML", typeof(CKEditor4_WysiwygWidgetProperties), "Widgets/FreeHTMLView", IconClass = "icon-l-header-text")]
+[assembly: RegisterWidget("FY19.FreeHTML", "Free HTML", typeof(CKEditor4_WysiwygWidgetProperties), "Widgets/FreeHTMLView", Description = "WYSIWYG Editor", IconClass = "icon-l-header-text")]
 [assembly: RegisterWidget("FY19.Table", "Table", typeof(CKEditor4_WysiwygWidgetProperties), "Widgets/TableView", IconClass = "icon-l-header-text")]
 [assembly: RegisterWidget("FY19.Placeholder", "Placeholder", typeof(KMJ_PlaceholderProperties), "Widgets/PlaceholderView", Description = "Placeholder", IconClass = "icon-l-header-text")]
 
@@ -31,6 +31,3 @@ using FY19.Controllers.PageTemplates;
 [assembly: RegisterSection("FY19.ThreeColumnSection", "Three Columns", typeof(KMJ_1_3ColumnProperties), "Sections/ThreeColumnView", IconClass = "icon-l-cols-3")]
 [assembly: RegisterSection("FY19.TwoThirdsColumnSection", "2/3 Columns", typeof(KMJ_2_3ColumnProperties), "Sections/TwoThirdsColumnView", IconClass = "icon-2-cols-3")]
 [assembly: RegisterSection("FY19.ColumnZone", "Column Zone", typeof(KMJ_ColumnZoneProperties), "Sections/ColumnZoneView", IconClass = "icon-2-cols-3")]
-
-//Templates
-[assembly: RegisterPageTemplate("FY19.SampleTemplate", typeof(SampleTemplateController), "Sample Template")]

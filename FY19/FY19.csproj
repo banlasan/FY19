@@ -708,6 +708,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Ude, Version=0.1.0.0, Culture=neutral, PublicKeyToken=834b12a258f213f9">
       <HintPath>..\packages\Kentico.Libraries.12.0.29\lib\net461\Ude.dll</HintPath>
       <Private>True</Private>
@@ -722,12 +723,8 @@
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\atlas\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\moono\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\ocean\" />
-    <Folder Include="Views\BannerWidget\" />
-    <Folder Include="Views\BreadCrumbs\" />
-    <Folder Include="Views\KMJ_DownloadItem\" />
-    <Folder Include="Views\KMJ_GenericPage\" />
-    <Folder Include="Views\KMJ_MasterPage\" />
-    <Folder Include="Views\SampleTemplate\" />
+    <Folder Include="Views\KMJ_Document_Sitemap\" />
+    <Folder Include="Views\KMJ_Office_Sitemap\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\InlineEditors\CKEditor4-InlineEditor\CKEditor4-InlineEditor.js" />
@@ -984,7 +981,16 @@
     <Content Include="Views\Shared\Widgets\TableView.cshtml" />
     <Content Include="Views\Shared\InlineEditors\TableView_WysiwygInlineEditor.cshtml" />
     <Content Include="Views\Shared\Widgets\PlaceholderView.cshtml" />
-    <Content Include="Views\Shared\PageTemplates\SampleTemplateView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_MasterPageView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_CatalogDownloadView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_OfficeMasterPageView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_DocumentSolutionMasterView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_GenericWidgetPageView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_ITG_MasterPageView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_GenericCategoryTopView.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_ITG_Sitemap.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_OfficeSitemap.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_DocumentSitemap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -997,13 +1003,23 @@
     <Compile Include="Controllers\InlineEditors\ImageUploaderHelper.cs" />
     <Compile Include="Controllers\InlineEditors\MediaFileImageUploader.cs" />
     <Compile Include="Controllers\ITguardiansController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_CatalogDownloadPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_CommonPageTemplateController.cs" />
-    <Compile Include="Controllers\PageTemplates\SampleTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_DocumentSolutionMasterPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_GenericCategoryTopPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_GenericWidgetPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_ITG_MasterPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_Document_SitemapController.cs" />
+    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_ITG_SitemapController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_MasterPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_OfficeMasterPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_Office_SitemapController.cs" />
     <Compile Include="Controllers\Sections\SingleColumnSection.cs" />
     <Compile Include="Controllers\Widgets\KMJ_ImageWidgetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\clsSitemap.cs" />
     <Compile Include="Helpers\Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Helpers\Property.cs" />
     <Compile Include="Infrastructure\ContentItemMetadataProvider.cs" />
@@ -1020,6 +1036,7 @@
     <Compile Include="Models\InlineEditors\InlineEditorViewModel.cs" />
     <Compile Include="Models\InlineEditors\LinkButtonEditor\LinkButtonEditorViewModel.cs" />
     <Compile Include="Models\InlineEditors\TextEditor\TextEditorViewModel.cs" />
+    <Compile Include="Models\ISitemapNodeRepository.cs" />
     <Compile Include="Models\ITGuardiansHome\IndexSectionViewModel.cs" />
     <Compile Include="Models\ITGuardiansHome\IndexViewModel.cs" />
     <Compile Include="Models\PageTemplates\KMJ_CommonPage\KMJ_CommonPageProperties.cs" />
@@ -1030,9 +1047,12 @@
     <Compile Include="Models\Sections\KMJ_2-3ColumnProperties.cs" />
     <Compile Include="Models\Sections\KMJ_ColumnZoneProperties.cs" />
     <Compile Include="Models\Sections\SingleSectionProperties.cs" />
+    <Compile Include="Models\SitemapNode.cs" />
+    <Compile Include="Models\SitemapNodeRepository.cs" />
     <Compile Include="Models\Widgets\BreadCrumbs\BreadCrumbsPaths.cs" />
     <Compile Include="Models\Widgets\BreadCrumbs\BreadCrumbsProperties.cs" />
     <Compile Include="Models\Widgets\BreadCrumbs\BreadCrumbsViewModel.cs" />
+    <Compile Include="Models\Widgets\ImageWidgetProperties.cs" />
     <Compile Include="Models\Widgets\ImageWidgetViewModel.cs" />
     <Compile Include="Models\Widgets\Image\KMJ_Image.cs" />
     <Compile Include="Models\Widgets\Image\KMJ_ImageViewModel.cs" />
