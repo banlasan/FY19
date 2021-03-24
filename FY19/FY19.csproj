@@ -723,8 +723,7 @@
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\atlas\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\moono\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\ocean\" />
-    <Folder Include="Views\KMJ_Document_Sitemap\" />
-    <Folder Include="Views\KMJ_Office_Sitemap\" />
+    <Folder Include="Views\Sitemap\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\InlineEditors\CKEditor4-InlineEditor\CKEditor4-InlineEditor.js" />
@@ -991,6 +990,16 @@
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_ITG_Sitemap.cshtml" />
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_OfficeSitemap.cshtml" />
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_DocumentSitemap.cshtml" />
+    <Content Include="Views\Security\Index.cshtml" />
+    <Content Include="Views\Telework\Index.cshtml" />
+    <Content Include="Views\Printing\Index.cshtml" />
+    <Content Include="Views\Cost\Index.cshtml" />
+    <Content Include="Views\Helpdesk\Index.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Catalog\Index.cshtml" />
+    <Content Include="Views\System\Index.cshtml" />
+    <Content Include="Views\RemoteView\Index.cshtml" />
+    <Content Include="Views\Antivirus\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -999,6 +1008,9 @@
     <Compile Include="App_Start\PageBuilderComponentRegister.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="CMSRegistrationSource.cs" />
+    <Compile Include="Controllers\Antivirus\AntivirusController.cs" />
+    <Compile Include="Controllers\Catalog\CatalogController.cs" />
+    <Compile Include="Controllers\Helpdesk\HelpdeskController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InlineEditors\ImageUploaderHelper.cs" />
     <Compile Include="Controllers\InlineEditors\MediaFileImageUploader.cs" />
@@ -1014,6 +1026,12 @@
     <Compile Include="Controllers\PageTemplates\KMJ_MasterPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_OfficeMasterPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_Office_SitemapController.cs" />
+    <Compile Include="Controllers\Purpose\Cost\CostController.cs" />
+    <Compile Include="Controllers\Purpose\Printing\PrintingController.cs" />
+    <Compile Include="Controllers\Purpose\Security\SecurityController.cs" />
+    <Compile Include="Controllers\Purpose\System\SystemController.cs" />
+    <Compile Include="Controllers\Purpose\Telework\TeleworkController.cs" />
+    <Compile Include="Controllers\RemoteView\RemoteViewController.cs" />
     <Compile Include="Controllers\Sections\SingleColumnSection.cs" />
     <Compile Include="Controllers\Widgets\KMJ_ImageWidgetController.cs" />
     <Compile Include="Global.asax.cs">

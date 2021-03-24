@@ -5,7 +5,7 @@ using FY19.Models.PageTemplates;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 using CMS.EventLog;
 
-[assembly: RegisterPageTemplate("FY19.KMJ_CommonPage", typeof(KMJ_CommonPageTemplateController), "Common Page Template", Description = "-", IconClass = "icon-doc-o")]
+[assembly: RegisterPageTemplate("FY19.KMJ_CommonPage", typeof(KMJ_CommonPageTemplateController), "Generic Page Template", Description = "-", IconClass = "icon-doc-o")]
 
 namespace FY19.Controllers.PageTemplates
 {
