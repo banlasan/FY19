@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* header searchbox */
+
+header .rightBox .searchBox .form {
+  margin: 7px 0 0 11px;
+  padding: 0;
+  line-height: 1.0;
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+  border-left: none;
+  font-family: "ＭＳ Ｐゴシック", "メイリオ", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+header .rightBox .searchBox .form label {
+  display: none;
+}
+
+header .rightBox .searchBox .form input {
+  float: left;
+}
+
+header .rightBox .searchBox .form input#search {
+  vertical-align: top;
+  /* width: 172px; */
+  width: 177px;
+  margin: 0;
+  padding: 0 2px;
+  margin-right: 2px;
+  color: #666;
+}
+
+.msie header .rightBox .searchBox .form input#search {
+  width: 169px;
+}
+
+.firefox header .rightBox .searchBox .form input#search {
+  width: 169px;
+}
+
+header .rightBox .searchBox .form input#search {
+  vertical-align: top;
+  margin: 0;
+  padding: 0 2px;
+  margin-right: 2px;
+  color: #666;
+}
+
+.msie6 header .rightBox .searchBox .form {
+  margin-left: 6px;
+}
+
+.msie7 header .rightBox .searchBox .form {
+  margin-left: 2px;
+}
+
+
+.searchBoxSP .form {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  zoom: 1;
+  font-family: "ＭＳ Ｐゴシック", "メイリオ", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+.searchBoxSP .form label {
+  display: none;
+}
+
+.searchBoxSP .form input#search {
+  color: #666;
+  width: 85%;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 0 0 10px;
+  border: none;
+  background: none;
+  float: left;
+}
+
+.searchBoxSP .form input[type='image'] {
+  float: right;
+}
+
+.searchBoxSP .form input:focus {
+  border: none;
+  outline: none;
+  outline: 0;
+}
+
+.newForm {
+  display: none;
+}

@@ -1,14 +1,15 @@
-﻿
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Web.Mvc
+
 <!DOCTYPE html>
 <html lang="ja">
 <head id="head">
     <title>
-        情報システムの運用負荷軽減 | IT管理サービス IT-Guardians | コニカミノルタ
+        IT管理サービス IT-Guardians（ITガーディアンズ） | コニカミノルタ
     </title>
-    <meta name="description" content="増え続けるIT資産の管理や、高度化するIT環境への対応などの課題を、包括的なサポートで解決いたします。" />
+    <meta name="description" content="IT-GuardiansはコニカミノルタのITの設計・導入・保守・運用ノウハウをパッケージ化し、すべての企業の皆様にご利用いただけるようご提供いたします。" />
     <meta charset="UTF-8" />
-    <meta name="keywords" content="インフラ構築,セキュリティ対策,リモートサポート" />
-
+    <meta name="keywords" content="インフラ,セキュリティ,サポート,環境構築,リモートサポート" />
     <!-- START OF SmartSource Data Collector TAG -->
     <!-- Google Tag Manager -->
     <script>
@@ -24,9 +25,11 @@
     <!-- END OF SmartSource Data Collector TAG -->
     <meta name="viewport" content="width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <link rel="canonical" href="https://www.konicaminolta.jp/business/service/it-guardians/purpose/system.html" />
+
+    <link rel="canonical" href="https://www.konicaminolta.jp/business/service/it-guardians/index.html" />
 
     <link rel="shortcut icon" href="#">
+
     <link rel="stylesheet" href="https://www.konicaminolta.jp/common/unchangeable/css/response-2.0.css">
     <link rel="stylesheet" href="https://www.konicaminolta.jp/common/unchangeable/css/response-3.0.css">
     <link rel="stylesheet" href="https://www.konicaminolta.jp/common/unchangeable/css/response-customize.css">
@@ -36,7 +39,7 @@
     @*<script src="https://www.konicaminolta.jp/common/unchangeable/js/response-3.0.js"></script>*@
     <script src="https://www.konicaminolta.jp/component/c_common/js/jquery-1.7.1.min.js"></script>
     <meta property="og:image" content="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_keyvisual_sp.jpg?ext=.jpg" />
-    <link rel="stylesheet" href="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/css/responsive.css">
+    <link rel="stylesheet" href="~/Content/responsive.css">
     <link rel="stylesheet" href="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/css/it-guardians_top.css">
 
     <!--[if lt IE 9]>
@@ -79,7 +82,7 @@
     <link rel="stylesheet" href="https://www.konicaminolta.com/web-contents/kmj/assets/common/css/searchbox-kentico.css">
     <script src="https://www.konicaminolta.com/web-contents/kmj/assets/common/js/searchbox-kentico.js"></script>
 </head>
-<body class="LTR Chrome KMJJA ContentBody" id="top">
+<body class="LTR Unknown KMJJA ContentBody" id="top">
     <!-- START OF SmartSource Data Collector TAG -->
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -88,69 +91,32 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- END OF SmartSource Data Collector TAG -->
-    <form method="post" action="/business/service/it-guardians/purpose/system.html" id="form">
-        <div class="aspNetHidden">
-            <input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="0YYhPe6nzsZ0+9vr6juyOfGFwwfAaBGGlT9375cSPBYM/ImIAQmKMAS9/qbQzcTdev6TOrvpjEpNnjzvt2ijmYnhwgk=" />
-            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="OqcGDCBF3E9xCADtzbY4SMACfLDZyluN7km3y0+9ed7HlCP4I3py74CwGgOyrDOYsE4ku3aBbw+09tQ1DFSL4eQ1TviXwO9TqFVxS8i8lRaZ2dCBYrGami64/mInTAeaRCS20/nn5mEzS/hPgPpfanKmBlyt597HryqlxjVtZzhX/ClkRc8Dsev3rEzIzZJPOF9ybtJMvtzcwwEnzNskArJZ+Lb2mQQTesGNy4uZaanFch10vbN7K6UqyoTJEcBLxQCnkU0yn3g0/2cTa0gITtPDXdLCXhnjghwYITZsnrJxaUHPvKLcMWssNmhnmV3z48NhzlW9OWqfzZpwrCbk+vJGn5gMT1q/uFVpjmkjywaKaJk9qBe7Eqr9AEu3qmUh4/2xvM/lHgTePLbgeuJJaqPX2Q4=" />
-        </div>
-
-        <script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['form'];
-if (!theForm) {
-    theForm = document.form;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-        </script>
-
-
-        <script src="https://www.konicaminolta.jp/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZCO74BmUmZECLXh-ij-QaT6vPIT2KP7OtqF122KFB1NQmNHEAA2&amp;t=636777049224055265" type="text/javascript"></script>
+    <form method="post" action="/business/service/it-guardians/index.html" id="form">
+        <input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="yFvYssg4Y4QEihIE6J0pZvzuHS02G+oJZbER6b6Iw6nEE9NO2TTAT/xz7PUHKQ1BTupTzLNeYBFdGzf/sQoZBsUdYXY=" />
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="EqaajylABORtirIVrUaNA19uEMSGGGOj1b88Tt830wQws02pKS3Dfs7r7RvWs0wEf266XypK1lGHdoKHZF2CyCK/CKGXAeHKSkSr0hvDg/CAoN9BVjPV9bj5P1DOYi9SES/DNIXTFg5vMMYLWl6Pmn156nctJuA+8F8T4QZ8zPNxdmX1Sa56jih5mzIoQWDYuK/7lzk3DOmHouOaWdc79/gwiSVNW6VeUsnOc2BS3DVCy//Iz6atCWcMjUtzWzUsNMeHvYoTxeC6EZ2pqHgcUs00YSQCTzrz9yMOVf2iB/2AhXnaD/sCcqyW2zbyXQ/B4mpt7wjbRCoLZEplfH1IAw8G32zjemhU5BbrGHSHUEZznIn444NGOr3qoAVZAs50hPk5B0hCOuAc6ZKG0PCUnvFsWpMLW4Ty4u7CmvYdUme+FvKh" />
 
         <input type="hidden" name="lng" id="lng" value="kmj-ja" />
         <script type="text/javascript">
-	//<![CDATA[
-
-function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
-function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
-//]]>
+            //<![CDATA[
+            function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
+            function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
+            //]]>
         </script>
-        <script src="https://www.konicaminolta.jp/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvgvcfK5wUaz0TMjRZjHh2n34-Cro2SUAm2dnKmL3z7HypyVPR2gPjM4lDyAstJKpw2GxCTByJmqAEEyy1C9ugD_t4EaA7-A8ZIjkY5CMC4WaPTyl_rXoYvSvsjaZKO8ySQzS0HA1&amp;t=ffffffff999c3159" type="text/javascript"></script>
-        <script src="https://www.konicaminolta.jp/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OAuXTcw6oEe6-MyaAITy4P5J_ZgisiDSMgWznlOZddvmajJJDsRnckufpC5ULJENR__ePn0zLMzyA3_H9kL80Qy-Lt5ldSjFzVjVbFzs4uPlXAzu3faaRxQ-V1fx-MHATB6tGj01&amp;t=ffffffff999c3159" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yATfwMzbiZh9yYNFwQU73A6Z4tvFijK_nMd6obLzzr96WoxDqWoSYaS2x4YITjx2OIO0dQGuuzo-qObGrd4C9g_tgAdoWNG4055PwCOsgPnXLnSp7f4K_vQ-XGKyhpoMKR40PAU1&amp;t=ffffffff999c3159" type="text/javascript"></script>
         <script type="text/javascript">
-	//<![CDATA[
-
-var CMS = CMS || {};
-CMS.Application = {
-  "language": "kmj",
-  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
-  "isDebuggingEnabled": false,
-  "applicationUrl": "/",
-  "isDialog": false,
-  "isRTL": "false"
-};
-
-//]]>
+            //<![CDATA[
+            var CMS = CMS || {};
+            CMS.Application = {
+                "language": "kmj",
+                "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+                "isDebuggingEnabled": false,
+                "applicationUrl": "/",
+                "isDialog": false,
+                "isRTL": "false"
+            };
+            //]]>
         </script>
-        <div class="aspNetHidden">
-
-            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
-            <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
-            <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
-        </div>
-        <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
-//]]>
-        </script>
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
 
         <div id="ctxM">
 
@@ -233,7 +199,6 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                             <li><a href="/business/solution/ejikan/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_090.jpg" width="180" height="107" alt=""><span>働き方改革</span></a></li>
                             <li><a href="/business/solution/salesup_sp/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_084.jpg" width="180" height="107" alt=""><span>売上向上</span></a></li>
                             <li><a href="/business/solution/cost_sp/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_085.jpg" width="180" height="107" alt=""><span>コスト削減</span></a></li>
-                            <li><a href="/business/solution/webinar/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_122.png" width="180" height="107" alt=""><span>セミナー動画ライブラリー</span></a></li>
                         </ul>
                         <!-- / .line -->
                     </div>
@@ -260,7 +225,6 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                     <div class="line">
                         <p class="h02">業種から探す</p>
                         <ul class="linkList02">
-                            <li><a href="/business/solution/success-pack/index.html"><span>業種別サクセスパック</span></a></li>
                             <li><a href="/business/solution_service/distribution/index.html"><span>流通・小売</span></a></li>
                             <li><a href="/business/solution/nursery/index.html"><span>保育園・こども園</span></a></li>
                         </ul>
@@ -322,8 +286,8 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                                     <p>印刷工程の自動化でオペレーションを効率化させるデジタル印刷システムのフラッグシップモデル</p>
                                 </li>
                                 <!--<li><p><a href="/business/products/graphic/ondemand_print/color/accurio_press_c2070_c2070p_c2060/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_072.jpg" width="155" height="110" alt=""><span>AccurioPress C2070 / C2070P / C2060</span></a></p>
-                        <p>進化し続けるマルチロールプロダクション印刷システム「AccurioPress C2070 / C2070P / C2060」</p></li><li><p><a href="/business/products/copiers/bw/bizhub_558_458_368_308/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_065.jpg" width="155" height="110" alt=""><span>bizhub 558 / 458 / 368 / 308</span></a></p>
-                        <p>快適な環境を構築し、業務効率化をサポートする「bizhub 558 / 458 / 368 / 308」</p></li>-->
+                                <p>進化し続けるマルチロールプロダクション印刷システム「AccurioPress C2070 / C2070P / C2060」</p></li><li><p><a href="/business/products/copiers/bw/bizhub_558_458_368_308/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_065.jpg" width="155" height="110" alt=""><span>bizhub 558 / 458 / 368 / 308</span></a></p>
+                                <p>快適な環境を構築し、業務効率化をサポートする「bizhub 558 / 458 / 368 / 308」</p></li>-->
                             </ul>
                             <!-- / .colR -->
                         </div>
@@ -364,12 +328,12 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                             <p class="h02">新着導入事例</p>
                             <ul class="linkList">
                                 <li>
-                                    <a href="/business/user_case/mitaka-city/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_124.jpg" width="155" height="110" alt=""><span>三鷹市 様</span></a>
-                                    <p>三層分離に対応しつつ出力環境が抱える課題をSecurePrint！が一挙解決。利便性、セキュリティー、抵抗コストを兼ね備えた出力基盤を再構築。</p>
+                                    <a href="/business/user_case/karuizawa-kyoiku/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_121.jpg" width="155" height="110" alt=""><span>軽井沢町教育委員会 様</span></a>
+                                    <p>軽井沢町では、全ての小中学校でタブレット１人１台の ICT授業を開始し、『学校 ICTプログラム』も推進しています。</p>
                                 </li>
                                 <li>
-                                    <a href="/business/solution/space-design/service/delfino_detail_01.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_123.png" width="155" height="110" alt=""><span>有限会社カノン 様</span></a>
-                                    <p>子供も大人も安心して通える音楽教室の実現を目指して、カノン音楽教室の綾瀬校をデルフィーノでまるごと抗菌。</p>
+                                    <a href="/business/user_case/sagawa2/index.html"><img src="https://www.konicaminolta.jp/business/common/img/megamenu/img_118.jpg" width="155" height="110" alt=""><span>佐川印刷株式会社 様</span></a>
+                                    <p>クラウド型色管理ソリューション AccurioPro Cloud Eye に切り替えて、全国各支店のカラープルーフの色状態をリアルタイムで簡単に把握。</p>
                                 </li>
                             </ul>
                             <!-- / .colR -->
@@ -495,7 +459,6 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                 <!-- /#megaMenu -->
             </div>
             <!-- +++ megamenu +++ -->
-
             <div class="skipLink">
                 <p><a id="anchorContents"></a></p>
                 <!-- / .skipLink -->
@@ -505,324 +468,10 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
             <div id="contentsArea">
                 <div id="contentsInner">
                     <div class="main">
-                        <nav class="localnavigation">
-                            <p class="localnavigation__btn">MENU</p>
-                            <ul>
-                                <li><a href="/business/service/it-guardians/index.html">TOP</a></li>
-                                <!--
-                        -->
-                                <li class="current"><a href="/business/service/it-guardians/index.html#itg-solution">課題解決</a></li>
-                                <!--
-                        -->
-                                <li><a href="/business/service/it-guardians/helpdesk/index.html">ヘルプデスク</a></li>
-                                <!--
-                        -->
-                                <li><a href="/business/service/it-guardians/service/index.html">サービス一覧</a></li>
-                                <!--
-                        -->
-                                <li><span>ニュース</span></li>
-                                <!--
-                        -->
-                                <li><a href="https://bsoffers.konicaminolta.jp/fm-it-guardians-contact.html" target="_blank">お問い合わせ</a></li>
-                            </ul>
-                        </nav>
-                        <div class="breadcrumb">
-                            <ul>
-                                <li><a href="/business/service/it-guardians/index.html">TOP</a></li>
-                                <li>
-                                    <a href="/business/service/it-guardians/index.html#itg-solution" class="CMSBreadCrumbsLink">課題解決</a>
-                                </li>
-                                <li>情報システムの運用負荷軽減</li>
-                            </ul>
-                        </div>
 
-
-                        <div class="content-wrapper">
-                            <section class="content-inner">
-                                <div class="title-area">
-                                    <h1 class="title-area__ttl hidden-sm">情報システムの運用負荷軽減</h1>
-
-                                    <h1 class="title-area__ttl hidden-lg">
-                                        情報システムの<br />
-                                        運用負荷軽減
-                                    </h1>
-
-                                    <p class="title-area__txt">課題解決<img alt="" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/icon_ttl_system.png" /></p>
-                                    <!--/title-area-->
-                                </div>
-
-                                <p class="content-inner__lead">増え続けるIT機器に対して、それをサポートすべき体制の整備や人材の確保は十分でしょうか？</p>
-
-                                <div class="top-content top-content--system">
-                                    <div class="column-wrapper mt-lg-60">
-                                        <div class="column-wrapper__col">
-                                            <p><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_001.jpg" /></p>
-
-                                            <p class="font-style-01 text-center mt-sm-20">
-                                                <span class="font-style-02">84.5</span><span class="font-style-03">％</span>の企業が<br />
-                                                IT人材の&quot;量&quot;が不足と回答
-                                            </p>
-                                            <!--/column-wrapper__col-->
-                                        </div>
-
-                                        <div class="column-wrapper__col">
-                                            <p><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_002.jpg" /></p>
-
-                                            <p class="font-style-01 text-center mt-sm-20">
-                                                <span class="font-style-02">89.9</span><span class="font-style-03">％</span>の企業が<br />
-                                                IT人材の&quot;質&quot;が不足と回答
-                                            </p>
-
-                                            <p class="text-lg-right mt-lg-10 mb-lg-0 mt-sm-10 mb-sm-0  ml-sm-10 mr-sm-10">
-                                                <small>
-                                                    引用元：独立行政法人情報処理推進機構 IT人材育成本部 編<br />
-                                                    『IT人材白書2017』
-                                                </small>
-                                            </p>
-                                            <!--/column-wrapper__col-->
-                                        </div>
-                                        <!--/column-wrapper-->
-                                    </div>
-
-                                    <p class="top-content__lead">IT人材の不足が&quot;ひとり情シス&quot;を生み、様々な経営課題に繋がる可能性があります。</p>
-
-                                    <div class="column-wrapper column-wrapper--3column mt-lg-40 mt-sm-40">
-                                        <div class="column-wrapper__col">
-                                            <p><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_003.jpg" /></p>
-
-                                            <p class="font-style-04 mt-lg-20 mt-sm-20 ml-sm-10 mr-sm-10">IT基盤が整備できない</p>
-
-                                            <ul class="column-wrapper__col__list">
-                                                <li>経営戦略に対応したシステム基盤を構築できない</li>
-                                                <li>増え続ける端末の管理や複雑化・高度化するITシステムに運用体制が追いつかない</li>
-                                            </ul>
-                                            <!--/column-wrapper__col-->
-                                        </div>
-
-                                        <div class="column-wrapper__col">
-                                            <p><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_004.jpg" /></p>
-
-                                            <p class="font-style-04 mt-lg-20 mt-sm-20 ml-sm-10 mr-sm-10">突発的な対応の遅れ</p>
-
-                                            <ul class="column-wrapper__col__list">
-                                                <li>IT人材の流出による社内システムのブラックボックス化とIT担当者への負荷の増大</li>
-                                                <li>外部環境の変化に応じたシステム投資ができず、既存のIT資産が陳腐化してしまう</li>
-                                            </ul>
-                                            <!--/column-wrapper__col-->
-                                        </div>
-
-                                        <div class="column-wrapper__col">
-                                            <p><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_005.jpg" /></p>
-
-                                            <p class="font-style-04 mt-lg-20 mt-sm-20 ml-sm-10 mr-sm-10">セキュリティ対策の未整備</p>
-
-                                            <ul class="column-wrapper__col__list">
-                                                <li>効果的なセキュリティ対策実施へのロードマップがない</li>
-                                                <li>様々に変化するサイバー攻撃への脆弱性やリスクを放置</li>
-                                            </ul>
-                                            <!--/column-wrapper__col-->
-                                        </div>
-                                        <!--/column-wrapper-->
-                                    </div>
-                                    <!--/top-content-->
-                                </div>
-
-                                <div class="bottom-content">
-                                    <h2 class="h2">IT-GuardiansによるIT機器の包括的なサポート</h2>
-
-                                    <div class="firgure-area">
-                                        <p class="firgure-area__img hidden-lg"><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_006_sp.png" /></p>
-
-                                        <div class="firgure-area__row">
-                                            <div class="firgure-area__row__col">
-                                                <div class="firgure-area-contet">
-                                                    <h3 class="firgure-area-contet__ttl">IT機器のリモートサポート</h3>
-
-                                                    <p class="firgure-area-contet__txt">PCの問合せやOfficeの操作をリモートにてサポートします。</p>
-
-                                                    <p class="firgure-area-contet__caption">[　対象商品　]</p>
-
-                                                    <ul class="firgure-area-contet__list">
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/it_support/index.html">ITサポートサービス</a><br class="hidden-lg" />
-                                                            PC周りの困りごとを解決
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/managed_pc/index.html">マネージドPCサービス</a><br class="hidden-lg" />
-                                                            サポートを含めたPCを提供
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/server/index.html">サーバーサービス</a><br class="hidden-lg" />
-                                                            監視や保守を含めてサーバーを提供
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/monitoring/index.html">遠隔監視サービス</a><br class="hidden-lg" />
-                                                            サーバーを24時間365日遠隔監視
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/wifi/index.html">無線LANサービスS</a><br />
-                                                            無線LANおよびゲストWi-Fiを構築・運用
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/base_lan/index.html">拠点内LANサービス</a><br />
-                                                            拠点内ネットワークを設計・構築・運用
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/pbx/index.html">クラウドPBXサービス</a><br />
-                                                            クラウド上でPBX管理し、IP電話(ビジネスフォン)を提供
-                                                        </li>
-                                                    </ul>
-                                                    <!--/firgure-area-contet-->
-                                                </div>
-                                                <!--/firgure-area__row__col-->
-                                            </div>
-
-                                            <div class="firgure-area__row__col">
-                                                <div class="firgure-area-contet">
-                                                    <h3 class="firgure-area-contet__ttl">IT資産管理サービス</h3>
-
-                                                    <p class="firgure-area-contet__txt">PCやソフトウェアなどIT資産を自動的に台帳化し、資産状況を見える化します。</p>
-
-                                                    <p class="firgure-area-contet__caption">[　対象商品　]</p>
-
-                                                    <ul class="firgure-area-contet__list">
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/skysea/index.html">IT資産/カウンタ管理　NAS版(SKYSEA Client View) </a><br class="hidden-lg" />
-                                                            カウンタ集計機能付IT資産管理システム
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/ism/index.html">IT資産管理サービス(ISM CloudOne)</a><br />
-                                                            クラウドによる多拠点向けIT資産管理サービス
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/faciriza/index.html">FaciRiza on IT-Guardians</a><br />
-                                                            施設予約管理サービス
-                                                        </li>
-                                                    </ul>
-                                                    <!--/firgure-area-contet-->
-                                                </div>
-                                                <!--/firgure-area__row__col-->
-                                            </div>
-                                            <!--/firgure-area__row-->
-                                        </div>
-
-                                        <p class="firgure-area__img hidden-sm"><img alt="" class="img-responsive center-block" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_system_006.png" /></p>
-
-                                        <div class="firgure-area__row">
-                                            <div class="firgure-area__row__col">
-                                                <div class="firgure-area-contet">
-                                                    <h3 class="firgure-area-contet__ttl">クラウド・インターネット</h3>
-
-                                                    <p class="firgure-area-contet__txt">セキュリティ、災害対策、二重化された設備など信頼性の高いデータセンターにて、公開サーバーを利用可能です。</p>
-
-                                                    <p class="firgure-area-contet__caption">[　対象商品　]</p>
-
-                                                    <ul class="firgure-area-contet__list">
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/hosting/index.html">メール＆ウェブサービス</a><br />
-                                                            メールと公開サーバーをレンタル提供
-                                                        </li>
-                                                        <!--<li class="hidden-lg"><a href="/business/service/it-guardians/base_lan/index.html">拠点内LANサービス</a> <br />… 拠点内ネットワークを設計・構築・運用</li>--><!--<li class="hidden-sm"><a href="/business/service/it-guardians/base_lan/index.html">拠点内LANサービス</a>… 拠点内ネットワークを設計・構築・運用</li>-->
-                                                        <li>
-                                                            <a href="https://www.konicaminolta.jp/business/solution/homepage_pkg/index.html" target="_blank">ホームページ制作パッケージ</a><br />
-                                                            立ち上げから運用まで必要な要素をオールインワン提供
-                                                        </li>
-                                                    </ul>
-                                                    <!--/firgure-area-contet-->
-                                                </div>
-                                                <!--/firgure-area__row__col-->
-                                            </div>
-
-                                            <div class="firgure-area__row__col">
-                                                <div class="firgure-area-contet">
-                                                    <h3 class="firgure-area-contet__ttl">テレワークサービス</h3>
-
-                                                    <p class="firgure-area-contet__txt">社外での安心・安全なテレワーク環境を提供します。</p>
-
-                                                    <p class="firgure-area-contet__caption">[　対象商品　]</p>
-
-                                                    <ul class="firgure-area-contet__list">
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/service/remote_view/index.html">リモートビューサービス</a><br />
-                                                            社外から社内のPCをリモートコントロール
-                                                        </li>
-                                                        <li>
-                                                            <a href="/business/service/it-guardians/vpn/index.html">VPN接続サービス</a><br />
-                                                            拠点間や社外からのVPN接続
-                                                        </li>
-                                                    </ul>
-                                                    <!--/firgure-area-contet-->
-                                                </div>
-                                                <!--/firgure-area__row__col-->
-                                            </div>
-                                            <!--/firgure-area__row-->
-                                        </div>
-                                        <!--/firgure-area-->
-                                    </div>
-                                    <!--/bottom-content-->
-                                </div>
-
-                                <div class="point">
-                                    <p class="point__ttl"><img alt="point" src="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/img_point.png" /> <!--/point__ttl--></p>
-
-                                    <ol class="point__content">
-                                        <li><span>PCやOfficeの操作や不具合が発生しても、リモートにて即対応・解決</span></li>
-                                        <li><span>セキュリティ、データのバックアップ、IT資産管理などのサービスと組み合わせて、 IT機器の困りごとをワンストップで解決</span></li>
-                                        <li><span>自社の公開サーバーやメールサーバーも構築からサポートまで提供可能</span></li>
-                                        <li><span>一部初期費用を除き月額/年額でのサービス提供をしているので、自社で資産を持つ必要なし</span></li>
-                                    </ol>
-                                    <!--/point-->
-                                </div>
-
-                                <p class="dl-brochure">
-                                    <a class="btn-brochure-line-1" href="https://bs-offers.konicaminolta.jp/l/466361/2019-06-14/4927l/466361/17047/it_guardians_system.pdf" target="_blank">
-                                        <i class="hidden-sm">当該課題のカタログのダウンロード</i> <i class="hidden-lg">
-                                            当該課題のカタログの<br />
-                                            ダウンロード
-                                        </i>
-                                    </a>
-                                </p>
-
-                                <nav class="liner-navigation">
-                                    <ul>
-                                        <li class="current">
-                                            <a class="hidden-sm" href="/business/service/it-guardians/purpose/system.html">
-                                                情報システムの<br />
-                                                運用負担軽減
-                                            </a> <a class="hidden-lg" href="/business/service/it-guardians/purpose/system.html">情報システムの運用負担軽減</a>
-                                        </li>
-                                        <li><a href="/business/service/it-guardians/purpose/security.html">セキュリティ対策</a></li>
-                                        <li>
-                                            <a class="hidden-sm" href="/business/service/it-guardians/purpose/telework.html">
-                                                情報伝達による<br />
-                                                生産性向上
-                                            </a> <a class="hidden-lg" href="/business/service/it-guardians/purpose/telework.html">情報伝達による生産性向上 </a>
-                                        </li>
-                                        <li>
-                                            <a class="hidden-sm" href="/business/service/it-guardians/purpose/printing.html">
-                                                プリンティング<br />
-                                                環境最適化
-                                            </a> <a class="hidden-lg" href="/business/service/it-guardians/purpose/printing.html">プリンティング環境最適化 </a>
-                                        </li>
-                                        <li>
-                                            <a class="hidden-sm" href="/business/service/it-guardians/purpose/cost.html">
-                                                ITコスト低減／<br />
-                                                変動費化
-                                            </a> <a class="hidden-lg" href="/business/service/it-guardians/purpose/cost.html">ITコスト低減／変動費化</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <!--/content-inner-->
-                            </section>
-                            <!--/content-wrapper-->
-                        </div>
-
-
-
-
+                        @Html.Kentico().EditableArea("ContentZone", defaultSectionIdentifier: null, allowedWidgets: new[] { "FY19.FreeHTML" })
 
                         <div class="footer-btn">
-
                             <div class="footer-btn__wrapper">
 
                                 <div class="footer-btn-content">
@@ -872,21 +521,19 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
 
             <script language='JavaScript1.1' src='//pixel.mathtag.com/event/js?mt_id=681494&mt_adid=135663&v1=&v2=&v3=&s1=&s2=&s3='></script>
 
-            @*<script type="text/javascript">
-            function PAGODA_prepClient(fn) {
-                fn.setClientCode('konicaminolta');
-                if (typeof (PAGODA_conversion) == "function") { PAGODA_conversion(fn); }
-            }
-            var host = (("https:" == document.location.protocol) ? "https://ssl" : "http://s") + '.pagoda56.com';
-            document.write(unescape("%3Cscript src='" + host + "/pagoda/pagoda.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>*@
-
+            <script type="text/javascript">
+                function PAGODA_prepClient(fn) {
+                    fn.setClientCode('konicaminolta');
+                    if (typeof (PAGODA_conversion) == "function") { PAGODA_conversion(fn); }
+                }
+                var host = (("https:" == document.location.protocol) ? "https://ssl" : "http://s") + '.pagoda56.com';
+                document.write(unescape("%3Cscript src='" + host + "/pagoda/pagoda.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
             <!-- End of Konica Minolta_Cvtag, Konica_Information equipment_RTtag and Pandora_tag for Web Ad Trucking -->
             <!-- Start of Konica Inc._LinkedInInsightTag -->
             <script type="text/javascript">
                 _bizo_data_partner_id = "7603";
             </script>
-
             <script type="text/javascript">
                 (function () {
                     var s = document.getElementsByTagName("script")[0];
@@ -897,7 +544,6 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                     s.parentNode.insertBefore(b, s);
                 })();
             </script>
-
             <noscript>
                 <img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=7603&fmt=gif" />
             </noscript>
@@ -915,27 +561,20 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
                         <li><a href="https://www.konicaminolta.jp/about/csr/index.html">CSR（社会・環境活動）</a></li>
                     </ul>
                 </article>
-                <p class="copyright"><small>&copy;2011-2021 KONICA MINOLTA JAPAN, INC.</small></p>
+                <p class="copyright"><small>&copy;2011-2019 KONICA MINOLTA JAPAN, INC.</small></p>
                 @*<script type="text/javascript" charset="UTF-8" src="https://www.konicaminolta.jp/js/ext/sug.js#sv=//s.marsfinder.jp/konicaminolta__jp_business__jp_business&amp;input=search"></script>*@
 
                 <p id="page-top"><a href="#anchorPagetop"><img src="https://www.konicaminolta.jp/business/common/img/navi/pagetop.png" width="70" height="50" alt="このページのトップへ"></a></p>
 
             </footer>
         </div>
-
-
-
-        <script type="text/javascript">
-            //<![CDATA[
-
-            WebForm_InitCallback();
-            theForm.oldSubmit = theForm.submit;
-            theForm.submit = WebForm_SaveScrollPositionSubmit;
-
-            theForm.oldOnSubmit = theForm.onsubmit;
-            theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
-            //]]>
-        </script>
     </form>
+
+    <script src="https://cdn.ckeditor.com/4.11.4/full-all/ckeditor.js"></script>
+
+    @Html.Kentico().PageBuilderScripts()
+    @Html.Kentico().PageBuilderStyles()
+
+    @Scripts.Render("~/bundles/scripts")
 </body>
 </html>

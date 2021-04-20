@@ -55,18 +55,20 @@ namespace FY19.Controllers
             //ViewBag.Text = text.ToString();
             //return View(page.DocumentID);
 
-            var KMJGeneral = kmjRepository.GetGeneral();
+            //var KMJGeneral = kmjRepository.GetGeneral();
 
-            if (KMJGeneral == null)
-                return HttpNotFound();
+            //if (KMJGeneral == null)
+            //    return HttpNotFound();
 
-            EventLogProvider.LogEvent(EventType.INFORMATION, "KMJ General", "", eventDescription: "document id - " + KMJGeneral.DocumentID);
+            //EventLogProvider.LogEvent(EventType.INFORMATION, "KMJ General " + KMJGeneral.DocumentID, "", eventDescription: "document id - " + KMJGeneral.DocumentID);
 
-            HttpContext.Kentico().PageBuilder().Initialize(KMJGeneral.DocumentID);
+            //HttpContext.Kentico().PageBuilder().Initialize(KMJGeneral.DocumentID);
 
-            mOutputCacheDependencies.AddDependencyOnPage<General>(KMJGeneral.DocumentID);
+            //mOutputCacheDependencies.AddDependencyOnPage<General>(KMJGeneral.DocumentID);
 
-            return new TemplateResult(KMJGeneral.DocumentID);
+            //return new TemplateResult(KMJGeneral.DocumentID);
+
+            return View();
         }
     }
 }

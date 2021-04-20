@@ -23,13 +23,13 @@ namespace FY19.Controllers
             //   Use Page tab = True
             // In the administration UI, create a Page utilizing the new Page type
 
-            //TreeNode page = DocumentHelper.GetDocuments().Path("/Home").OnCurrentSite().TopN(1).FirstOrDefault();
-            //if (page == null)
-            //{
-            //    return HttpNotFound();
-            //}
+            TreeNode page = DocumentHelper.GetDocuments().Path("/business/service/it-guardians/Home").OnCurrentSite().TopN(1).FirstOrDefault();
+            if (page == null)
+            {
+                return HttpNotFound();
+            }
 
-            //HttpContext.Kentico().PageBuilder().Initialize(page.DocumentID);
+            HttpContext.Kentico().PageBuilder().Initialize(page.DocumentID);
 
             return View();
         }

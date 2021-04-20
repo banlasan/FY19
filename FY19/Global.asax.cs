@@ -7,7 +7,9 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using CMS.AspNet.Platform;
 using CMS.ContactManagement;
+using FY19.PageTemplateFilters;
 using Kentico.OnlineMarketing.Web.Mvc;
+using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
 
 namespace FY19
@@ -26,6 +28,8 @@ namespace FY19
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             DependencyResolverConfig.Register();
+
+            //RegisterPageTemplateFilters();
         }
 
         public override string GetVaryByCustomString(HttpContext context, string custom)
@@ -103,6 +107,12 @@ namespace FY19
                 Server.ClearError();
                 Response.StatusCode = 404;
             }
+        }
+
+        private void RegisterPageTemplateFilters()
+        {
+            //PageBuilderFilters.PageTemplates.Add(new KMJ_GenericPageTemplateFilter());
+            //PageBuilderFilters.PageTemplates.Add(new KMJ_CatalogDownloadPageTemplateFilter());
         }
     }
 }

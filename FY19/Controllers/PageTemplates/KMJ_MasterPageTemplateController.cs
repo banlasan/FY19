@@ -5,8 +5,6 @@ using FY19.Models.PageTemplates;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 using CMS.EventLog;
 
-[assembly: RegisterPageTemplate("FY19.KMJ_MasterPage", typeof(KMJ_MasterPageTemplateController), "Master Page Template", Description = "-", IconClass = "icon-doc-o")]
-
 namespace FY19.Controllers.PageTemplates
 {
     public class KMJ_MasterPageTemplateController : PageTemplateController<KMJ_CommonPageProperties>

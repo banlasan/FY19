@@ -18,7 +18,7 @@ using Kentico.PageBuilder.Web.Mvc;
 
 namespace FY19.Controllers.Widgets
 {
-    public class KMJ_ImageWidgetController : WidgetController<KMJ_Image>
+    public class KMJ_ImageWidgetController : WidgetController<KMJ_ImageProperties>
     {
 
 
@@ -76,7 +76,7 @@ namespace FY19.Controllers.Widgets
             }
         }
 
-        private MediaFileInfo GetImage(KMJ_Image properties)
+        private MediaFileInfo GetImage(KMJ_ImageProperties properties)
         {
             var imageGuid = properties.Image?.FirstOrDefault()?.FileGuid ?? Guid.Empty;
             if (imageGuid == Guid.Empty)
@@ -86,7 +86,7 @@ namespace FY19.Controllers.Widgets
 
             return mediaFileRepo.GetMediaFile(imageGuid, SiteContext.CurrentSiteName);
         }
-        private MediaFileInfo GetImageSP(KMJ_Image properties)
+        private MediaFileInfo GetImageSP(KMJ_ImageProperties properties)
         {
             var imageGuid = properties.ImageSP?.FirstOrDefault()?.FileGuid ?? Guid.Empty;
             if (imageGuid == Guid.Empty)

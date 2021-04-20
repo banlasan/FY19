@@ -6,7 +6,7 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 using FY19.Controllers.PageTemplates;
 
 //Widgets
-[assembly: RegisterWidget("FY19.Image", "Image", typeof(KMJ_Image), "Widgets/ImageView", Description = "Kentico Image", IconClass = "icon-pictures")]
+[assembly: RegisterWidget("FY19.Image", "Image", typeof(KMJ_ImageProperties), "Widgets/ImageView", Description = "Kentico Image", IconClass = "icon-pictures")]
 [assembly: RegisterWidget("FY19.H2Header", "H2Header", typeof(KMJ_H2HeadingProperties), "Widgets/H2View", Description = "H2 Header", IconClass = "icon-l-header-text")]
 [assembly: RegisterWidget("FY19.H3Header", "H3Header", typeof(KMJ_H3HeadingProperties), "Widgets/H3View", Description = "H3 Header", IconClass = "icon-l-header-text")]
 [assembly: RegisterWidget("FY19.H4Header", "H4Header", typeof(KMJ_H4HeadingProperties), "Widgets/H4View", Description = "H4 Header", IconClass = "icon-l-header-text")]
@@ -31,3 +31,17 @@ using FY19.Controllers.PageTemplates;
 [assembly: RegisterSection("FY19.ThreeColumnSection", "Three Columns", typeof(KMJ_1_3ColumnProperties), "Sections/ThreeColumnView", IconClass = "icon-l-cols-3")]
 [assembly: RegisterSection("FY19.TwoThirdsColumnSection", "2/3 Columns", typeof(KMJ_2_3ColumnProperties), "Sections/TwoThirdsColumnView", IconClass = "icon-2-cols-3")]
 [assembly: RegisterSection("FY19.ColumnZone", "Column Zone", typeof(KMJ_ColumnZoneProperties), "Sections/ColumnZoneView", IconClass = "icon-2-cols-3")]
+
+//PageTemplates
+//[assembly: RegisterPageTemplate("FY19.KMJ_CatalogDownloadPage", typeof(KMJ_CatalogDownloadPageTemplateController), "Catalog Download Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_CommonPage", typeof(KMJ_CommonPageTemplateController), "Common Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_DocumentSolutionMasterPage", typeof(KMJ_DocumentSolutionMasterPageTemplateController), "Document Solution Master Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_GenericCategoryTopPage", typeof(KMJ_GenericCategoryTopPageTemplateController), "Generic Category Top Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_GenericPage", typeof(KMJ_GenericPageTemplateController), "Generic Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_GenericWidgetPage", typeof(KMJ_GenericWidgetPageTemplateController), "Generic Widget Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_ITG_MasterPage", typeof(KMJ_ITG_MasterPageTemplateController), "ITG Master Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_MasterPage", typeof(KMJ_MasterPageTemplateController), "Master Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_OfficeMasterPage", typeof(KMJ_OfficeMasterPageTemplateController), "Office 365 Master Page Template", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_Document_Sitemap", typeof(KMJ_Document_SitemapController), "KMJ Document Sitemap", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_ITG_Sitemap", typeof(KMJ_ITG_SitemapController), "KMJ ITG Sitemap", Description = "-", IconClass = "icon-doc-o")]
+//[assembly: RegisterPageTemplate("FY19.KMJ_Office_Sitemap", typeof(KMJ_Office_SitemapController), "KMJ Office Sitemap", Description = "-", IconClass = "icon-doc-o")]

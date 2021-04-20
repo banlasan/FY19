@@ -5,8 +5,6 @@ using FY19.Models.PageTemplates;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 using System.Web.Mvc;
 
-[assembly: RegisterPageTemplate("FY19.KMJ_Office365MasterPage", typeof(KMJ_CatalogDownloadPageTemplateController), "Catalog Download Page Template", Description = "-", IconClass = "icon-doc-o")]
-
 namespace FY19.Controllers.PageTemplates
 {
     public class KMJ_CatalogDownloadPageTemplateController : PageTemplateController<KMJ_CommonPageProperties>
@@ -16,7 +14,7 @@ namespace FY19.Controllers.PageTemplates
             var KMJ_CatalogDownloadPage = GetPage<General>();
             var props = GetProperties();
 
-            EventLogProvider.LogEvent(EventType.INFORMATION, "Template Props", "", eventDescription: "showTitle - " + props.ShowTitle.ToString());
+            EventLogProvider.LogEvent(EventType.INFORMATION, "Template Props for KMJ_CatalogDownloadPageTemplateController", "", eventDescription: "showTitle - " + props.ShowTitle.ToString());
 
             if (KMJ_CatalogDownloadPage == null)
                 return HttpNotFound();

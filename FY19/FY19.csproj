@@ -738,6 +738,247 @@
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\TextEditor.css" />
     <Content Include="Content\it-guardians.css" />
     <Content Include="Content\it-guardians_top.css" />
+    <Content Include="Content\kmj\assets\common\css\searchbox-kentico.css" />
+    <Content Include="Content\kmj\assets\common\js\business.js" />
+    <Content Include="Content\kmj\assets\common\js\searchbox-kentico.js" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_001.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_001_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_002.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_002_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_003.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_003_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_004.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_004_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_005.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_005_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_006.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\img_index_006_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\document\consulting\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\css\document.css" />
+    <Content Include="Content\kmj\assets\document\css\responsive.css" />
+    <Content Include="Content\kmj\assets\document\css\sticky-state.css" />
+    <Content Include="Content\kmj\assets\document\img\bg_arrow_001.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_content.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_content_sec.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_content_sec_sp.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_content_top.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_content_top_sp.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_h2.png" />
+    <Content Include="Content\kmj\assets\document\img\bg_keyvisual_pc.jpg" />
+    <Content Include="Content\kmj\assets\document\img\bg_keyvisual_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_001.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_001_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_002.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_002_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_003.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_003_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_004.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_004_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_005.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_005_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_006.jpg" />
+    <Content Include="Content\kmj\assets\document\img\img_index_006_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_001.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_001_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_002.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_002_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_003.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_003_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_004.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\img_index_004_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\document\implementation-support\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\js\index.js" />
+    <Content Include="Content\kmj\assets\document\js\jquery-smoothscroll.js" />
+    <Content Include="Content\kmj\assets\document\js\sticky-state-min.js" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_001.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_001_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_002.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_002_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_003.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_003_sp.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_004.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_004_sp.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_005.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_005_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_006.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_006_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_007.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_007_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_008.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_008_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_009.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\img_index_009_sp.png" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\document\rakuraku\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\img_index_001.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\img_index_002.pngPext=.png" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\img_p001.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\img_p002.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\img_p003.jpgPext=.jpg" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\document\xpoint-cloud\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\bg_index.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\img_index_001.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\img_index_002.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\img_index_004.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\img_index_005.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\img_index_006.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\img_index_007.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\catalog\img\utmsophos.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\css\it-guardians.css" />
+    <Content Include="Content\kmj\assets\it-guardians\css\it-guardians_top.css" />
+    <Content Include="Content\kmj\assets\it-guardians\css\responsive.css" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\bg_index.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\img_index_001.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\img_index_002.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\img_index_003.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\img_index_004.png" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\img_index_005.png" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\helpdesk\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_arrow_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_arrow_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_content_pc.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_content_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_footer-btn_pc.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_footer-btn_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_index_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_index_001_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_index_figure_pc.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_index_figure_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_keyvisual_pc.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_keyvisual_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\bg_newwin.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\btn_menu-close_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\btn_menu_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\icn_index_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\icn_index_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\icn_index_003.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\icn_index_004.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\icn_index_005.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_figure_01.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_figure_02.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_figure_03.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_figure_04.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_figure_05.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_001.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_002.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_002_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_003.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_003_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_004.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_004_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_005.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_005_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_006.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_006_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_007.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_index_007_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\img_security_005.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\img\ttl_keyvisual_pc.png" />
+    <Content Include="Content\kmj\assets\it-guardians\img\ttl_keyvisual_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\js\index.js" />
+    <Content Include="Content\kmj\assets\it-guardians\js\jquery-smoothscroll.js" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_arrow_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_h2.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_num_1.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_num_2.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_num_3.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_num_4.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_pdf_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_pdf_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_system_pc.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\bg_telework_pc.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\icon_ttl_cost.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\icon_ttl_printing.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\icon_ttl_security.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\icon_ttl_system.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\icon_ttl_telework.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_003.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_003_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_004.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_004_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_005.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_cost_005_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_point.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_printing_001.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_printing_002.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_printing_003.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_printing_004.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_printing_005.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_printing_005_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_security_001.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_security_002.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_security_003.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_security_004.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_security_006.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_security_006_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_001.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_002.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_003.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_004.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_005.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_006.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_system_006_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_003.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_004.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_005.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_006.png" />
+    <Content Include="Content\kmj\assets\it-guardians\purpose\img\img_telework_006_sp.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_003.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_004.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_005.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_006.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_007.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_008.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_009.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_010.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_011.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_011_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\img_index_012.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\logo_index.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\antivirus\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\img\bg_service-arrow.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_003.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_004.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_005.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_006.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_006_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_007.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\img_index_007_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\remote_view\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\gp_001.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\gp_002.pngPext=.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\gp_003.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\icon_001.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\icon_002.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\icon_003.png" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\img_products.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\img_xg106.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\img_xg135.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\img_xg210.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\it-guardians\service\utmsophos\img\ttl_index_sp.jpg" />
+    <Content Include="Content\kmj\assets\office365\img\img_index_001.pngPext=.png" />
+    <Content Include="Content\kmj\assets\office365\img\img_index_001_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\office365\img\img_index_002.pngPext=.png" />
+    <Content Include="Content\kmj\assets\office365\img\img_index_002_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\office365\img\img_index_003.pngPext=.png" />
+    <Content Include="Content\kmj\assets\office365\img\img_index_003_sp.pngPext=.png" />
+    <Content Include="Content\kmj\assets\office365\img\ttl_index.jpg" />
+    <Content Include="Content\kmj\assets\office365\img\ttl_index_sp.jpg" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
@@ -992,14 +1233,16 @@
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_DocumentSitemap.cshtml" />
     <Content Include="Views\Security\Index.cshtml" />
     <Content Include="Views\Telework\Index.cshtml" />
+    <Content Include="Views\System\Index.cshtml" />
     <Content Include="Views\Printing\Index.cshtml" />
     <Content Include="Views\Cost\Index.cshtml" />
     <Content Include="Views\Helpdesk\Index.cshtml" />
-    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Service\Index.cshtml" />
+    <Content Include="Views\Purpose\Index.cshtml" />
     <Content Include="Views\Catalog\Index.cshtml" />
-    <Content Include="Views\System\Index.cshtml" />
-    <Content Include="Views\RemoteView\Index.cshtml" />
     <Content Include="Views\Antivirus\Index.cshtml" />
+    <Content Include="Views\RemoteView\Index.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\KMJ_GenericPageView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -1008,7 +1251,6 @@
     <Compile Include="App_Start\PageBuilderComponentRegister.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="CMSRegistrationSource.cs" />
-    <Compile Include="Controllers\Antivirus\AntivirusController.cs" />
     <Compile Include="Controllers\Catalog\CatalogController.cs" />
     <Compile Include="Controllers\Helpdesk\HelpdeskController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -1019,20 +1261,24 @@
     <Compile Include="Controllers\PageTemplates\KMJ_CommonPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_DocumentSolutionMasterPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_GenericCategoryTopPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\KMJ_GenericPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_GenericWidgetPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_ITG_MasterPageTemplateController.cs" />
-    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_Document_SitemapController.cs" />
-    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_ITG_SitemapController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_MasterPageTemplateController.cs" />
     <Compile Include="Controllers\PageTemplates\KMJ_OfficeMasterPageTemplateController.cs" />
+    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_Document_SitemapController.cs" />
+    <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_ITG_SitemapController.cs" />
     <Compile Include="Controllers\PageTemplates\Sitemaps\KMJ_Office_SitemapController.cs" />
     <Compile Include="Controllers\Purpose\Cost\CostController.cs" />
     <Compile Include="Controllers\Purpose\Printing\PrintingController.cs" />
+    <Compile Include="Controllers\Purpose\PurposeController.cs" />
     <Compile Include="Controllers\Purpose\Security\SecurityController.cs" />
     <Compile Include="Controllers\Purpose\System\SystemController.cs" />
     <Compile Include="Controllers\Purpose\Telework\TeleworkController.cs" />
-    <Compile Include="Controllers\RemoteView\RemoteViewController.cs" />
     <Compile Include="Controllers\Sections\SingleColumnSection.cs" />
+    <Compile Include="Controllers\Service\Antivirus\AntivirusController.cs" />
+    <Compile Include="Controllers\Service\RemoteView\RemoteViewController.cs" />
+    <Compile Include="Controllers\Service\ServiceController.cs" />
     <Compile Include="Controllers\Widgets\KMJ_ImageWidgetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1072,7 +1318,7 @@
     <Compile Include="Models\Widgets\BreadCrumbs\BreadCrumbsViewModel.cs" />
     <Compile Include="Models\Widgets\ImageWidgetProperties.cs" />
     <Compile Include="Models\Widgets\ImageWidgetViewModel.cs" />
-    <Compile Include="Models\Widgets\Image\KMJ_Image.cs" />
+    <Compile Include="Models\Widgets\Image\KMJ_ImageProperties.cs" />
     <Compile Include="Models\Widgets\Image\KMJ_ImageViewModel.cs" />
     <Compile Include="Models\Widgets\KMJ_AnchorLinkListProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_AnnotationListProperties.cs" />
@@ -1088,7 +1334,8 @@
     <Compile Include="Models\Widgets\KMJ_PlaceholderProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_TextContentProperties.cs" />
     <Compile Include="Models\Widgets\StaticTextModelProperties.cs" />
-    <Compile Include="PageTemplateFilters\KMJ_CommonPageTemplatesFilter.cs" />
+    <Compile Include="PageTemplateFilters\KMJ_CatalogDownloadPageTemplateFilter.cs" />
+    <Compile Include="PageTemplateFilters\KMJ_GenericPageTemplateFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\WebAssemblyInfo.cs" />
     <Compile Include="Repositories\IKMJPageGeneralRepository.cs" />

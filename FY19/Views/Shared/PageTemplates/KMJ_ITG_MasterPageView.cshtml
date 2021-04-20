@@ -1,30 +1,20 @@
 ﻿@using Kentico.PageBuilder.Web.Mvc
 @using Kentico.Web.Mvc
-@using FY19.Models.PageTemplates
-@model KMJ_CommonPageTemplateViewModel
-
-@{ string title = string.Empty;
-
-    if (Model.props.ShowTitle)
-    {
-        title = "IT管理サービス IT-Guardians（ITガーディアンズ） | コニカミノルタ";
-    } }
 
 <!DOCTYPE html>
 <html lang="ja">
 <head id="head">
     <title>
-        @title
+        IT管理サービス IT-Guardians（ITガーディアンズ） | コニカミノルタ
     </title>
     <meta name="description" content="IT-GuardiansはコニカミノルタのITの設計・導入・保守・運用ノウハウをパッケージ化し、すべての企業の皆様にご利用いただけるようご提供いたします。" />
     <meta charset="UTF-8" />
     <meta name="keywords" content="インフラ,セキュリティ,サポート,環境構築,リモートサポート" />
-    @Styles.Render("~/Content/css")
 
     <!-- START OF SmartSource Data Collector TAG -->
     <!-- Google Tag Manager -->
     <script>
-    (function (w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
@@ -39,6 +29,7 @@
     <link rel="canonical" href="https://www.konicaminolta.jp/business/service/it-guardians/index.html" />
 
     <link rel="shortcut icon" href="#">
+
     <link rel="stylesheet" href="https://www.konicaminolta.jp/common/unchangeable/css/response-2.0.css">
     <link rel="stylesheet" href="https://www.konicaminolta.jp/common/unchangeable/css/response-3.0.css">
     <link rel="stylesheet" href="https://www.konicaminolta.jp/common/unchangeable/css/response-customize.css">
@@ -48,7 +39,7 @@
     @*<script src="https://www.konicaminolta.jp/common/unchangeable/js/response-3.0.js"></script>*@
     <script src="https://www.konicaminolta.jp/component/c_common/js/jquery-1.7.1.min.js"></script>
     <meta property="og:image" content="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_keyvisual_sp.jpg?ext=.jpg" />
-    <link rel="stylesheet" href="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/css/responsive.css">
+    <link rel="stylesheet" href="~/Content/responsive.css">
     <link rel="stylesheet" href="https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/css/it-guardians_top.css">
 
     <!--[if lt IE 9]>
@@ -68,7 +59,7 @@
 
     <!-- BEGIN JMA Google Analytics -->
     <script>
-    (function (i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date(); a = s.createElement(o),
@@ -503,7 +494,7 @@
                 <div id="contentsInner" class="content-inner">
                     <div class="main">
                         @*//render here!*@
-
+                        
                         @Html.Kentico().EditableArea("ContentZone")
 
                         <div class="footer-btn">
@@ -592,7 +583,7 @@
                     </ul>
                 </article>
                 <p class="copyright"><small>&copy;2011-2019 KONICA MINOLTA JAPAN, INC.</small></p>
-                <script type="text/javascript" charset="UTF-8" src="https://www.konicaminolta.jp/js/ext/sug.js#sv=//s.marsfinder.jp/konicaminolta__jp_business__jp_business&amp;input=search"></script>
+                @*<script type="text/javascript" charset="UTF-8" src="https://www.konicaminolta.jp/js/ext/sug.js#sv=//s.marsfinder.jp/konicaminolta__jp_business__jp_business&amp;input=search"></script>*@
 
                 <p id="page-top"><a href="#anchorPagetop"><img src="https://www.konicaminolta.jp/business/common/img/navi/pagetop.png" width="70" height="50" alt="このページのトップへ"></a></p>
 

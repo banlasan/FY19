@@ -9,8 +9,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-[assembly: RegisterPageTemplate("FY19.KMJ_ITG_Sitemap", typeof(KMJ_ITG_SitemapController), "KMJ ITG Sitemap", Description = "-", IconClass = "icon-doc-o")]
-
 namespace FY19.Controllers.PageTemplates
 {
     public class KMJ_ITG_SitemapController : PageTemplateController<KMJ_CommonPageProperties>

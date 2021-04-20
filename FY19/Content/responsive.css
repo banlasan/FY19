@@ -4765,9 +4765,7 @@ a:hover .img-responsive {
         background-size: auto 360px;
     }
 
-        .help-desk img {
-            height: 360px;
-        }
+    .help-desk img {
+        height: 360px;
+    }
 }
-
-/*# sourceMappingURL=responsive.css.map */
