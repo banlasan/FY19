@@ -1,0 +1,15 @@
+﻿@using CMS.EventLog
+
+@model FY19.Models.InlineEditor.TextEditorViewModel
+
+@EventLogProvider.LogEvent(EventType.INFORMATION, "Static Text View", "CODE", eventDescription: "is EditMode = " + Context.Kentico().PageBuilder().EditMode)
+
+@using (Html.Kentico().BeginInlineEditor("text-editor", Model.PropertyName,
+    new
+    {
+        @class = "text-editor",
+        data_enable_formatting = Model.EnableFormatting.ToString()
+    }))
+{
+    @Html.Raw(HttpUtility.HtmlDecode(Model.Text))
+}

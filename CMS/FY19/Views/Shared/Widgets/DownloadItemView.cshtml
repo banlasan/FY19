@@ -1,0 +1,25 @@
+﻿@using FY19.Models.Widgets
+@using CMS.MediaLibrary
+@using Kentico.PageBuilder.Web.Mvc
+@using CMS.SiteProvider
+@using CMS.EventLog
+@model ComponentViewModel<KMJ_DownloadItemProperties>
+
+@{
+    string classEx = string.Empty;
+    if (Model.Properties.NewIcon == "Display")
+    {
+        classEx = "catalog-row__col__img--new";
+    }
+}
+
+@if (Model.Properties.Image != null)
+{
+    <div class="catalog-row__col">
+        <a href="@Model.Properties.Url" class="catalog-row__col__img @classEx" target="_blank"><img src="@Url.Content(MediaLibraryHelper.GetDirectUrl(MediaFileInfoProvider.GetMediaFileInfo(Model.Properties.Image.FirstOrDefault().FileGuid, SiteContext.CurrentSiteName))) " alt="" class="center-block img-responsive"></a>
+        <p class="catalog-row__col__ttl">@Model.Properties.Title</p>
+        <p class="catalog-row__col__txt">@Model.Properties.ContentText.Replace("\r\n", "<br>")</p>
+        <p class="catalog-row__col__btn"><a href="@Model.Properties.Url" target="_blank">ダウンロードはこちら</a></p>
+        <!--/catalog-row__col-->
+    </div>
+}

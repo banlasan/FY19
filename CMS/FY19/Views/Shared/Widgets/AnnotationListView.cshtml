@@ -1,0 +1,67 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using FY19.Models.Widgets
+@model ComponentViewModel<KMJ_AnnotationListProperties>
+
+
+@{
+    string leftFootClass = string.Empty;
+    string text1 = string.Empty, text2 = string.Empty, text3 = string.Empty, text4 = string.Empty, text5 = string.Empty, text6 = string.Empty, text7 = string.Empty, text8 = string.Empty, text9 = string.Empty, text10 = string.Empty;
+
+    if (Model.Properties.Count == "None")
+    { leftFootClass = "listFootNote001"; }
+    else
+    { leftFootClass = "listFootNote002"; }
+
+    if (Model.Properties.Text1 != null)
+    { text1 = Model.Properties.Text1.Replace("\r\n", "<br>"); }
+    else { text1 = Model.Properties.Text1; }
+
+    if (Model.Properties.Text2 != null)
+    { text2 = Model.Properties.Text2.Replace("\r\n", "<br>"); }
+    else { text2 = Model.Properties.Text2; }
+
+    if (Model.Properties.Text3 != null)
+    { text3 = Model.Properties.Text3.Replace("\r\n", "<br>"); }
+    else { text3 = Model.Properties.Text3; }
+
+    if (Model.Properties.Text4 != null)
+    { text4 = Model.Properties.Text4.Replace("\r\n", "<br>"); }
+    else { text4 = Model.Properties.Text4; }
+
+    if (Model.Properties.Text5 != null)
+    { text5 = Model.Properties.Text5.Replace("\r\n", "<br>"); }
+    else { text5 = Model.Properties.Text5; }
+
+    if (Model.Properties.Text6 != null)
+    { text6 = Model.Properties.Text6.Replace("\r\n", "<br>"); }
+    else { text6 = Model.Properties.Text6; }
+
+    if (Model.Properties.Text7 != null)
+    { text7 = Model.Properties.Text7.Replace("\r\n", "<br>"); }
+    else { text7 = Model.Properties.Text7; }
+
+    if (Model.Properties.Text8 != null)
+    { text8 = Model.Properties.Text8.Replace("\r\n", "<br>"); }
+    else { text8 = Model.Properties.Text8; }
+
+    if (Model.Properties.Text9 != null)
+    { text9 = Model.Properties.Text9.Replace("\r\n", "<br>"); }
+    else { text9 = Model.Properties.Text9; }
+
+    if (Model.Properties.Text10 != null)
+    { text10 = Model.Properties.Text10.Replace("\r\n", "<br>"); }
+    else { text10 = Model.Properties.Text10; }
+}
+
+<ul class="@leftFootClass @Model.Properties.Class" id="@Model.Properties.Id">
+    <li>@text1</li>
+    <li>@text2</li>
+    <li>@text3</li>
+    <li>@text4</li>
+    <li>@text5</li>
+    <li>@text6</li>
+    <li>@text7</li>
+    <li>@text8</li>
+    <li>@text9</li>
+    <li>@text10</li>
+</ul>

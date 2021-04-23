@@ -1,0 +1,14 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using FY19.Models.Widgets
+@model ComponentViewModel<KMJ_H3HeadingProperties>
+
+
+@{
+    string headText = string.Empty;
+
+    if (Model.Properties.Heading_Text != null)
+    { headText = Model.Properties.Heading_Text.Replace("\r\n", "<br>"); }
+    else { headText = Model.Properties.Heading_Text; }
+}
+
+<h3 class="h3 @Model.Properties.Class" id="@Model.Properties.Id">@headText</h3>

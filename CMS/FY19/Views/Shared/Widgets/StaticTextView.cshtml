@@ -1,0 +1,24 @@
+﻿@using FY19.Models.Widgets
+@using FY19.Models.InlineEditor
+@using CMS.EventLog
+@model ComponentViewModel<StaticTextModelProperties>
+
+
+@*@EventLogProvider.LogEvent(EventType.INFORMATION, "Static Text View", "CODE", eventDescription: "is EditMode = " + Context.Kentico().PageBuilder().EditMode)*@
+
+@*@if (Context.Kentico().PageBuilder().EditMode)
+{
+    Html.Partial("InlineEditor/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Text",
+        Text = Model.Properties.Text
+    });
+}
+else
+{
+    @Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Text));
+}*@
+
+<div>
+        @Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Text))
+    </div>

@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>IT Guardians</h1>
+
+@*@section styles
+{
+    @Html.Kentico().PageBuilderStyles()
+}
+
+@section scripts
+{
+    @Html.Kentico().PageBuilderScripts()
+}*@
+
+<div>
+@Html.Kentico().EditableArea("area1"
+    //, defaultSectionIdentifier: "FY19.SingColSec"
+    //, allowedWidgets: new[] { "FY19.Image" }
+    )
+</div>

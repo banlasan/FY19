@@ -1,0 +1,13 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using FY19.Models.Widgets
+@model ComponentViewModel<KMJ_TextContentProperties>
+
+@{ 
+    string bodyText = string.Empty;
+
+     if (Model.Properties.TextContent != null)
+    { bodyText = Model.Properties.TextContent.Replace("\r\n", "<br>"); }
+    else { bodyText = Model.Properties.TextContent; }
+}
+
+<p class="textRead @Model.Properties.Class" id="@Model.Properties.Id">@bodyText</p>
