@@ -1,4 +1,5 @@
 ﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.OnlineMarketing.Web.Mvc
 @using Kentico.Web.Mvc
 
 <!DOCTYPE html>
@@ -101,39 +102,39 @@
 
         <script type="text/javascript">
             //<![CDATA[
-                var theForm = document.forms['form'];
-                if (!theForm) {
-                    theForm = document.form;
+            var theForm = document.forms['form'];
+            if (!theForm) {
+                theForm = document.form;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
                 }
-                function __doPostBack(eventTarget, eventArgument) {
-                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                        theForm.__EVENTTARGET.value = eventTarget;
-                        theForm.__EVENTARGUMENT.value = eventArgument;
-                        theForm.submit();
-                    }
-                }
+            }
             //]]>
         </script>
 
         <input type="hidden" name="lng" id="lng" value="kmj-ja" />
         <script type="text/javascript">
             //<![CDATA[
-                function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
-                function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
+            function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
+            function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
             //]]>
         </script>
 
         <script type="text/javascript">
             //<![CDATA[
-                var CMS = CMS || {};
-                CMS.Application = {
-                    "language": "kmj",
-                    "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
-                    "isDebuggingEnabled": false,
-                    "applicationUrl": "/",
-                    "isDialog": false,
-                    "isRTL": "false"
-                };
+            var CMS = CMS || {};
+            CMS.Application = {
+                "language": "kmj",
+                "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+                "isDebuggingEnabled": false,
+                "applicationUrl": "/",
+                "isDialog": false,
+                "isRTL": "false"
+            };
             //]]>
         </script>
 
@@ -655,7 +656,7 @@
 
     @Scripts.Render("~/bundles/scripts")
 
-    @*@RenderSection("scripts", required: false)*@
-
+    @* Registers scripts that ensure logging of analytics data for A/B tests *@
+    @Html.Kentico().ABTestLoggerScript()
 </body>
 </html>

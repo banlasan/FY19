@@ -1,4 +1,5 @@
 ﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.OnlineMarketing.Web.Mvc
 @using Kentico.Web.Mvc
 
 <!DOCTYPE html>
@@ -97,21 +98,21 @@
         <input type="hidden" name="lng" id="lng" value="kmj-ja" />
         <script type="text/javascript">
             //<![CDATA[
-                function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
-                function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
+            function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
+            function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
             //]]>
         </script>
         <script type="text/javascript">
             //<![CDATA[
-                var CMS = CMS || {};
-                CMS.Application = {
-                    "language": "kmj",
-                    "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
-                    "isDebuggingEnabled": false,
-                    "applicationUrl": "/",
-                    "isDialog": false,
-                    "isRTL": "false"
-                };
+            var CMS = CMS || {};
+            CMS.Application = {
+                "language": "kmj",
+                "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+                "isDebuggingEnabled": false,
+                "applicationUrl": "/",
+                "isDialog": false,
+                "isRTL": "false"
+            };
             //]]>
         </script>
         <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
@@ -490,7 +491,7 @@
                 <div id="contentsInner" class="content-inner">
                     <div class="main">
                         @*//render here!*@
-                        
+
                         @Html.Kentico().EditableArea("ContentZone")
 
                         <div class="footer-btn">
@@ -544,7 +545,8 @@
 
             <script language='JavaScript1.1' src='//pixel.mathtag.com/event/js?mt_id=681494&mt_adid=135663&v1=&v2=&v3=&s1=&s2=&s3='></script>
 
-            <script type="text/javascript">function PAGODA_prepClient(fn) {
+            <script type="text/javascript">
+                function PAGODA_prepClient(fn) {
                     fn.setClientCode('konicaminolta');
                     if (typeof (PAGODA_conversion) == "function") { PAGODA_conversion(fn); }
                 }
@@ -553,7 +555,8 @@
             <!-- End of Konica Minolta_Cvtag, Konica_Information equipment_RTtag and Pandora_tag for Web Ad Trucking -->
             <!-- Start of Konica Inc._LinkedInInsightTag -->
             <script type="text/javascript">_bizo_data_partner_id = "7603";</script>
-            <script type="text/javascript">(function () {
+            <script type="text/javascript">
+                (function () {
                     var s = document.getElementsByTagName("script")[0];
                     var b = document.createElement("script");
                     b.type = "text/javascript";
@@ -595,7 +598,7 @@
 
     @Scripts.Render("~/bundles/scripts")
 
-    @*@RenderSection("scripts", required: false)*@
-
+    @* Registers scripts that ensure logging of analytics data for A/B tests *@
+    @Html.Kentico().ABTestLoggerScript()
 </body>
 </html>
