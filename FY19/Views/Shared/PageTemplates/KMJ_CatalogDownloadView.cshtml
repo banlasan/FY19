@@ -101,62 +101,46 @@
 
         <script type="text/javascript">
             //<![CDATA[
-            var theForm = document.forms['form'];
-            if (!theForm) {
-                theForm = document.form;
-            }
-            function __doPostBack(eventTarget, eventArgument) {
-                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                    theForm.__EVENTTARGET.value = eventTarget;
-                    theForm.__EVENTARGUMENT.value = eventArgument;
-                    theForm.submit();
+                var theForm = document.forms['form'];
+                if (!theForm) {
+                    theForm = document.form;
                 }
-            }
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
             //]]>
         </script>
-
-
-        <script src="https://www.konicaminolta.jp/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZCO74BmUmZECLXh-ij-QaT6vPIT2KP7OtqF122KFB1NQmNHEAA2&amp;t=636777049224055265" type="text/javascript"></script>
 
         <input type="hidden" name="lng" id="lng" value="kmj-ja" />
         <script type="text/javascript">
             //<![CDATA[
-
-            function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
-            function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
+                function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
+                function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
             //]]>
         </script>
-        <script src="https://www.konicaminolta.jp/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvgvcfK5wUaz0TMjRZjHh2n34-Cro2SUAm2dnKmL3z7HypyVPR2gPjM4lDyAstJKpw2GxCTByJmqAEEyy1C9ugD_t4EaA7-A8ZIjkY5CMC4WaPTyl_rXoYvSvsjaZKO8ySQzS0HA1&amp;t=ffffffff999c3159" type="text/javascript"></script>
-        <script src="https://www.konicaminolta.jp/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OAuXTcw6oEe6-MyaAITy4P5J_ZgisiDSMgWznlOZddvmajJJDsRnckufpC5ULJENR__ePn0zLMzyA3_H9kL80Qy-Lt5ldSjFzVjVbFzs4uPlXAzu3faaRxQ-V1fx-MHATB6tGj01&amp;t=ffffffff999c3159" type="text/javascript"></script>
+
         <script type="text/javascript">
             //<![CDATA[
-
-            var CMS = CMS || {};
-            CMS.Application = {
-                "language": "kmj",
-                "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
-                "isDebuggingEnabled": false,
-                "applicationUrl": "/",
-                "isDialog": false,
-                "isRTL": "false"
-            };
-
+                var CMS = CMS || {};
+                CMS.Application = {
+                    "language": "kmj",
+                    "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+                    "isDebuggingEnabled": false,
+                    "applicationUrl": "/",
+                    "isDialog": false,
+                    "isRTL": "false"
+                };
             //]]>
         </script>
-        <div class="aspNetHidden">
 
+        <div class="aspNetHidden">
             <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
             <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
             <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
-        </div>
-        <script type="text/javascript">
-            //<![CDATA[
-            Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM', ''], [], [], 90, '');
-            //]]>
-        </script>
-
-        <div id="ctxM">
-
         </div>
 
         <div id="pagetop"><a id="anchorPagetop"></a></div>
