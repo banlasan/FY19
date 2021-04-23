@@ -1,4 +1,5 @@
 ﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.OnlineMarketing.Web.Mvc
 @using Kentico.Web.Mvc
 
 <!DOCTYPE html>
@@ -36,7 +37,7 @@
     <script src="https://www.konicaminolta.jp/common/unchangeable/js/kmjslib.js"></script>
     @*<script src="https://www.konicaminolta.jp/common/unchangeable/js/response-3.0.js"></script>*@
     <script src="https://www.konicaminolta.jp/component/c_common/js/jquery-1.7.1.min.js"></script>
-    <meta property="og:image" content="~/Content/kmj/assets/document/img/bg_keyvisual_sp.jpg?ext=.jpg" />    
+    <meta property="og:image" content="~/Content/kmj/assets/document/img/bg_keyvisual_sp.jpg?ext=.jpg" />
     <link rel="stylesheet" href="~/Content/responsive.css">
     <link rel="stylesheet" href="~/Content/kmj/assets/document/css/responsive.css">
 
@@ -82,7 +83,7 @@
     <link rel="stylesheet" href="~/Content/kmj/assets/document/css/document.css" />
 
     <script src="~/Content/kmj/assets/document/js/sticky-state-min.js"></script>
-    <script src="~/Content/kmj/assets/common/js/business.js"></script>    
+    <script src="~/Content/kmj/assets/common/js/business.js"></script>
     <!-- //local共通CSS&JS -->
     <!--script>
     $(window).scroll(function(){
@@ -113,38 +114,38 @@
 
         <script type="text/javascript">
             //<![CDATA[
-                var theForm = document.forms['form'];
-                if (!theForm) {
-                    theForm = document.form;
+            var theForm = document.forms['form'];
+            if (!theForm) {
+                theForm = document.form;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
                 }
-                function __doPostBack(eventTarget, eventArgument) {
-                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                        theForm.__EVENTTARGET.value = eventTarget;
-                        theForm.__EVENTARGUMENT.value = eventArgument;
-                        theForm.submit();
-                    }
-                }
+            }
             //]]>
         </script>
 
         <input type="hidden" name="lng" id="lng" value="kmj-ja" />
         <script type="text/javascript">
             //<![CDATA[
-                function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
-                function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
+            function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
+            function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
             //]]>
         </script>
         <script type="text/javascript">
             //<![CDATA[
-                var CMS = CMS || {};
-                CMS.Application = {
-                    "language": "kmj",
-                    "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
-                    "isDebuggingEnabled": false,
-                    "applicationUrl": "/",
-                    "isDialog": false,
-                    "isRTL": "false"
-                };
+            var CMS = CMS || {};
+            CMS.Application = {
+                "language": "kmj",
+                "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+                "isDebuggingEnabled": false,
+                "applicationUrl": "/",
+                "isDialog": false,
+                "isRTL": "false"
+            };
             //]]>
         </script>
         <div class="aspNetHidden">
@@ -643,6 +644,7 @@ acp=$$$$&amp;"
 
     @Scripts.Render("~/bundles/scripts")
 
-    @*@RenderSection("scripts", required: false)*@
+    @* Registers scripts that ensure logging of analytics data for A/B tests *@
+    @Html.Kentico().ABTestLoggerScript()
 </body>
 </html>
