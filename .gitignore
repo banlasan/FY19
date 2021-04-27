@@ -321,4 +321,3 @@ CMS/PersonalSite
 ## Project specific ignores
 # Sensitive settings
 AppSettings.config
-Web.config
