@@ -744,6 +744,7 @@
     <Folder Include="Views\XPointCloud\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\document-sitemap.xml" />
     <Content Include="Content\InlineEditors\CKEditor4-InlineEditor\CKEditor4-InlineEditor.js" />
     <Content Include="Content\InlineEditors\ImageUploaderEditor\dropzone\dropzone.css" />
     <Content Include="Content\InlineEditors\ImageUploaderEditor\dropzone\dropzone.js" />
@@ -756,6 +757,7 @@
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\TextEditor.css" />
     <Content Include="Content\it-guardians.css" />
     <Content Include="Content\it-guardians_top.css" />
+    <Content Include="Content\itg-sitemap.xml" />
     <Content Include="Content\kmj\assets\common\css\searchbox-kentico.css" />
     <Content Include="Content\kmj\assets\common\js\business.js" />
     <Content Include="Content\kmj\assets\common\js\searchbox-kentico.js" />
@@ -997,6 +999,7 @@
     <Content Include="Content\kmj\assets\office365\img\img_index_003_sp.pngPext=.png" />
     <Content Include="Content\kmj\assets\office365\img\ttl_index.jpg" />
     <Content Include="Content\kmj\assets\office365\img\ttl_index_sp.jpg" />
+    <Content Include="Content\office-sitemap.xml" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
@@ -1245,7 +1248,6 @@
     <Content Include="Views\Shared\PageTemplates\KMJ_GenericWidgetPageView.cshtml" />
     <Content Include="Views\Shared\PageTemplates\KMJ_ITG_MasterPageView.cshtml" />
     <Content Include="Views\Shared\PageTemplates\KMJ_GenericCategoryTopView.cshtml" />
-    <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_ITG_Sitemap.cshtml" />
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_OfficeSitemap.cshtml" />
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_DocumentSitemap.cshtml" />
     <Content Include="Views\Shared\PageTemplates\KMJ_GenericPageView.cshtml" />
@@ -1253,6 +1255,8 @@
     <Content Include="Views\DynamicPageTemplate\UnregisteredTemplate.cshtml" />
     <Content Include="Views\HttpErrors\Index.cshtml" />
     <Content Include="Views\Catalog\Index.cshtml" />
+    <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_ITGSitemap.cshtml" />
+    <Content Include="Views\ITG_Sitemap\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -1271,6 +1275,7 @@
     <Compile Include="Controllers\ImplementationSupportController.cs" />
     <Compile Include="Controllers\InlineEditors\ImageUploaderHelper.cs" />
     <Compile Include="Controllers\InlineEditors\MediaFileImageUploader.cs" />
+    <Compile Include="Controllers\ITG_SitemapController.cs" />
     <Compile Include="Controllers\ListOfServicesController.cs" />
     <Compile Include="Controllers\Office365Controller.cs" />
     <Compile Include="Controllers\Office365_SitemapController.cs" />

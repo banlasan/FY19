@@ -44,5 +44,5 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 [assembly: RegisterPageTemplate("FY19.KMJ_MasterPage", "Master Page Template", customViewName: "PageTemplates/KMJ_MasterPageView", Description = "", IconClass = "icon-doc-o")]
 [assembly: RegisterPageTemplate("FY19.KMJ_OfficeMasterPage", "Office Master Page Template", customViewName: "PageTemplates/KMJ_OfficeMasterPageView", Description = "", IconClass = "icon-doc-o")]
 [assembly: RegisterPageTemplate("FY19.KMJ_Document_Sitemap", "Document Sitemap", customViewName: "PageTemplates/Sitemaps/KMJ_DocumentSitemap", Description = "", IconClass = "icon-doc-o")]
-[assembly: RegisterPageTemplate("FY19.KMJ_ITG_Sitemap", "ITG Sitemap", customViewName: "PageTemplates/SitemapsKMJ_ITG_Sitemap", Description = "", IconClass = "icon-doc-o")]
+[assembly: RegisterPageTemplate("FY19.KMJ_ITG_Sitemap", "ITG Sitemap", customViewName: "PageTemplates/Sitemaps/KMJ_ITGSitemap", Description = "", IconClass = "icon-doc-o")]
 [assembly: RegisterPageTemplate("FY19.KMJ_Office_Sitemap", "Office Sitemap", customViewName: "PageTemplates/Sitemaps/KMJ_OfficeSitemap", Description = "", IconClass = "icon-doc-o")]
