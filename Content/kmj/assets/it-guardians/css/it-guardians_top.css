@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#contentsArea .main .figure-area-content__col .figure-area-content__col__ttl a{
+	text-decoration: none;
+	color: #28364f;
+	}
+	
+#contentsArea .main .figure-area-content__col .figure-area-content__col__ttl a:hover{
+	opacity: 0.6 ;
+	}
+

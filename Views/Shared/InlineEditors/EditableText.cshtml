@@ -1,0 +1,13 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Web.Mvc
+@model FY19.Models.InlineEditors.EditableTextViewModel
+
+@using (Html.Kentico().BeginInlineEditor("quill-editor", Model.PropertyName,
+    new
+    {
+        @class = "quill-editor-" + Model.Id.ToString(),
+        data_divid = Model.Id.ToString()
+    }))
+{
+    @Html.Raw(Model.Text)
+}

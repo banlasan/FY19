@@ -1,0 +1,61 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using FY19.Models.Widgets
+@using FY19.Models.InlineEditors
+@using System.Text.RegularExpressions;
+@model ComponentViewModel<KMJ_H2HeadingProperties>
+
+@functions
+{
+    private static string HtmlToPlainText(string html)
+    {
+        const string tagWhiteSpace = @"(>|$)(\W|\n|\r)+<";//matches one or more (white space or line breaks) between '>' and '<'
+        const string stripFormatting = @"<[^>]*(>|$)";//match any character between '<' and '>', even when end tag is missing
+        const string lineBreak = @"<(br|BR)\s{0,1}\/{0,1}>";//matches: <br>,<br/>,<br />,<BR>,<BR/>,<BR />
+        var lineBreakRegex = new Regex(lineBreak, RegexOptions.Multiline);
+        var stripFormattingRegex = new Regex(stripFormatting, RegexOptions.Multiline);
+        var tagWhiteSpaceRegex = new Regex(tagWhiteSpace, RegexOptions.Multiline);
+
+        var text = html;
+        //Decode html specific characters
+        text = System.Net.WebUtility.HtmlDecode(text);
+        //Remove tag whitespace/line breaks
+        text = tagWhiteSpaceRegex.Replace(text, "><");
+        //Replace <br /> with line breaks
+        text = lineBreakRegex.Replace(text, Environment.NewLine);
+        //Strip formatting
+        text = stripFormattingRegex.Replace(text, string.Empty);
+
+        return text;
+    }
+}
+
+@{
+    string headText = string.Empty;
+
+    if (Model.Properties.Heading_Text != null)
+    {
+        headText = HtmlToPlainText(Model.Properties.Heading_Text);
+    }
+    else
+    {
+        headText = Model.Properties.Heading_Text;
+    }
+}
+
+
+@if (Context.Kentico().PageBuilder().EditMode)
+{
+    Type propType = typeof(KMJ_TextContentProperties);
+    System.Reflection.PropertyInfo pInfo = propType.GetProperty("TextContent");
+
+    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    {
+        PropertyName = "Heading_Text",
+        Text = headText,
+        Class = "h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 " + Model.Properties.Class
+    });
+}
+else
+{
+    <h2 class="h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 @Model.Properties.Class" id="@Model.Properties.Id">@headText</h2>
+}

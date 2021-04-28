@@ -1,0 +1,4771 @@
+﻿@charset "UTF-8";
+/* ALL
+-------------------------------------------------- */
+/* Scss Document */
+.row {
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+    float: left;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+    .container .row--overflow-visible {
+        overflow: visible;
+    }
+
+    .container .row [class^="col-"],
+    .container .row [class*=" col-"] {
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .container .row a[class^="col-"],
+    .container .row a[class*=" col-"] {
+        text-decoration: none;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+
+        .container .row a[class^="col-"]:hover,
+        .container .row a[class*=" col-"]:hover {
+            opacity: 0.75;
+        }
+
+            .container .row a[class^="col-"]:hover .hover-text-decoration,
+            .container .row a[class*=" col-"]:hover .hover-text-decoration {
+                text-decoration: underline;
+            }
+
+                .container .row a[class^="col-"]:hover .hover-text-decoration:before,
+                .container .row a[class*=" col-"]:hover .hover-text-decoration:before {
+                    text-decoration: none;
+                }
+
+        .container .row a[class^="col-"].hover-bg-f6f6f6,
+        .container .row a[class*=" col-"].hover-bg-f6f6f6 {
+            transition: none;
+        }
+
+            .container .row a[class^="col-"].hover-bg-f6f6f6:hover,
+            .container .row a[class*=" col-"].hover-bg-f6f6f6:hover {
+                background: #f6f6f6;
+            }
+
+a.row {
+    display: block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+    a.row:hover {
+        opacity: 0.75;
+    }
+
+        a.row:hover .title-link.hover-text-decoration {
+            text-decoration: underline;
+        }
+
+            a.row:hover .title-link.hover-text-decoration:before {
+                text-decoration: none;
+            }
+
+a.hover-text-decoration {
+    text-decoration: none;
+}
+
+    a.hover-text-decoration:hover {
+        text-decoration: underline;
+    }
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.float-none {
+    float: none !important;
+}
+
+.font-weight-bold {
+    font-weight: bold !important;
+}
+
+.font-weight-normal {
+    font-weight: normal !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-red {
+    color: #e73134 !important;
+}
+
+.text-0066cc {
+    color: #0066cc !important;
+}
+
+.text-333333 {
+    color: #333333 !important;
+}
+
+.text-ffffff {
+    color: #ffffff !important;
+}
+
+.text-005bc5 {
+    color: #005bc5 !important;
+}
+
+.text-xxlarge {
+    font-size: 4.0rem !important;
+}
+
+.text-xlarge {
+    font-size: 3.2rem !important;
+}
+
+.text-large {
+    font-size: 2.8rem !important;
+}
+
+.text-medium,
+.text-middle {
+    font-size: 1.8rem !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-inline {
+    display: inline !important;
+}
+
+.align-top {
+    vertical-align: top !important;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+a:hover .img-responsive {
+    opacity: 0.75;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-rounded {
+    border-radius: 4px;
+}
+
+.bg-000000 {
+    background-color: #000000 !important;
+}
+
+.bg-ffffff {
+    background-color: #ffffff !important;
+}
+
+.bg-f0f0f0 {
+    background-color: #f0f0f0 !important;
+}
+
+.bg-333333 {
+    background-color: #333333 !important;
+}
+
+.bg-444444 {
+    background-color: #444444 !important;
+}
+
+.bg-e9e9e9 {
+    background-color: #e9e9e9 !important;
+}
+
+.bg-005bc5 {
+    background-color: #005bc5 !important;
+}
+
+/* Scss Document */
+.main {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+}
+
+#contentsArea {
+    width: 100%;
+}
+
+.keyvisual {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.keyvisual__copy {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.keyvisual__txt {
+    color: #fff;
+    text-align: center;
+    margin: 40px 0 0 0;
+    letter-spacing: 0.25em;
+}
+
+.top-text-area {
+    text-align: center;
+    font-size: 20px;
+    color: #28364f;
+    padding: 73px 0 0 0;
+}
+
+.top-text-area__lead {
+    font-weight: bold;
+    margin: 0;
+    line-height: 2;
+}
+
+.top-text-area__txt {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    font-size: 20px;
+}
+
+    .top-text-area__txt span {
+        font-weight: bold;
+        color: #009e96;
+    }
+
+.top-text-area__img {
+    margin: 67px 0 0 0;
+    width: 100%;
+}
+
+.index-section-01__ttl {
+    color: #009e96;
+    font-weight: normal;
+    text-align: center;
+    margin: 80px 0 0 0;
+}
+
+.index-section-01__txt {
+    color: #009e96;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+}
+
+.content-list__list {
+    box-shadow: 0px 0px 7px -2px #828282;
+    text-decoration: none !important;
+    color: #28364f;
+    display: block;
+}
+
+    .content-list__list:hover {
+        color: #28364f !important;
+    }
+
+        .content-list__list:hover .content-list__list__img img {
+            opacity: 0.7;
+        }
+
+    .content-list__list a {
+        text-decoration: none !important;
+    }
+
+    .content-list__list:nth-child(1) .content-list__list__txt {
+        border-top: 2px solid #2890ae;
+    }
+
+    .content-list__list:nth-child(2) .content-list__list__txt {
+        border-top: 2px solid #5ca66c;
+    }
+
+    .content-list__list:nth-child(3) .content-list__list__txt {
+        border-top: 2px solid #b74865;
+    }
+
+    .content-list__list:nth-child(4) .content-list__list__txt {
+        border-top: 2px solid #546e7a;
+    }
+
+    .content-list__list:nth-child(5) .content-list__list__txt {
+        border-top: 2px solid #d3b111;
+    }
+
+.content-list__list__img {
+    vertical-align: top;
+    margin: 0;
+}
+
+.content-list__list__ttl {
+    padding: 0 30px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.content-list__list__txt {
+    padding: 15px 0 0 0;
+    margin: 15px 30px 0 30px;
+    font-size: 14px;
+    line-height: 2.0;
+}
+
+.index-section-02__ttl {
+    color: #28364f;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.index-section-02__txt {
+    color: #28364f;
+    text-align: center;
+    font-size: 14px;
+}
+
+.figure-area-content {
+    color: #28364f;
+}
+
+.figure-area-content__col__txt {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+
+.figure-area-content__col__list {
+    padding: 0;
+    list-style: none;
+}
+
+    .figure-area-content__col__list li {
+        display: inline-block;
+    }
+
+        .figure-area-content__col__list li a {
+            padding: 5px 20px 5px 30px;
+            font-size: 12px;
+            box-shadow: 0px 0px 7px -2px #828282;
+            border-radius: 15px;
+            text-decoration: none !important;
+        }
+
+        .figure-area-content__col__list li.icon-01 a {
+            background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_001.png) 10px no-repeat;
+        }
+
+        .figure-area-content__col__list li.icon-02 a {
+            background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_002.png) 10px no-repeat;
+        }
+
+        .figure-area-content__col__list li.icon-03 a {
+            background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_003.png) 10px no-repeat;
+        }
+
+        .figure-area-content__col__list li.icon-04 a {
+            background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_004.png) 10px no-repeat;
+        }
+
+        .figure-area-content__col__list li.icon-05 a {
+            background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_005.png) 10px no-repeat;
+        }
+
+        .figure-area-content__col__list li[class^="icon-0"] a {
+            background-size: 15px;
+        }
+
+#page-top {
+    display: none;
+}
+
+.localnavigation {
+    background: #212121;
+}
+
+.footer-navigation {
+    background: #28364f;
+    margin-bottom: -1px;
+}
+
+    .footer-navigation ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+        .footer-navigation ul li:nth-child(5) {
+            opacity: 0.7;
+        }
+
+        .footer-navigation ul li a,
+        .footer-navigation ul li span {
+            color: #ccc !important;
+            text-decoration: none !important;
+        }
+
+            .footer-navigation ul li a[target=_blank],
+            .footer-navigation ul li span[target=_blank] {
+                background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_newwin.png) 95% center no-repeat;
+            }
+
+.footer-btn__wrapper .footer-btn-content {
+    background: rgba(255, 255, 255, 0.7);
+    color: #28364f;
+    box-sizing: border-box;
+}
+
+.footer-btn__wrapper .footer-btn-content__txt {
+    margin: 0;
+}
+
+.footer-btn__wrapper .footer-btn-content__link {
+    margin: 20px 0 0 0;
+}
+
+    .footer-btn__wrapper .footer-btn-content__link a {
+        border: 1px solid #28364f;
+        text-align: center;
+        display: block;
+        padding: 15px 10px;
+        text-decoration: none !important;
+        background: #fff;
+        position: relative;
+    }
+
+        .footer-btn__wrapper .footer-btn-content__link a:after {
+            content: '';
+            border-bottom: 1px solid #28364f;
+            border-left: 1px solid #28364f;
+            border-top: none;
+            border-right: none;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            right: 5%;
+            top: 50%;
+            margin-top: -0.5rem;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+        }
+
+        .footer-btn__wrapper .footer-btn-content__link a:before {
+            content: '';
+            border-bottom: 1px solid #28364f;
+            border-top: none;
+            border-right: none;
+            right: 4.5%;
+            top: 22%;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+        }
+
+.to-top {
+    background: #28364f;
+}
+
+.content-wrapper {
+    padding: 0 0 40px 0;
+}
+
+    .content-wrapper .content-inner__lead {
+        color: #28364f !important;
+    }
+
+    .content-wrapper .content-inner__pager {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+        .content-wrapper .content-inner__pager li {
+            display: inline-block;
+        }
+
+            .content-wrapper .content-inner__pager li a {
+                border: 1px solid #28364f;
+                color: #28364f !important;
+                text-decoration: none !important;
+                padding: 10px 15px;
+                font-weight: bold;
+            }
+
+                .content-wrapper .content-inner__pager li a:hover {
+                    opacity: 0.7;
+                }
+
+            .content-wrapper .content-inner__pager li.current a {
+                background: #28364f;
+                color: #fff !important;
+            }
+
+                .content-wrapper .content-inner__pager li.current a:hover {
+                    opacity: 1;
+                }
+
+    .content-wrapper .content-inner__select-category ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+        .content-wrapper .content-inner__select-category ul li a {
+            text-decoration: none !important;
+        }
+
+        .content-wrapper .content-inner__select-category ul li.current a {
+            color: #fff !important;
+            background: #28364f;
+        }
+
+    .content-wrapper .content-inner__internal-link {
+        padding: 0;
+        list-style: none;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+        .content-wrapper .content-inner__internal-link li {
+            position: relative;
+            padding: 0 0 0 15px;
+            font-size: 14px;
+        }
+
+            .content-wrapper .content-inner__internal-link li:before {
+                content: '';
+                border-bottom: 1px solid #009e96;
+                border-left: 1px solid #009e96;
+                border-top: none;
+                border-right: none;
+                -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+                left: 0;
+                top: 7px;
+                width: 7px;
+                height: 7px;
+                position: absolute;
+            }
+
+            .content-wrapper .content-inner__internal-link li a {
+                color: #009e96 !important;
+                text-decoration: none !important;
+            }
+
+                .content-wrapper .content-inner__internal-link li a:hover {
+                    opacity: 0.7;
+                }
+
+.title-area__ttl {
+    letter-spacing: 0.25em;
+    font-weight: normal;
+    color: #28364f !important;
+}
+
+    .title-area__ttl small {
+        padding: 0;
+        letter-spacing: 0.1em;
+    }
+
+    .title-area__ttl i {
+        font-style: normal;
+    }
+
+.title-area__txt {
+    color: #28364f !important;
+    text-align: right;
+}
+
+    .title-area__txt img {
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+.point__ttl img {
+    width: 100px;
+}
+
+.point__content {
+    padding: 0;
+}
+
+    .point__content li {
+        list-style: none;
+        display: table;
+        margin: 20px 0 0 0;
+    }
+
+        .point__content li:before {
+            content: "";
+            font-size: 30px;
+            color: #fff !important;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .point__content li:nth-child(1):before {
+            background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_num_1.png");
+        }
+
+        .point__content li:nth-child(2):before {
+            background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_num_2.png");
+        }
+
+        .point__content li:nth-child(3):before {
+            background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_num_3.png");
+        }
+
+        .point__content li:nth-child(4):before {
+            background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_num_4.png");
+        }
+
+        .point__content li span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+.dl-brochure a {
+    display: block;
+    background-color: #00a094;
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none !important;
+    background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_pdf_002.png"), url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_pdf_001.png");
+    background-repeat: no-repeat, no-repeat;
+}
+
+    .dl-brochure a i {
+        font-style: normal;
+    }
+
+    .dl-brochure a:hover {
+        opacity: 0.7;
+    }
+
+.liner-navigation ul li {
+    list-style: none;
+}
+
+    .liner-navigation ul li a {
+        text-decoration: none !important;
+        color: #28364f !important;
+        background-repeat: no-repeat;
+    }
+
+    .liner-navigation ul li:nth-child(1).current a {
+        color: #2890ae !important;
+    }
+
+        .liner-navigation ul li:nth-child(1).current a:after {
+            background: #2890ae;
+        }
+
+    .liner-navigation ul li:nth-child(1) a {
+        background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_004.png");
+    }
+
+        .liner-navigation ul li:nth-child(1) a:hover {
+            color: #2890ae !important;
+        }
+
+    .liner-navigation ul li:nth-child(2).current a {
+        color: #5ca66c !important;
+    }
+
+        .liner-navigation ul li:nth-child(2).current a:after {
+            background: #5ca66c;
+        }
+
+    .liner-navigation ul li:nth-child(2) a {
+        background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_002.png");
+    }
+
+        .liner-navigation ul li:nth-child(2) a:hover {
+            color: #5ca66c !important;
+        }
+
+    .liner-navigation ul li:nth-child(3).current a {
+        color: #b74865 !important;
+    }
+
+        .liner-navigation ul li:nth-child(3).current a:after {
+            background: #b74865;
+        }
+
+    .liner-navigation ul li:nth-child(3) a {
+        background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_001.png");
+    }
+
+        .liner-navigation ul li:nth-child(3) a:hover {
+            color: #b74865 !important;
+        }
+
+    .liner-navigation ul li:nth-child(4).current a {
+        color: #546e7a !important;
+    }
+
+        .liner-navigation ul li:nth-child(4).current a:after {
+            background: #546e7a;
+        }
+
+    .liner-navigation ul li:nth-child(4) a {
+        background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_005.png");
+    }
+
+        .liner-navigation ul li:nth-child(4) a:hover {
+            color: #546e7a !important;
+        }
+
+    .liner-navigation ul li:nth-child(5).current a {
+        color: #d3b111 !important;
+    }
+
+        .liner-navigation ul li:nth-child(5).current a:after {
+            background: #d3b111;
+        }
+
+    .liner-navigation ul li:nth-child(5) a {
+        background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/icn_index_003.png");
+    }
+
+        .liner-navigation ul li:nth-child(5) a:hover {
+            color: #d3b111 !important;
+        }
+
+    .liner-navigation ul li.current a {
+        position: relative;
+    }
+
+        .liner-navigation ul li.current a:before {
+            content: '';
+            border-style: solid;
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+
+        .liner-navigation ul li.current a:after {
+            content: '';
+            position: absolute;
+        }
+
+.top-content__lead {
+    text-align: center;
+    color: #28364f;
+}
+
+.column-wrapper__col > p {
+    margin: 0;
+    color: #28364f;
+}
+
+.column-wrapper__col__list {
+    padding: 0;
+    font-size: 14px;
+    color: #28364f;
+    list-style: none;
+}
+
+    .column-wrapper__col__list li {
+        position: relative;
+        padding: 0 0 0 20px;
+        margin: 10px 0 0 0;
+    }
+
+        .column-wrapper__col__list li:before {
+            content: '';
+            left: 0;
+            top: 5px;
+            width: 7px;
+            height: 7px;
+            background: #28364f;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+.font-style-01 {
+    font-size: 24px;
+    color: #28364f;
+    margin: 20px 0 0 0;
+}
+
+.font-style-02 {
+    font-size: 56px;
+    color: #00a094;
+}
+
+.font-style-03 {
+    font-size: 32px;
+    color: #00a094;
+}
+
+.font-style-04 {
+    font-size: 18px;
+    color: #28364f;
+    font-weight: bold;
+}
+
+.h2 {
+    color: #009e96;
+    letter-spacing: 0.25em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.h3 {
+    font-size: 18px;
+    color: #28364f;
+    padding: 1px 0 2px 15px;
+    font-weight: 700;
+    position: relative;
+}
+
+    .h3:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+.firgure-area__img {
+    margin: 0;
+}
+
+.firgure-area-contet {
+    background: #fff;
+    color: #28364f;
+}
+
+.firgure-area-contet__ttl {
+    margin: 0;
+}
+
+.firgure-area-contet__txt {
+    margin: 20px 0 0 0;
+}
+
+.firgure-area-contet__caption {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.firgure-area-contet__list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .firgure-area-contet__list li {
+        background: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_arrow_001.png") no-repeat left 5px;
+        padding: 0 0 0 20px;
+        font-size: 14px;
+        margin: 15px 0 0 0;
+    }
+
+        .firgure-area-contet__list li a {
+            font-size: 16px;
+            color: #00a094 !important;
+            text-decoration: none !important;
+        }
+
+            .firgure-area-contet__list li a:hover {
+                opacity: 0.7;
+            }
+
+.indent {
+    padding-left: 1em;
+    text-indent: -1em;
+    display: inline-block;
+}
+
+.service-content__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #28364f;
+}
+
+    .service-content__table tr th {
+        text-align: left;
+    }
+
+    .service-content__table tr td:last-child a {
+        color: #009e96 !important;
+        text-decoration: none !important;
+    }
+
+        .service-content__table tr td:last-child a:hover {
+            opacity: 0.7;
+        }
+
+.catalog-row__col {
+    color: #28364f;
+    margin-bottom: 50px;
+}
+
+.catalog-row__col__img {
+    background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/catalog/img/bg_index.png);
+    background-size: cover;
+    padding: 5% 30%;
+    display: block;
+}
+
+    .catalog-row__col__img:hover {
+        opacity: 0.7;
+    }
+
+    .catalog-row__col__img img {
+        box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.3);
+    }
+
+.catalog-row__col__img--new {
+    position: relative;
+}
+
+    .catalog-row__col__img--new:after {
+        content: 'NEW';
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        right: 4px;
+        top: 10px;
+        color: #fff;
+        position: absolute;
+        font-size: 16px;
+    }
+
+    .catalog-row__col__img--new:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 60px 60px 0;
+        border-color: transparent #b74865 transparent transparent;
+        right: 0;
+        top: 0;
+        position: absolute;
+    }
+
+.catalog-row__col__ttl {
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+
+.catalog-row__col__txt {
+    margin: 11px 0 0 0;
+}
+
+.catalog-row__col__btn a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff !important;
+    text-decoration: none !important;
+    background: #00a094 url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_pdf_002.png") no-repeat 95% center;
+    background-size: 20px;
+}
+
+.catalog-row__col__btn a:hover {
+    opacity: 0.7;
+}
+
+/* SP
+-------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    /* Scss Document */
+    .container.container--sp-internal-fixed-position {
+        margin-top: -61px;
+        padding-top: 61px;
+    }
+
+    .container .row {
+        margin: 0 -5px;
+    }
+
+    .container .row--gutter-sp-10 {
+        margin: 0 -5px;
+    }
+
+        .container .row--gutter-sp-10 [class^="col-"],
+        .container .row--gutter-sp-10 [class*=" col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+    .container .row [class^="col-"],
+    .container .row [class*=" col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .container-fluid-footer-menu .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+        .container-fluid-footer-menu .container .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+            .container-fluid-footer-menu .container .row [class^="col-"],
+            .container-fluid-footer-menu .container .row [class*=" col-"] {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+    .col-sm-1 {
+        width: 8.3333333333%;
+    }
+
+    .col-sm-offset-1 {
+        margin-left: 8.3333333333%;
+    }
+
+    .col-sm-2 {
+        width: 16.6666666667%;
+    }
+
+    .col-sm-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.3333333333%;
+    }
+
+    .col-sm-offset-4 {
+        margin-left: 33.3333333333%;
+    }
+
+    .col-sm-5 {
+        width: 41.6666666667%;
+    }
+
+    .col-sm-offset-5 {
+        margin-left: 41.6666666667%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.3333333333%;
+    }
+
+    .col-sm-offset-7 {
+        margin-left: 58.3333333333%;
+    }
+
+    .col-sm-8 {
+        width: 66.6666666667%;
+    }
+
+    .col-sm-offset-8 {
+        margin-left: 66.6666666667%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.3333333333%;
+    }
+
+    .col-sm-offset-10 {
+        margin-left: 83.3333333333%;
+    }
+
+    .col-sm-11 {
+        width: 91.6666666667%;
+    }
+
+    .col-sm-offset-11 {
+        margin-left: 91.6666666667%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .col-sm-offset-12 {
+        margin-left: 100%;
+    }
+
+    .mt-sm-0 {
+        margin-top: 0px !important;
+    }
+
+    .mb-sm-0 {
+        margin-bottom: 0px !important;
+    }
+
+    .mr-sm-0 {
+        margin-right: 0px !important;
+    }
+
+    .ml-sm-0 {
+        margin-left: 0px !important;
+    }
+
+    .pt-sm-0 {
+        padding-top: 0px !important;
+    }
+
+    .pb-sm-0 {
+        padding-bottom: 0px !important;
+    }
+
+    .pr-sm-0 {
+        padding-right: 0px !important;
+    }
+
+    .pl-sm-0 {
+        padding-left: 0px !important;
+    }
+
+    .mt-sm-5 {
+        margin-top: 5px !important;
+    }
+
+    .mb-sm-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .mr-sm-5 {
+        margin-right: 5px !important;
+    }
+
+    .ml-sm-5 {
+        margin-left: 5px !important;
+    }
+
+    .pt-sm-5 {
+        padding-top: 5px !important;
+    }
+
+    .pb-sm-5 {
+        padding-bottom: 5px !important;
+    }
+
+    .pr-sm-5 {
+        padding-right: 5px !important;
+    }
+
+    .pl-sm-5 {
+        padding-left: 5px !important;
+    }
+
+    .mt-sm-10 {
+        margin-top: 10px !important;
+    }
+
+    .mb-sm-10 {
+        margin-bottom: 10px !important;
+    }
+
+    .mr-sm-10 {
+        margin-right: 10px !important;
+    }
+
+    .ml-sm-10 {
+        margin-left: 10px !important;
+    }
+
+    .pt-sm-10 {
+        padding-top: 10px !important;
+    }
+
+    .pb-sm-10 {
+        padding-bottom: 10px !important;
+    }
+
+    .pr-sm-10 {
+        padding-right: 10px !important;
+    }
+
+    .pl-sm-10 {
+        padding-left: 10px !important;
+    }
+
+    .mt-sm-15 {
+        margin-top: 15px !important;
+    }
+
+    .mb-sm-15 {
+        margin-bottom: 15px !important;
+    }
+
+    .mr-sm-15 {
+        margin-right: 15px !important;
+    }
+
+    .ml-sm-15 {
+        margin-left: 15px !important;
+    }
+
+    .pt-sm-15 {
+        padding-top: 15px !important;
+    }
+
+    .pb-sm-15 {
+        padding-bottom: 15px !important;
+    }
+
+    .pr-sm-15 {
+        padding-right: 15px !important;
+    }
+
+    .pl-sm-15 {
+        padding-left: 15px !important;
+    }
+
+    .mt-sm-20 {
+        margin-top: 20px !important;
+    }
+
+    .mb-sm-20 {
+        margin-bottom: 20px !important;
+    }
+
+    .mr-sm-20 {
+        margin-right: 20px !important;
+    }
+
+    .ml-sm-20 {
+        margin-left: 20px !important;
+    }
+
+    .pt-sm-20 {
+        padding-top: 20px !important;
+    }
+
+    .pb-sm-20 {
+        padding-bottom: 20px !important;
+    }
+
+    .pr-sm-20 {
+        padding-right: 20px !important;
+    }
+
+    .pl-sm-20 {
+        padding-left: 20px !important;
+    }
+
+    .mt-sm-25 {
+        margin-top: 25px !important;
+    }
+
+    .mb-sm-25 {
+        margin-bottom: 25px !important;
+    }
+
+    .mr-sm-25 {
+        margin-right: 25px !important;
+    }
+
+    .ml-sm-25 {
+        margin-left: 25px !important;
+    }
+
+    .pt-sm-25 {
+        padding-top: 25px !important;
+    }
+
+    .pb-sm-25 {
+        padding-bottom: 25px !important;
+    }
+
+    .pr-sm-25 {
+        padding-right: 25px !important;
+    }
+
+    .pl-sm-25 {
+        padding-left: 25px !important;
+    }
+
+    .mt-sm-30 {
+        margin-top: 30px !important;
+    }
+
+    .mb-sm-30 {
+        margin-bottom: 30px !important;
+    }
+
+    .mr-sm-30 {
+        margin-right: 30px !important;
+    }
+
+    .ml-sm-30 {
+        margin-left: 30px !important;
+    }
+
+    .pt-sm-30 {
+        padding-top: 30px !important;
+    }
+
+    .pb-sm-30 {
+        padding-bottom: 30px !important;
+    }
+
+    .pr-sm-30 {
+        padding-right: 30px !important;
+    }
+
+    .pl-sm-30 {
+        padding-left: 30px !important;
+    }
+
+    .mt-sm-35 {
+        margin-top: 35px !important;
+    }
+
+    .mb-sm-35 {
+        margin-bottom: 35px !important;
+    }
+
+    .mr-sm-35 {
+        margin-right: 35px !important;
+    }
+
+    .ml-sm-35 {
+        margin-left: 35px !important;
+    }
+
+    .pt-sm-35 {
+        padding-top: 35px !important;
+    }
+
+    .pb-sm-35 {
+        padding-bottom: 35px !important;
+    }
+
+    .pr-sm-35 {
+        padding-right: 35px !important;
+    }
+
+    .pl-sm-35 {
+        padding-left: 35px !important;
+    }
+
+    .mt-sm-40 {
+        margin-top: 40px !important;
+    }
+
+    .mb-sm-40 {
+        margin-bottom: 40px !important;
+    }
+
+    .mr-sm-40 {
+        margin-right: 40px !important;
+    }
+
+    .ml-sm-40 {
+        margin-left: 40px !important;
+    }
+
+    .pt-sm-40 {
+        padding-top: 40px !important;
+    }
+
+    .pb-sm-40 {
+        padding-bottom: 40px !important;
+    }
+
+    .pr-sm-40 {
+        padding-right: 40px !important;
+    }
+
+    .pl-sm-40 {
+        padding-left: 40px !important;
+    }
+
+    .mt-sm-45 {
+        margin-top: 45px !important;
+    }
+
+    .mb-sm-45 {
+        margin-bottom: 45px !important;
+    }
+
+    .mr-sm-45 {
+        margin-right: 45px !important;
+    }
+
+    .ml-sm-45 {
+        margin-left: 45px !important;
+    }
+
+    .pt-sm-45 {
+        padding-top: 45px !important;
+    }
+
+    .pb-sm-45 {
+        padding-bottom: 45px !important;
+    }
+
+    .pr-sm-45 {
+        padding-right: 45px !important;
+    }
+
+    .pl-sm-45 {
+        padding-left: 45px !important;
+    }
+
+    .mt-sm-50 {
+        margin-top: 50px !important;
+    }
+
+    .mb-sm-50 {
+        margin-bottom: 50px !important;
+    }
+
+    .mr-sm-50 {
+        margin-right: 50px !important;
+    }
+
+    .ml-sm-50 {
+        margin-left: 50px !important;
+    }
+
+    .pt-sm-50 {
+        padding-top: 50px !important;
+    }
+
+    .pb-sm-50 {
+        padding-bottom: 50px !important;
+    }
+
+    .pr-sm-50 {
+        padding-right: 50px !important;
+    }
+
+    .pl-sm-50 {
+        padding-left: 50px !important;
+    }
+
+    .mt-sm-55 {
+        margin-top: 55px !important;
+    }
+
+    .mb-sm-55 {
+        margin-bottom: 55px !important;
+    }
+
+    .mr-sm-55 {
+        margin-right: 55px !important;
+    }
+
+    .ml-sm-55 {
+        margin-left: 55px !important;
+    }
+
+    .pt-sm-55 {
+        padding-top: 55px !important;
+    }
+
+    .pb-sm-55 {
+        padding-bottom: 55px !important;
+    }
+
+    .pr-sm-55 {
+        padding-right: 55px !important;
+    }
+
+    .pl-sm-55 {
+        padding-left: 55px !important;
+    }
+
+    .mt-sm-60 {
+        margin-top: 60px !important;
+    }
+
+    .mb-sm-60 {
+        margin-bottom: 60px !important;
+    }
+
+    .mr-sm-60 {
+        margin-right: 60px !important;
+    }
+
+    .ml-sm-60 {
+        margin-left: 60px !important;
+    }
+
+    .pt-sm-60 {
+        padding-top: 60px !important;
+    }
+
+    .pb-sm-60 {
+        padding-bottom: 60px !important;
+    }
+
+    .pr-sm-60 {
+        padding-right: 60px !important;
+    }
+
+    .pl-sm-60 {
+        padding-left: 60px !important;
+    }
+
+    .mt-sm-65 {
+        margin-top: 65px !important;
+    }
+
+    .mb-sm-65 {
+        margin-bottom: 65px !important;
+    }
+
+    .mr-sm-65 {
+        margin-right: 65px !important;
+    }
+
+    .ml-sm-65 {
+        margin-left: 65px !important;
+    }
+
+    .pt-sm-65 {
+        padding-top: 65px !important;
+    }
+
+    .pb-sm-65 {
+        padding-bottom: 65px !important;
+    }
+
+    .pr-sm-65 {
+        padding-right: 65px !important;
+    }
+
+    .pl-sm-65 {
+        padding-left: 65px !important;
+    }
+
+    .mt-sm-70 {
+        margin-top: 70px !important;
+    }
+
+    .mb-sm-70 {
+        margin-bottom: 70px !important;
+    }
+
+    .mr-sm-70 {
+        margin-right: 70px !important;
+    }
+
+    .ml-sm-70 {
+        margin-left: 70px !important;
+    }
+
+    .pt-sm-70 {
+        padding-top: 70px !important;
+    }
+
+    .pb-sm-70 {
+        padding-bottom: 70px !important;
+    }
+
+    .pr-sm-70 {
+        padding-right: 70px !important;
+    }
+
+    .pl-sm-70 {
+        padding-left: 70px !important;
+    }
+
+    .mt-sm-75 {
+        margin-top: 75px !important;
+    }
+
+    .mb-sm-75 {
+        margin-bottom: 75px !important;
+    }
+
+    .mr-sm-75 {
+        margin-right: 75px !important;
+    }
+
+    .ml-sm-75 {
+        margin-left: 75px !important;
+    }
+
+    .pt-sm-75 {
+        padding-top: 75px !important;
+    }
+
+    .pb-sm-75 {
+        padding-bottom: 75px !important;
+    }
+
+    .pr-sm-75 {
+        padding-right: 75px !important;
+    }
+
+    .pl-sm-75 {
+        padding-left: 75px !important;
+    }
+
+    .mt-sm-80 {
+        margin-top: 80px !important;
+    }
+
+    .mb-sm-80 {
+        margin-bottom: 80px !important;
+    }
+
+    .mr-sm-80 {
+        margin-right: 80px !important;
+    }
+
+    .ml-sm-80 {
+        margin-left: 80px !important;
+    }
+
+    .pt-sm-80 {
+        padding-top: 80px !important;
+    }
+
+    .pb-sm-80 {
+        padding-bottom: 80px !important;
+    }
+
+    .pr-sm-80 {
+        padding-right: 80px !important;
+    }
+
+    .pl-sm-80 {
+        padding-left: 80px !important;
+    }
+
+    .mt-sm-85 {
+        margin-top: 85px !important;
+    }
+
+    .mb-sm-85 {
+        margin-bottom: 85px !important;
+    }
+
+    .mr-sm-85 {
+        margin-right: 85px !important;
+    }
+
+    .ml-sm-85 {
+        margin-left: 85px !important;
+    }
+
+    .pt-sm-85 {
+        padding-top: 85px !important;
+    }
+
+    .pb-sm-85 {
+        padding-bottom: 85px !important;
+    }
+
+    .pr-sm-85 {
+        padding-right: 85px !important;
+    }
+
+    .pl-sm-85 {
+        padding-left: 85px !important;
+    }
+
+    .mt-sm-90 {
+        margin-top: 90px !important;
+    }
+
+    .mb-sm-90 {
+        margin-bottom: 90px !important;
+    }
+
+    .mr-sm-90 {
+        margin-right: 90px !important;
+    }
+
+    .ml-sm-90 {
+        margin-left: 90px !important;
+    }
+
+    .pt-sm-90 {
+        padding-top: 90px !important;
+    }
+
+    .pb-sm-90 {
+        padding-bottom: 90px !important;
+    }
+
+    .pr-sm-90 {
+        padding-right: 90px !important;
+    }
+
+    .pl-sm-90 {
+        padding-left: 90px !important;
+    }
+
+    .mt-sm-95 {
+        margin-top: 95px !important;
+    }
+
+    .mb-sm-95 {
+        margin-bottom: 95px !important;
+    }
+
+    .mr-sm-95 {
+        margin-right: 95px !important;
+    }
+
+    .ml-sm-95 {
+        margin-left: 95px !important;
+    }
+
+    .pt-sm-95 {
+        padding-top: 95px !important;
+    }
+
+    .pb-sm-95 {
+        padding-bottom: 95px !important;
+    }
+
+    .pr-sm-95 {
+        padding-right: 95px !important;
+    }
+
+    .pl-sm-95 {
+        padding-left: 95px !important;
+    }
+
+    .mt-sm-100 {
+        margin-top: 100px !important;
+    }
+
+    .mb-sm-100 {
+        margin-bottom: 100px !important;
+    }
+
+    .mr-sm-100 {
+        margin-right: 100px !important;
+    }
+
+    .ml-sm-100 {
+        margin-left: 100px !important;
+    }
+
+    .pt-sm-100 {
+        padding-top: 100px !important;
+    }
+
+    .pb-sm-100 {
+        padding-bottom: 100px !important;
+    }
+
+    .pr-sm-100 {
+        padding-right: 100px !important;
+    }
+
+    .pl-sm-100 {
+        padding-left: 100px !important;
+    }
+
+    .mt-sm-105 {
+        margin-top: 105px !important;
+    }
+
+    .mb-sm-105 {
+        margin-bottom: 105px !important;
+    }
+
+    .mr-sm-105 {
+        margin-right: 105px !important;
+    }
+
+    .ml-sm-105 {
+        margin-left: 105px !important;
+    }
+
+    .pt-sm-105 {
+        padding-top: 105px !important;
+    }
+
+    .pb-sm-105 {
+        padding-bottom: 105px !important;
+    }
+
+    .pr-sm-105 {
+        padding-right: 105px !important;
+    }
+
+    .pl-sm-105 {
+        padding-left: 105px !important;
+    }
+
+    .mt-sm-110 {
+        margin-top: 110px !important;
+    }
+
+    .mb-sm-110 {
+        margin-bottom: 110px !important;
+    }
+
+    .mr-sm-110 {
+        margin-right: 110px !important;
+    }
+
+    .ml-sm-110 {
+        margin-left: 110px !important;
+    }
+
+    .pt-sm-110 {
+        padding-top: 110px !important;
+    }
+
+    .pb-sm-110 {
+        padding-bottom: 110px !important;
+    }
+
+    .pr-sm-110 {
+        padding-right: 110px !important;
+    }
+
+    .pl-sm-110 {
+        padding-left: 110px !important;
+    }
+
+    .mt-sm-115 {
+        margin-top: 115px !important;
+    }
+
+    .mb-sm-115 {
+        margin-bottom: 115px !important;
+    }
+
+    .mr-sm-115 {
+        margin-right: 115px !important;
+    }
+
+    .ml-sm-115 {
+        margin-left: 115px !important;
+    }
+
+    .pt-sm-115 {
+        padding-top: 115px !important;
+    }
+
+    .pb-sm-115 {
+        padding-bottom: 115px !important;
+    }
+
+    .pr-sm-115 {
+        padding-right: 115px !important;
+    }
+
+    .pl-sm-115 {
+        padding-left: 115px !important;
+    }
+
+    .mt-sm-120 {
+        margin-top: 120px !important;
+    }
+
+    .mb-sm-120 {
+        margin-bottom: 120px !important;
+    }
+
+    .mr-sm-120 {
+        margin-right: 120px !important;
+    }
+
+    .ml-sm-120 {
+        margin-left: 120px !important;
+    }
+
+    .pt-sm-120 {
+        padding-top: 120px !important;
+    }
+
+    .pb-sm-120 {
+        padding-bottom: 120px !important;
+    }
+
+    .pr-sm-120 {
+        padding-right: 120px !important;
+    }
+
+    .pl-sm-120 {
+        padding-left: 120px !important;
+    }
+
+    .mt-sm-125 {
+        margin-top: 125px !important;
+    }
+
+    .mb-sm-125 {
+        margin-bottom: 125px !important;
+    }
+
+    .mr-sm-125 {
+        margin-right: 125px !important;
+    }
+
+    .ml-sm-125 {
+        margin-left: 125px !important;
+    }
+
+    .pt-sm-125 {
+        padding-top: 125px !important;
+    }
+
+    .pb-sm-125 {
+        padding-bottom: 125px !important;
+    }
+
+    .pr-sm-125 {
+        padding-right: 125px !important;
+    }
+
+    .pl-sm-125 {
+        padding-left: 125px !important;
+    }
+
+    .mt-sm-130 {
+        margin-top: 130px !important;
+    }
+
+    .mb-sm-130 {
+        margin-bottom: 130px !important;
+    }
+
+    .mr-sm-130 {
+        margin-right: 130px !important;
+    }
+
+    .ml-sm-130 {
+        margin-left: 130px !important;
+    }
+
+    .pt-sm-130 {
+        padding-top: 130px !important;
+    }
+
+    .pb-sm-130 {
+        padding-bottom: 130px !important;
+    }
+
+    .pr-sm-130 {
+        padding-right: 130px !important;
+    }
+
+    .pl-sm-130 {
+        padding-left: 130px !important;
+    }
+
+    .mt-sm-135 {
+        margin-top: 135px !important;
+    }
+
+    .mb-sm-135 {
+        margin-bottom: 135px !important;
+    }
+
+    .mr-sm-135 {
+        margin-right: 135px !important;
+    }
+
+    .ml-sm-135 {
+        margin-left: 135px !important;
+    }
+
+    .pt-sm-135 {
+        padding-top: 135px !important;
+    }
+
+    .pb-sm-135 {
+        padding-bottom: 135px !important;
+    }
+
+    .pr-sm-135 {
+        padding-right: 135px !important;
+    }
+
+    .pl-sm-135 {
+        padding-left: 135px !important;
+    }
+
+    .visible-lg,
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    .text-sm-left {
+        text-align: left !important;
+    }
+
+    .text-sm-right {
+        text-align: right !important;
+    }
+
+    /* Scss Document */
+    .keyvisual {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_keyvisual_sp.jpg) center;
+        background-size: cover;
+        height: 85vw;
+    }
+
+    .keyvisual__copy {
+        padding: 23vw 0 0 0;
+        letter-spacing: 0.50em;
+        font-weight: bold;
+    }
+
+    .keyvisual__img {
+        margin: 6vw 0 0 0;
+    }
+
+    .keyvisual__txt {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .keyvisual + .localnavigation {
+        display: none;
+    }
+
+    .top-text-area {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_index_001_sp.png) top center no-repeat;
+        background-size: cover;
+    }
+
+    .top-text-area__txt {
+        font-size: 16px;
+    }
+
+    .index-section-01 {
+        margin: 0 auto 60px auto;
+    }
+
+    .index-section-01__ttl {
+        font-size: 30px;
+    }
+
+    .content-list {
+        margin: 0 0 0;
+        padding: 0 10px;
+    }
+
+    .content-list__list {
+        margin: 40px 0 0 0;
+        padding: 0 0 20px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .index-section-02 {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_index_figure_sp.jpg) top no-repeat;
+        background-size: 100% auto;
+        padding: 0 0 40px 0;
+    }
+
+    .index-section-02__ttl {
+        font-size: 22px;
+        padding: 30px 0 0 0;
+    }
+
+    .index-section-02__txt {
+        margin: 0;
+    }
+
+    .figure-area__img {
+        margin: 20px 20px 0 20px;
+    }
+
+    .figure-area__content {
+        margin: 40px 10px 0 10px;
+    }
+
+    .figure-area__content__btn {
+        color: #fff;
+        background: #00a094;
+        padding: 10px;
+    }
+
+        .figure-area__content__btn img {
+            display: none;
+        }
+
+    .figure-area-content {
+        display: block !important;
+        margin: 0 10px;
+    }
+
+    .figure-area-content__close {
+        display: none;
+    }
+
+    .figure-area-content__col__ttl {
+        margin: 40px 0 0 0;
+    }
+
+    .figure-area-content__col:nth-child(2) .figure-area-content__col__ttl {
+        margin: 20px 0 0 0;
+    }
+
+    .figure-area-content__col__list {
+        margin: 4px 0 0 0;
+    }
+
+        .figure-area-content__col__list li {
+            margin: 15px 10px 0 0;
+        }
+
+    .localnavigation__btn {
+        color: #fff;
+        margin: 0;
+        padding: 10px 10px 10px 35px;
+        position: relative;
+        cursor: pointer;
+    }
+
+        .localnavigation__btn:before {
+            content: '';
+            border-bottom: 2px solid #fff;
+            border-top: 2px solid #fff;
+            left: 10px;
+            top: 46%;
+            margin-top: -0.5rem;
+            margin-right: -3px;
+            width: 17px;
+            height: 15px;
+            position: absolute;
+        }
+
+        .localnavigation__btn:after {
+            content: '';
+            border-top: 2px solid #fff;
+            left: 10px;
+            top: 66%;
+            margin-top: -0.5rem;
+            margin-right: -3px;
+            width: 17px;
+            height: 15px;
+            position: absolute;
+        }
+
+    .localnavigation ul {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #ccc;
+        display: none;
+    }
+
+        .localnavigation ul.is-open {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .localnavigation ul li {
+            width: 50%;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .localnavigation ul li:nth-child(odd) {
+                border-right: 1px solid #ccc;
+            }
+
+            .localnavigation ul li a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+                color: #fff !important;
+                text-decoration: none !important;
+            }
+
+            .localnavigation ul li span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+                color: #fff !important;
+                text-decoration: none !important;
+                opacity: 0.7;
+            }
+
+    .footer-navigation ul {
+        padding: 0;
+        border-left: 2px solid #626262;
+        border-top: 2px solid #626262;
+        border-right: 2px solid #626262;
+        border-bottom: 2px solid #626262;
+    }
+
+        .footer-navigation ul li {
+            width: 50%;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            border-bottom: 2px solid #626262;
+        }
+
+            .footer-navigation ul li:nth-child(odd) {
+                border-right: 2px solid #626262;
+            }
+
+            .footer-navigation ul li:last-child {
+                border-bottom: none;
+            }
+
+            .footer-navigation ul li a,
+            .footer-navigation ul li span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+            }
+
+                .footer-navigation ul li a[target=_blank],
+                .footer-navigation ul li span[target=_blank] {
+                    background-size: 18px 18px;
+                }
+
+    .footer-btn {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_footer-btn_sp.jpg) center no-repeat;
+    }
+
+    .footer-btn__wrapper {
+        padding: 10px 10px 20px 10px;
+    }
+
+        .footer-btn__wrapper .footer-btn-content {
+            margin: 20px 0 0 0;
+            padding: 20px 20px;
+        }
+
+    .to-top p {
+        margin: 0;
+    }
+
+    .to-top a {
+        display: block;
+        height: 45px;
+    }
+
+        .to-top a span {
+            width: 35px;
+            height: 35px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+
+            .to-top a span:after {
+                content: '';
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                border-top: none;
+                border-right: none;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                right: 10px;
+                top: 50%;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+            }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .content-wrapper {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_content_sp.png) center top no-repeat;
+    }
+
+        .content-wrapper .content-inner__lead {
+            margin: 0 10px;
+        }
+
+        .content-wrapper .content-inner__pager {
+            margin: 60px 0 0 0;
+        }
+
+            .content-wrapper .content-inner__pager li {
+                padding: 0 5px;
+            }
+
+        .content-wrapper .content-inner__select-category {
+            margin: 60px 10px 0 10px;
+            position: relative;
+        }
+
+            .content-wrapper .content-inner__select-category > p {
+                border: 1px solid #28364f;
+                padding: 10px;
+                margin: 0;
+                background: #fff;
+                cursor: pointer;
+            }
+
+            .content-wrapper .content-inner__select-category ul {
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                background: #fff;
+                display: none;
+            }
+
+                .content-wrapper .content-inner__select-category ul.is-open {
+                    display: block;
+                    z-index: 1;
+                }
+
+                .content-wrapper .content-inner__select-category ul li a {
+                    padding: 10px;
+                    border-left: 1px solid #28364f;
+                    border-right: 1px solid #28364f;
+                    border-bottom: 1px solid #28364f;
+                    display: block;
+                }
+
+        .content-wrapper .content-inner__internal-link {
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 40px 10px 0 10px;
+        }
+
+            .content-wrapper .content-inner__internal-link li {
+                width: 50%;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                margin: 20px 0 0 0;
+            }
+
+    .title-area {
+        padding: 40px 0 0 0;
+        margin: 0 10px;
+    }
+
+    .title-area__ttl {
+        line-height: 1.4 !important;
+    }
+
+        .title-area__ttl small {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+    .title-area__txt img {
+        width: 65px;
+    }
+
+    .point {
+        margin: 0 10px;
+    }
+
+    .point__ttl {
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+
+    .point__content li:before {
+        background-size: 36px 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .point__content li span {
+        padding: 0 0 0 10px;
+    }
+
+    .dl-brochure {
+        margin: 40px 10px 0 10px;
+    }
+
+        .dl-brochure a {
+            padding: 6px 0;
+            background-size: 15px auto, 20px auto;
+            background-position: right 10px center, left 15px center;
+            line-height: 1.4
+        }
+
+            .dl-brochure a, .dl-brochure a small {
+                font-size: 14px;
+                letter-spacing: normal
+            }
+
+                .dl-brochure a.btn-brochure-line-1 {
+                    padding: 6px 35px 6px 40px;
+                    font-size: 14px;
+                    letter-spacing: normal;
+                    line-height: 1.4;
+                }
+
+                .dl-brochure a.btn-brochure-line-multi {
+                    padding: 6px 35px 6px 40px;
+                    font-size: 14px;
+                    letter-spacing: normal;
+                    line-height: 1.4;
+                }
+
+    .liner-navigation {
+        margin: 0 10px;
+    }
+
+        .liner-navigation ul {
+            padding: 0;
+            border-bottom: 1px solid #c3c9d1;
+            margin: 40px 0 0 0;
+        }
+
+            .liner-navigation ul li a {
+                display: block;
+                border-right: 1px solid #c3c9d1;
+                border-left: 1px solid #c3c9d1;
+                border-top: 1px solid #c3c9d1;
+                padding: 7px 7px 7px 40px;
+                background-position: 17px center;
+                background-size: 15px;
+            }
+
+            .liner-navigation ul li:nth-child(1).current a:before {
+                border-color: transparent transparent transparent #2890ae;
+            }
+
+            .liner-navigation ul li:nth-child(2).current a:before {
+                border-color: transparent transparent transparent #5ca66c;
+            }
+
+            .liner-navigation ul li:nth-child(3).current a:before {
+                border-color: transparent transparent transparent #b74865;
+            }
+
+            .liner-navigation ul li:nth-child(4).current a:before {
+                border-color: transparent transparent transparent #546e7a;
+            }
+
+            .liner-navigation ul li:nth-child(5).current a:before {
+                border-color: transparent transparent transparent #d3b111;
+            }
+
+            .liner-navigation ul li.current a:before {
+                border-width: 5.5px 0 5.5px 8px;
+                left: 0;
+                top: 50%;
+                margin-top: -5px;
+            }
+
+            .liner-navigation ul li.current a:after {
+                width: 3px;
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+            }
+
+    .top-content__lead {
+        font-size: 21px;
+        margin: -20px 20px 0 20px;
+        background: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_system_pc.png") no-repeat 0 10px;
+        background-size: contain;
+        padding: 90px 0 0 0;
+    }
+
+    .top-content__lead--telework {
+        background: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_telework_pc.png") no-repeat 0 10px;
+        margin: -35px 20px 0 20px;
+        background-size: contain;
+        padding: 76px 0 0 0;
+    }
+
+    .column-wrapper__col {
+        margin: 40px 0 0 0;
+    }
+
+    .column-wrapper__col__list {
+        margin: 13px 10px 0 10px;
+    }
+
+    .bottom-content {
+        margin: 40px 0 0 0;
+    }
+
+    .h2 {
+        background: #f9f9f9 url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_h2.png") repeat-y left;
+        border: 1px solid #c3c9d1;
+        padding: 10px 10px 10px 20px;
+        margin: 0;
+        line-height: 1.25
+    }
+
+    .h3:before {
+        height: 82%;
+        border-left: 4px solid #28364f;
+    }
+
+    .firgure-area__img {
+        margin: 30px 0 0 0;
+    }
+
+    .firgure-area__img--sp {
+        border-bottom: 1px solid #c3c9d1;
+        margin: 0;
+        padding: 0 10px 30px 10px;
+    }
+
+    .firgure-area-contet {
+        padding: 30px 10px;
+        border-bottom: 1px solid #c3c9d1;
+    }
+
+    .firgure-area-contet__list li {
+        background-size: 12px;
+    }
+
+    .service-content__table {
+        margin: 0 10px;
+    }
+
+        .service-content__table tr {
+            display: block;
+        }
+
+            .service-content__table tr th {
+                float: left;
+                width: 100%;
+                margin: 40px 0 0 0;
+            }
+
+            .service-content__table tr:first-child th {
+                margin: 20px 0 0 0;
+            }
+
+            .service-content__table tr td {
+                float: left;
+                width: 100%;
+                margin: 13px 0 0 0;
+            }
+
+                .service-content__table tr td:last-child a {
+                    display: block;
+                    border: 1px solid #009e96;
+                    text-align: center;
+                    padding: 10px 0;
+                    position: relative;
+                }
+
+                    .service-content__table tr td:last-child a:before {
+                        content: '';
+                        border-bottom: 1px solid #009e96;
+                        border-top: none;
+                        border-right: none;
+                        right: 4.5%;
+                        top: 14%;
+                        width: 20px;
+                        height: 15px;
+                        position: absolute;
+                    }
+
+                    .service-content__table tr td:last-child a:after {
+                        content: '';
+                        border-bottom: 1px solid #009e96;
+                        border-left: 1px solid #009e96;
+                        border-top: none;
+                        border-right: none;
+                        -webkit-transform: rotate(-135deg);
+                        transform: rotate(-135deg);
+                        right: 5%;
+                        top: 50%;
+                        margin-top: -0.5rem;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                    }
+
+    .catalog-row {
+        margin: 0 10px;
+    }
+
+    .catalog-row__col__img {
+        margin: 60px 0 0 0;
+    }
+
+    .catalog-row__col__btn {
+        margin: 20px 0 0 0;
+    }
+}
+/* PC
+-------------------------------------------------- */
+@media only screen and (min-width: 601px) {
+    /* Scss Document */
+    .row {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+        .container .row {
+            max-width: 1250px;
+            padding: 0;
+            margin: 0 -15px;
+        }
+
+            .container .row.row-lg-flex {
+                display: flex;
+                align-items: stretch;
+                padding: 0 15px;
+            }
+
+                .container .row.row-lg-flex .row-lg-flex__content {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                    .container .row.row-lg-flex .row-lg-flex__content .row-lg-flex__content__btn {
+                        margin-top: auto;
+                    }
+
+            .container .row [class^="col-"],
+            .container .row [class*=" col-"] {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+    .col-lg-1 {
+        width: 8.3333333333%;
+    }
+
+    .col-lg-pull-1 {
+        right: 8.3333333333%;
+    }
+
+    .col-lg-push-1 {
+        left: 8.3333333333%;
+    }
+
+    .col-lg-offset-1 {
+        margin-left: 8.3333333333%;
+    }
+
+    .col-lg-2 {
+        width: 16.6666666667%;
+    }
+
+    .col-lg-pull-2 {
+        right: 16.6666666667%;
+    }
+
+    .col-lg-push-2 {
+        left: 16.6666666667%;
+    }
+
+    .col-lg-offset-2 {
+        margin-left: 16.6666666667%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-pull-3 {
+        right: 25%;
+    }
+
+    .col-lg-push-3 {
+        left: 25%;
+    }
+
+    .col-lg-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.3333333333%;
+    }
+
+    .col-lg-pull-4 {
+        right: 33.3333333333%;
+    }
+
+    .col-lg-push-4 {
+        left: 33.3333333333%;
+    }
+
+    .col-lg-offset-4 {
+        margin-left: 33.3333333333%;
+    }
+
+    .col-lg-5 {
+        width: 41.6666666667%;
+    }
+
+    .col-lg-pull-5 {
+        right: 41.6666666667%;
+    }
+
+    .col-lg-push-5 {
+        left: 41.6666666667%;
+    }
+
+    .col-lg-offset-5 {
+        margin-left: 41.6666666667%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-pull-6 {
+        right: 50%;
+    }
+
+    .col-lg-push-6 {
+        left: 50%;
+    }
+
+    .col-lg-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.3333333333%;
+    }
+
+    .col-lg-pull-7 {
+        right: 58.3333333333%;
+    }
+
+    .col-lg-push-7 {
+        left: 58.3333333333%;
+    }
+
+    .col-lg-offset-7 {
+        margin-left: 58.3333333333%;
+    }
+
+    .col-lg-8 {
+        width: 66.6666666667%;
+    }
+
+    .col-lg-pull-8 {
+        right: 66.6666666667%;
+    }
+
+    .col-lg-push-8 {
+        left: 66.6666666667%;
+    }
+
+    .col-lg-offset-8 {
+        margin-left: 66.6666666667%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-pull-9 {
+        right: 75%;
+    }
+
+    .col-lg-push-9 {
+        left: 75%;
+    }
+
+    .col-lg-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.3333333333%;
+    }
+
+    .col-lg-pull-10 {
+        right: 83.3333333333%;
+    }
+
+    .col-lg-push-10 {
+        left: 83.3333333333%;
+    }
+
+    .col-lg-offset-10 {
+        margin-left: 83.3333333333%;
+    }
+
+    .col-lg-11 {
+        width: 91.6666666667%;
+    }
+
+    .col-lg-pull-11 {
+        right: 91.6666666667%;
+    }
+
+    .col-lg-push-11 {
+        left: 91.6666666667%;
+    }
+
+    .col-lg-offset-11 {
+        margin-left: 91.6666666667%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .col-lg-pull-12 {
+        right: 100%;
+    }
+
+    .col-lg-push-12 {
+        left: 100%;
+    }
+
+    .col-lg-offset-12 {
+        margin-left: 100%;
+    }
+
+    .mt-lg-0 {
+        margin-top: 0px !important;
+    }
+
+    .mb-lg-0 {
+        margin-bottom: 0px !important;
+    }
+
+    .mr-lg-0 {
+        margin-right: 0px !important;
+    }
+
+    .ml-lg-0 {
+        margin-left: 0px !important;
+    }
+
+    .pt-lg-0 {
+        padding-top: 0px !important;
+    }
+
+    .pb-lg-0 {
+        padding-bottom: 0px !important;
+    }
+
+    .pr-lg-0 {
+        padding-right: 0px !important;
+    }
+
+    .pl-lg-0 {
+        padding-left: 0px !important;
+    }
+
+    .mt-lg-5 {
+        margin-top: 5px !important;
+    }
+
+    .mb-lg-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .mr-lg-5 {
+        margin-right: 5px !important;
+    }
+
+    .ml-lg-5 {
+        margin-left: 5px !important;
+    }
+
+    .pt-lg-5 {
+        padding-top: 5px !important;
+    }
+
+    .pb-lg-5 {
+        padding-bottom: 5px !important;
+    }
+
+    .pr-lg-5 {
+        padding-right: 5px !important;
+    }
+
+    .pl-lg-5 {
+        padding-left: 5px !important;
+    }
+
+    .mt-lg-10 {
+        margin-top: 10px !important;
+    }
+
+    .mb-lg-10 {
+        margin-bottom: 10px !important;
+    }
+
+    .mr-lg-10 {
+        margin-right: 10px !important;
+    }
+
+    .ml-lg-10 {
+        margin-left: 10px !important;
+    }
+
+    .pt-lg-10 {
+        padding-top: 10px !important;
+    }
+
+    .pb-lg-10 {
+        padding-bottom: 10px !important;
+    }
+
+    .pr-lg-10 {
+        padding-right: 10px !important;
+    }
+
+    .pl-lg-10 {
+        padding-left: 10px !important;
+    }
+
+    .mt-lg-15 {
+        margin-top: 15px !important;
+    }
+
+    .mb-lg-15 {
+        margin-bottom: 15px !important;
+    }
+
+    .mr-lg-15 {
+        margin-right: 15px !important;
+    }
+
+    .ml-lg-15 {
+        margin-left: 15px !important;
+    }
+
+    .pt-lg-15 {
+        padding-top: 15px !important;
+    }
+
+    .pb-lg-15 {
+        padding-bottom: 15px !important;
+    }
+
+    .pr-lg-15 {
+        padding-right: 15px !important;
+    }
+
+    .pl-lg-15 {
+        padding-left: 15px !important;
+    }
+
+    .mt-lg-20 {
+        margin-top: 20px !important;
+    }
+
+    .mb-lg-20 {
+        margin-bottom: 20px !important;
+    }
+
+    .mr-lg-20 {
+        margin-right: 20px !important;
+    }
+
+    .ml-lg-20 {
+        margin-left: 20px !important;
+    }
+
+    .pt-lg-20 {
+        padding-top: 20px !important;
+    }
+
+    .pb-lg-20 {
+        padding-bottom: 20px !important;
+    }
+
+    .pr-lg-20 {
+        padding-right: 20px !important;
+    }
+
+    .pl-lg-20 {
+        padding-left: 20px !important;
+    }
+
+    .mt-lg-25 {
+        margin-top: 25px !important;
+    }
+
+    .mb-lg-25 {
+        margin-bottom: 25px !important;
+    }
+
+    .mr-lg-25 {
+        margin-right: 25px !important;
+    }
+
+    .ml-lg-25 {
+        margin-left: 25px !important;
+    }
+
+    .pt-lg-25 {
+        padding-top: 25px !important;
+    }
+
+    .pb-lg-25 {
+        padding-bottom: 25px !important;
+    }
+
+    .pr-lg-25 {
+        padding-right: 25px !important;
+    }
+
+    .pl-lg-25 {
+        padding-left: 25px !important;
+    }
+
+    .mt-lg-30 {
+        margin-top: 30px !important;
+    }
+
+    .mb-lg-30 {
+        margin-bottom: 30px !important;
+    }
+
+    .mr-lg-30 {
+        margin-right: 30px !important;
+    }
+
+    .ml-lg-30 {
+        margin-left: 30px !important;
+    }
+
+    .pt-lg-30 {
+        padding-top: 30px !important;
+    }
+
+    .pb-lg-30 {
+        padding-bottom: 30px !important;
+    }
+
+    .pr-lg-30 {
+        padding-right: 30px !important;
+    }
+
+    .pl-lg-30 {
+        padding-left: 30px !important;
+    }
+
+    .mt-lg-35 {
+        margin-top: 35px !important;
+    }
+
+    .mb-lg-35 {
+        margin-bottom: 35px !important;
+    }
+
+    .mr-lg-35 {
+        margin-right: 35px !important;
+    }
+
+    .ml-lg-35 {
+        margin-left: 35px !important;
+    }
+
+    .pt-lg-35 {
+        padding-top: 35px !important;
+    }
+
+    .pb-lg-35 {
+        padding-bottom: 35px !important;
+    }
+
+    .pr-lg-35 {
+        padding-right: 35px !important;
+    }
+
+    .pl-lg-35 {
+        padding-left: 35px !important;
+    }
+
+    .mt-lg-40 {
+        margin-top: 40px !important;
+    }
+
+    .mb-lg-40 {
+        margin-bottom: 40px !important;
+    }
+
+    .mr-lg-40 {
+        margin-right: 40px !important;
+    }
+
+    .ml-lg-40 {
+        margin-left: 40px !important;
+    }
+
+    .pt-lg-40 {
+        padding-top: 40px !important;
+    }
+
+    .pb-lg-40 {
+        padding-bottom: 40px !important;
+    }
+
+    .pr-lg-40 {
+        padding-right: 40px !important;
+    }
+
+    .pl-lg-40 {
+        padding-left: 40px !important;
+    }
+
+    .mt-lg-45 {
+        margin-top: 45px !important;
+    }
+
+    .mb-lg-45 {
+        margin-bottom: 45px !important;
+    }
+
+    .mr-lg-45 {
+        margin-right: 45px !important;
+    }
+
+    .ml-lg-45 {
+        margin-left: 45px !important;
+    }
+
+    .pt-lg-45 {
+        padding-top: 45px !important;
+    }
+
+    .pb-lg-45 {
+        padding-bottom: 45px !important;
+    }
+
+    .pr-lg-45 {
+        padding-right: 45px !important;
+    }
+
+    .pl-lg-45 {
+        padding-left: 45px !important;
+    }
+
+    .mt-lg-50 {
+        margin-top: 50px !important;
+    }
+
+    .mb-lg-50 {
+        margin-bottom: 50px !important;
+    }
+
+    .mr-lg-50 {
+        margin-right: 50px !important;
+    }
+
+    .ml-lg-50 {
+        margin-left: 50px !important;
+    }
+
+    .pt-lg-50 {
+        padding-top: 50px !important;
+    }
+
+    .pb-lg-50 {
+        padding-bottom: 50px !important;
+    }
+
+    .pr-lg-50 {
+        padding-right: 50px !important;
+    }
+
+    .pl-lg-50 {
+        padding-left: 50px !important;
+    }
+
+    .mt-lg-55 {
+        margin-top: 55px !important;
+    }
+
+    .mb-lg-55 {
+        margin-bottom: 55px !important;
+    }
+
+    .mr-lg-55 {
+        margin-right: 55px !important;
+    }
+
+    .ml-lg-55 {
+        margin-left: 55px !important;
+    }
+
+    .pt-lg-55 {
+        padding-top: 55px !important;
+    }
+
+    .pb-lg-55 {
+        padding-bottom: 55px !important;
+    }
+
+    .pr-lg-55 {
+        padding-right: 55px !important;
+    }
+
+    .pl-lg-55 {
+        padding-left: 55px !important;
+    }
+
+    .mt-lg-60 {
+        margin-top: 60px !important;
+    }
+
+    .mb-lg-60 {
+        margin-bottom: 60px !important;
+    }
+
+    .mr-lg-60 {
+        margin-right: 60px !important;
+    }
+
+    .ml-lg-60 {
+        margin-left: 60px !important;
+    }
+
+    .pt-lg-60 {
+        padding-top: 60px !important;
+    }
+
+    .pb-lg-60 {
+        padding-bottom: 60px !important;
+    }
+
+    .pr-lg-60 {
+        padding-right: 60px !important;
+    }
+
+    .pl-lg-60 {
+        padding-left: 60px !important;
+    }
+
+    .mt-lg-65 {
+        margin-top: 65px !important;
+    }
+
+    .mb-lg-65 {
+        margin-bottom: 65px !important;
+    }
+
+    .mr-lg-65 {
+        margin-right: 65px !important;
+    }
+
+    .ml-lg-65 {
+        margin-left: 65px !important;
+    }
+
+    .pt-lg-65 {
+        padding-top: 65px !important;
+    }
+
+    .pb-lg-65 {
+        padding-bottom: 65px !important;
+    }
+
+    .pr-lg-65 {
+        padding-right: 65px !important;
+    }
+
+    .pl-lg-65 {
+        padding-left: 65px !important;
+    }
+
+    .mt-lg-70 {
+        margin-top: 70px !important;
+    }
+
+    .mb-lg-70 {
+        margin-bottom: 70px !important;
+    }
+
+    .mr-lg-70 {
+        margin-right: 70px !important;
+    }
+
+    .ml-lg-70 {
+        margin-left: 70px !important;
+    }
+
+    .pt-lg-70 {
+        padding-top: 70px !important;
+    }
+
+    .pb-lg-70 {
+        padding-bottom: 70px !important;
+    }
+
+    .pr-lg-70 {
+        padding-right: 70px !important;
+    }
+
+    .pl-lg-70 {
+        padding-left: 70px !important;
+    }
+
+    .mt-lg-75 {
+        margin-top: 75px !important;
+    }
+
+    .mb-lg-75 {
+        margin-bottom: 75px !important;
+    }
+
+    .mr-lg-75 {
+        margin-right: 75px !important;
+    }
+
+    .ml-lg-75 {
+        margin-left: 75px !important;
+    }
+
+    .pt-lg-75 {
+        padding-top: 75px !important;
+    }
+
+    .pb-lg-75 {
+        padding-bottom: 75px !important;
+    }
+
+    .pr-lg-75 {
+        padding-right: 75px !important;
+    }
+
+    .pl-lg-75 {
+        padding-left: 75px !important;
+    }
+
+    .mt-lg-80 {
+        margin-top: 80px !important;
+    }
+
+    .mb-lg-80 {
+        margin-bottom: 80px !important;
+    }
+
+    .mr-lg-80 {
+        margin-right: 80px !important;
+    }
+
+    .ml-lg-80 {
+        margin-left: 80px !important;
+    }
+
+    .pt-lg-80 {
+        padding-top: 80px !important;
+    }
+
+    .pb-lg-80 {
+        padding-bottom: 80px !important;
+    }
+
+    .pr-lg-80 {
+        padding-right: 80px !important;
+    }
+
+    .pl-lg-80 {
+        padding-left: 80px !important;
+    }
+
+    .mt-lg-85 {
+        margin-top: 85px !important;
+    }
+
+    .mb-lg-85 {
+        margin-bottom: 85px !important;
+    }
+
+    .mr-lg-85 {
+        margin-right: 85px !important;
+    }
+
+    .ml-lg-85 {
+        margin-left: 85px !important;
+    }
+
+    .pt-lg-85 {
+        padding-top: 85px !important;
+    }
+
+    .pb-lg-85 {
+        padding-bottom: 85px !important;
+    }
+
+    .pr-lg-85 {
+        padding-right: 85px !important;
+    }
+
+    .pl-lg-85 {
+        padding-left: 85px !important;
+    }
+
+    .mt-lg-90 {
+        margin-top: 90px !important;
+    }
+
+    .mb-lg-90 {
+        margin-bottom: 90px !important;
+    }
+
+    .mr-lg-90 {
+        margin-right: 90px !important;
+    }
+
+    .ml-lg-90 {
+        margin-left: 90px !important;
+    }
+
+    .pt-lg-90 {
+        padding-top: 90px !important;
+    }
+
+    .pb-lg-90 {
+        padding-bottom: 90px !important;
+    }
+
+    .pr-lg-90 {
+        padding-right: 90px !important;
+    }
+
+    .pl-lg-90 {
+        padding-left: 90px !important;
+    }
+
+    .mt-lg-95 {
+        margin-top: 95px !important;
+    }
+
+    .mb-lg-95 {
+        margin-bottom: 95px !important;
+    }
+
+    .mr-lg-95 {
+        margin-right: 95px !important;
+    }
+
+    .ml-lg-95 {
+        margin-left: 95px !important;
+    }
+
+    .pt-lg-95 {
+        padding-top: 95px !important;
+    }
+
+    .pb-lg-95 {
+        padding-bottom: 95px !important;
+    }
+
+    .pr-lg-95 {
+        padding-right: 95px !important;
+    }
+
+    .pl-lg-95 {
+        padding-left: 95px !important;
+    }
+
+    .mt-lg-100 {
+        margin-top: 100px !important;
+    }
+
+    .mb-lg-100 {
+        margin-bottom: 100px !important;
+    }
+
+    .mr-lg-100 {
+        margin-right: 100px !important;
+    }
+
+    .ml-lg-100 {
+        margin-left: 100px !important;
+    }
+
+    .pt-lg-100 {
+        padding-top: 100px !important;
+    }
+
+    .pb-lg-100 {
+        padding-bottom: 100px !important;
+    }
+
+    .pr-lg-100 {
+        padding-right: 100px !important;
+    }
+
+    .pl-lg-100 {
+        padding-left: 100px !important;
+    }
+
+    .mt-lg-105 {
+        margin-top: 105px !important;
+    }
+
+    .mb-lg-105 {
+        margin-bottom: 105px !important;
+    }
+
+    .mr-lg-105 {
+        margin-right: 105px !important;
+    }
+
+    .ml-lg-105 {
+        margin-left: 105px !important;
+    }
+
+    .pt-lg-105 {
+        padding-top: 105px !important;
+    }
+
+    .pb-lg-105 {
+        padding-bottom: 105px !important;
+    }
+
+    .pr-lg-105 {
+        padding-right: 105px !important;
+    }
+
+    .pl-lg-105 {
+        padding-left: 105px !important;
+    }
+
+    .mt-lg-110 {
+        margin-top: 110px !important;
+    }
+
+    .mb-lg-110 {
+        margin-bottom: 110px !important;
+    }
+
+    .mr-lg-110 {
+        margin-right: 110px !important;
+    }
+
+    .ml-lg-110 {
+        margin-left: 110px !important;
+    }
+
+    .pt-lg-110 {
+        padding-top: 110px !important;
+    }
+
+    .pb-lg-110 {
+        padding-bottom: 110px !important;
+    }
+
+    .pr-lg-110 {
+        padding-right: 110px !important;
+    }
+
+    .pl-lg-110 {
+        padding-left: 110px !important;
+    }
+
+    .mt-lg-115 {
+        margin-top: 115px !important;
+    }
+
+    .mb-lg-115 {
+        margin-bottom: 115px !important;
+    }
+
+    .mr-lg-115 {
+        margin-right: 115px !important;
+    }
+
+    .ml-lg-115 {
+        margin-left: 115px !important;
+    }
+
+    .pt-lg-115 {
+        padding-top: 115px !important;
+    }
+
+    .pb-lg-115 {
+        padding-bottom: 115px !important;
+    }
+
+    .pr-lg-115 {
+        padding-right: 115px !important;
+    }
+
+    .pl-lg-115 {
+        padding-left: 115px !important;
+    }
+
+    .mt-lg-120 {
+        margin-top: 120px !important;
+    }
+
+    .mb-lg-120 {
+        margin-bottom: 120px !important;
+    }
+
+    .mr-lg-120 {
+        margin-right: 120px !important;
+    }
+
+    .ml-lg-120 {
+        margin-left: 120px !important;
+    }
+
+    .pt-lg-120 {
+        padding-top: 120px !important;
+    }
+
+    .pb-lg-120 {
+        padding-bottom: 120px !important;
+    }
+
+    .pr-lg-120 {
+        padding-right: 120px !important;
+    }
+
+    .pl-lg-120 {
+        padding-left: 120px !important;
+    }
+
+    .mt-lg-125 {
+        margin-top: 125px !important;
+    }
+
+    .mb-lg-125 {
+        margin-bottom: 125px !important;
+    }
+
+    .mr-lg-125 {
+        margin-right: 125px !important;
+    }
+
+    .ml-lg-125 {
+        margin-left: 125px !important;
+    }
+
+    .pt-lg-125 {
+        padding-top: 125px !important;
+    }
+
+    .pb-lg-125 {
+        padding-bottom: 125px !important;
+    }
+
+    .pr-lg-125 {
+        padding-right: 125px !important;
+    }
+
+    .pl-lg-125 {
+        padding-left: 125px !important;
+    }
+
+    .mt-lg-130 {
+        margin-top: 130px !important;
+    }
+
+    .mb-lg-130 {
+        margin-bottom: 130px !important;
+    }
+
+    .mr-lg-130 {
+        margin-right: 130px !important;
+    }
+
+    .ml-lg-130 {
+        margin-left: 130px !important;
+    }
+
+    .pt-lg-130 {
+        padding-top: 130px !important;
+    }
+
+    .pb-lg-130 {
+        padding-bottom: 130px !important;
+    }
+
+    .pr-lg-130 {
+        padding-right: 130px !important;
+    }
+
+    .pl-lg-130 {
+        padding-left: 130px !important;
+    }
+
+    .mt-lg-135 {
+        margin-top: 135px !important;
+    }
+
+    .mb-lg-135 {
+        margin-bottom: 135px !important;
+    }
+
+    .mr-lg-135 {
+        margin-right: 135px !important;
+    }
+
+    .ml-lg-135 {
+        margin-left: 135px !important;
+    }
+
+    .pt-lg-135 {
+        padding-top: 135px !important;
+    }
+
+    .pb-lg-135 {
+        padding-bottom: 135px !important;
+    }
+
+    .pr-lg-135 {
+        padding-right: 135px !important;
+    }
+
+    .pl-lg-135 {
+        padding-left: 135px !important;
+    }
+
+    .pc-nowrap {
+        white-space: nowrap;
+        display: block;
+    }
+
+    .visible-sm,
+    .hidden-lg {
+        display: none !important;
+    }
+
+    .text-lg-center {
+        text-align: center !important;
+    }
+
+    .text-lg-left {
+        text-align: left !important;
+    }
+
+    .text-lg-right {
+        text-align: right !important;
+    }
+
+    .d-lg-inline {
+        display: inline !important;
+    }
+
+    /* Scss Document */
+    #wrapper,
+    #contentsArea {
+        width: 100%;
+    }
+
+    header,
+    footer {
+        width: 970px;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin: 5px auto 30px;
+    }
+
+    .keyvisual {
+        height: 691px;
+        background: #212121 url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_keyvisual_pc.jpg) center;
+        margin-bottom: -51px;
+        margin-top: 24px;
+    }
+
+    .keyvisual__copy {
+        padding: 238px 0 0 0;
+        letter-spacing: 0.65em;
+    }
+
+    .keyvisual__img {
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+
+    .keyvisual__txt {
+        font-size: 18px;
+    }
+
+    .keyvisual + .localnavigation {
+        background: none;
+        border-bottom: 5px solid #d8d8d8;
+        margin-top: 0;
+    }
+
+        .keyvisual + .localnavigation ul li a, .keyvisual + .localnavigation ul li span {
+            border-bottom: 5px solid #d8d8d8;
+            height: 51px;
+            padding: 0 20px;
+        }
+
+    .top-text-area {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_index_001.png) top center no-repeat;
+        background-size: 1367px 70%;
+    }
+
+    .index-section-01 {
+        width: 970px;
+        margin: 0 auto 100px auto;
+    }
+
+    .index-section-01__ttl {
+        font-size: 35px;
+        letter-spacing: 0.25em;
+    }
+
+    .content-list {
+        margin: 40px 0 0 0;
+    }
+
+    .content-list__list {
+        margin-top: 40px;
+        width: 300px;
+        height: 490px;
+        float: left;
+    }
+
+        .content-list__list:nth-child(3n+2) {
+            margin: 40px 34px 0 34px;
+        }
+
+    .content-list__list__ttl {
+        height: 67px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .index-section-02 {
+        background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_index_figure_pc.jpg) top no-repeat;
+        height: 780px;
+        padding: 0 0 120px 0;
+    }
+
+    .index-section-02__ttl {
+        font-size: 35px;
+        letter-spacing: 0.25em;
+        padding: 80px 0 0 0;
+    }
+
+    .index-section-02__txt {
+        margin: 20px 0 0 0;
+    }
+
+    .figure-area {
+        position: relative;
+        width: 970px;
+        margin: 0 auto;
+    }
+
+    .figure-area__content {
+        position: absolute;
+        margin: 0;
+        height: 0;
+    }
+
+    .figure-area__content--001 {
+        top: 6px;
+        left: 5px;
+        z-index: 5;
+    }
+
+        .figure-area__content--001 .figure-area__content__btn {
+            margin: 0 7px 56px 0;
+        }
+
+    .figure-area__content--002 {
+        top: 18px;
+        right: 0px;
+        z-index: 4;
+    }
+
+        .figure-area__content--002 .figure-area__content__btn {
+            text-align: right;
+            margin: 0 7px 56px 0;
+        }
+
+    .figure-area__content--003 {
+        top: 351px;
+        right: 0px;
+        z-index: 3;
+    }
+
+        .figure-area__content--003 .figure-area__content__btn {
+            text-align: right;
+            margin: 0 249px 56px 0;
+        }
+
+    .figure-area__content--004 {
+        top: 370px;
+        right: 0px;
+        z-index: 2;
+    }
+
+        .figure-area__content--004 .figure-area__content__btn {
+            text-align: right;
+            margin: 0 531px 56px 0;
+        }
+
+    .figure-area__content--005 {
+        top: 505px;
+        right: 0px;
+        z-index: 1;
+    }
+
+        .figure-area__content--005 .figure-area__content__btn {
+            text-align: right;
+            margin: 0 383px 56px 0;
+        }
+
+    .figure-area__content__btn {
+        margin: 0;
+        height: 0;
+    }
+
+        .figure-area__content__btn span {
+            display: none;
+        }
+
+        .figure-area__content__btn img {
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+    .figure-area-content {
+        width: 970px;
+        border: 2px solid #28364f;
+        box-sizing: border-box;
+        background: #fff;
+        padding: 0 15px 40px 15px;
+        display: none;
+        overflow: hidden;
+        *zoom: 1;
+        position: relative;
+    }
+
+    .figure-area-content__close {
+        background: #28364f;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+    }
+
+        .figure-area-content__close:before {
+            width: 25px;
+            height: 25px;
+            content: '';
+            display: block;
+            border-left: 5px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            margin: -5px 0 0px 11px;
+        }
+
+        .figure-area-content__close:after {
+            width: 25px;
+            height: 25px;
+            content: '';
+            display: block;
+            border-left: 5px solid #fff;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            margin: -7px 0 0px 11px;
+        }
+
+    .figure-area-content__col {
+        width: 33.3333%;
+        float: left;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .figure-area-content__col__ttl {
+        margin: 40px 0 0 0;
+        font-size: 20px;
+    }
+
+    .figure-area-content__col__list {
+        margin: 10px 0 0 0;
+    }
+
+        .figure-area-content__col__list li {
+            margin: 20px 0 0 0;
+        }
+
+    .figure-area-content__col--4column {
+        width: 25%;
+        padding: 0 10px;
+    }
+
+    #megaMenu,
+    .globalNav {
+        width: 970px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .localnavigation {
+        border-bottom: 5px solid #212121;
+        margin-top: 24px;
+    }
+
+    .localnavigation__btn {
+        display: none;
+    }
+
+    .localnavigation ul {
+        width: 970px;
+        margin: 0 auto -5px auto;
+        height: 51px;
+        display: table;
+        padding: 0;
+    }
+
+        .localnavigation ul li {
+            display: table-cell;
+            width: 16.666%;
+            vertical-align: middle;
+        }
+
+            .localnavigation ul li.current a {
+                border-bottom: 5px solid #888888;
+            }
+
+                .localnavigation ul li.current a:after {
+                    content: '';
+                    border-bottom: 1px solid #fff;
+                    border-left: 1px solid #fff;
+                    border-top: none;
+                    border-right: none;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    right: 50%;
+                    top: 0;
+                    margin-right: -3px;
+                    width: 6px;
+                    height: 6px;
+                    position: absolute;
+                }
+
+            .localnavigation ul li a {
+                display: table-cell;
+                text-decoration: none !important;
+                height: 45px;
+                vertical-align: middle;
+                padding: 5px 20px 0 20px;
+                color: #fff !important;
+                border-bottom: 5px solid #212121;
+                position: relative;
+            }
+
+                .localnavigation ul li a:hover {
+                    border-bottom: 5px solid #888888;
+                }
+
+                    .localnavigation ul li a:hover:after {
+                        content: '';
+                        border-bottom: 1px solid #fff;
+                        border-left: 1px solid #fff;
+                        border-top: none;
+                        border-right: none;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        right: 50%;
+                        top: 0;
+                        margin-right: -3px;
+                        width: 6px;
+                        height: 6px;
+                        position: absolute;
+                    }
+
+            .localnavigation ul li span {
+                display: table-cell;
+                text-decoration: none;
+                height: 51px;
+                vertical-align: middle;
+                padding: 0 20px;
+                color: #fff;
+                border-bottom: 5px solid #212121;
+                position: relative;
+                opacity: 0.3;
+            }
+
+    .footer-navigation ul {
+        width: 970px;
+        margin: 0 auto;
+        padding: 40px 242px 0 0;
+        box-sizing: border-box;
+    }
+
+        .footer-navigation ul li {
+            list-style: none;
+            width: 33.333%;
+            margin: 20px 0 0 0;
+        }
+
+            .footer-navigation ul li:nth-child(1) {
+                order: 1;
+            }
+
+            .footer-navigation ul li:nth-child(2) {
+                order: 4;
+            }
+
+            .footer-navigation ul li:nth-child(3) {
+                order: 7;
+            }
+
+            .footer-navigation ul li:nth-child(4) {
+                order: 2;
+            }
+
+            .footer-navigation ul li:nth-child(5) {
+                order: 5;
+            }
+
+            .footer-navigation ul li:nth-child(6) {
+                order: 8;
+            }
+
+            .footer-navigation ul li:nth-child(7) {
+                order: 3;
+            }
+
+            .footer-navigation ul li:nth-child(8) {
+                order: 6;
+            }
+
+            .footer-navigation ul li:nth-child(9) {
+                order: 9;
+            }
+
+            .footer-navigation ul li a,
+            .footer-navigation ul li span {
+                padding: 0 30px 0 0;
+            }
+
+                .footer-navigation ul li a[target=_blank],
+                .footer-navigation ul li span[target=_blank] {
+                    background-size: 15px 15px;
+                }
+
+                .footer-navigation ul li a:hover {
+                    opacity: 0.7;
+                }
+
+.footer-btn {
+    background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_footer-btn_pc.jpg) center no-repeat;
+    height: 350px;
+    margin: 0 0 0 0;
+}
+
+.footer-btn__wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.footer-btn__wrapper .footer-btn-content {
+    padding: 40px 20px;
+    width: 470px;
+    float: left;
+}
+
+.footer-btn__wrapper .footer-btn-content:first-child {
+    margin: 70px 15px 0 0;
+}
+
+.footer-btn__wrapper .footer-btn-content:last-child {
+    margin: 70px 0 0 15px;
+}
+
+.to-top p {
+    width: 970px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.to-top a {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background: #1f2b41;
+    vertical-align: top;
+}
+
+.to-top a span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.to-top a span:after {
+    content: '';
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    right: 10px;
+    top: 66%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.breadcrumb {
+    background: #f0f0f0;
+}
+
+.breadcrumb ul {
+    width: 970px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.breadcrumb ul li {
+    display: inline-block;
+    padding: 20px 60px 20px 0;
+    font-size: 12px;
+    overflow: hidden;
+    vertical-align: middle;
+    color: #28364f !important;
+}
+
+.breadcrumb ul li a, .breadcrumb ul li span {
+    position: relative;
+    text-decoration: none !important;
+}
+
+.breadcrumb ul li a:before, .breadcrumb ul li span:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: -30px;
+    right: -40px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    border-width: 40px 0 40px 1em;
+    z-index: 10;
+}
+
+.breadcrumb ul li a:after, .breadcrumb ul li span:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: auto;
+    top: -30px;
+    right: -38px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f0f0f0;
+    border-width: 40px 0 40px 1em;
+    z-index: 10;
+}
+
+.content-wrapper {
+    padding: 0 0 90px 0;
+    background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/img/bg_content_pc.png) center top no-repeat;
+}
+
+.content-wrapper .content-inner {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.content-wrapper .content-inner__lead {
+    font-size: 18px;
+}
+
+.content-wrapper .content-inner__pager {
+    margin: 100px 0 50px 0;
+}
+
+.content-wrapper .content-inner__pager li {
+    padding: 0 7px;
+}
+
+.content-wrapper .content-inner__select-category {
+    margin: 60px 0 0 0;
+}
+
+.content-wrapper .content-inner__select-category > p {
+    display: none;
+}
+
+.content-wrapper .content-inner__select-category ul li {
+    display: inline-block;
+    width: 156px;
+}
+
+.content-wrapper .content-inner__select-category ul li a {
+    display: block;
+    width: 140px;
+    text-align: center;
+    color: #28364f;
+    border: 1px solid #28364f;
+    padding: 10px 0;
+    font-size-adjust: 16px;
+}
+
+.content-wrapper .content-inner__internal-link {
+    margin: 60px 0 0 0;
+}
+
+.content-wrapper .content-inner__internal-link li {
+    display: block;
+    margin: 0 16px 0 0;
+}
+
+.content-wrapper .content-inner__internal-link li:last-of-type {
+    margin: 0;
+}
+
+.title-area {
+    padding: 100px 0 0 0;
+    display: table;
+    width: 100%;
+}
+
+.title-area__ttl {
+    font-size: 36px !important;
+    display: table-cell;
+    width: 80%;
+    vertical-align: middle;
+}
+
+.title-area__ttl small {
+    font-size: 16px;
+}
+
+.title-area__txt {
+    font-size: 18px !important;
+    display: table-cell;
+    width: 20%;
+}
+
+    .point {
+        display: table;
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    .point__ttl {
+        display: table-cell;
+        width: 21%;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+        .point__ttl img {
+            margin: 0 0 0 35px;
+        }
+
+    .point__content {
+        display: table-cell;
+        width: 79%;
+    }
+
+        .point__content li:before {
+            background-size: 46px 46px;
+            width: 46px;
+            height: 46px;
+        }
+
+        .point__content li span {
+            padding: 0 0 0 20px;
+        }
+
+    .dl-brochure {
+        width: 580px;
+        margin: 80px auto 0 auto;
+    }
+
+        .dl-brochure a {
+            padding: 17px 0 17px 22px;
+            font-size: 22px;
+            background-position: right 19px center, left 29px center;
+            line-height: 1.3;
+            letter-spacing: .05em;
+            text-align: center
+        }
+
+            .dl-brochure a small {
+                font-size: 18px;
+                letter-spacing: .1em
+            }
+
+            .dl-brochure a.btn-brochure-line-1 {
+                padding: 25px 60px 25px 80px;
+                font-size: 22px;
+                line-height: 1.5;
+                letter-spacing: 0;
+            }
+
+            .dl-brochure a.btn-brochure-line-multi {
+                padding: 17px 60px 17px 80px;
+                font-size: 22px;
+                line-height: 1.3;
+                letter-spacing: .05em;
+            }
+
+    .liner-navigation {
+        margin: 100px 0 0 0;
+    }
+
+        .liner-navigation ul {
+            width: 970px;
+            margin: 0 auto;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+            .liner-navigation ul li {
+                width: 190px;
+                height: 70px;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 0 5px 0 0;
+            }
+
+                .liner-navigation ul li:last-child {
+                    padding: 0;
+                }
+
+                .liner-navigation ul li a {
+                    font-size: 14px;
+                    width: 100%;
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    height: 70px;
+                    border: 1px solid #c3c9d1;
+                    background-color: #f9f9f9;
+                    padding: 0 0 0 15px;
+                    background-position: 90% center;
+                    background-size: 25px;
+                }
+
+                .liner-navigation ul li:nth-child(1).current a:before {
+                    border-color: transparent transparent #2890ae transparent;
+                }
+
+                .liner-navigation ul li:nth-child(2).current a:before {
+                    border-color: transparent transparent #5ca66c transparent;
+                }
+
+                .liner-navigation ul li:nth-child(3).current a:before {
+                    border-color: transparent transparent #b74865 transparent;
+                }
+
+                .liner-navigation ul li:nth-child(4).current a:before {
+                    border-color: transparent transparent #546e7a transparent;
+                }
+
+                .liner-navigation ul li:nth-child(5).current a:before {
+                    border-color: transparent transparent #d3b111 transparent;
+                }
+
+                .liner-navigation ul li.current a:before {
+                    border-width: 0 10px 11px 10px;
+                    right: 50%;
+                    top: -10px;
+                    margin-right: -10px;
+                }
+
+                .liner-navigation ul li.current a:after {
+                    width: 190px;
+                    height: 3px;
+                    top: -1px;
+                    left: -1px;
+                }
+
+    .top-content--system {
+        background: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_system_pc.png") no-repeat 0 300px;
+    }
+
+    .top-content--telework {
+        background: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_telework_pc.png") no-repeat 0 600px;
+    }
+
+    .top-content__lead {
+        margin: 80px 0 0 0 !important;
+        font-size: 24px;
+    }
+
+    .top-content__lead--telework {
+        margin: 135px 0 0 0 !important;
+    }
+
+    .column-wrapper {
+        overflow: hidden;
+        *zoom: 1;
+    }
+
+    .column-wrapper--3column .column-wrapper__col {
+        width: 300px;
+        margin: 0 35px;
+    }
+
+        .column-wrapper--3column .column-wrapper__col:first-child {
+            margin: 0;
+        }
+
+        .column-wrapper--3column .column-wrapper__col:last-child {
+            margin: 0;
+        }
+
+    .column-wrapper--1column .column-wrapper__col {
+        width: 100%;
+        margin: 0;
+    }
+
+    .column-wrapper__col {
+        width: 450px;
+        float: left;
+    }
+
+        .column-wrapper__col:first-child {
+            margin: 0 70px 0 0;
+        }
+
+    .column-wrapper__col__list {
+        margin: 20px 0 0 0;
+    }
+
+    .bottom-content {
+        margin: 100px 0 0 0;
+    }
+
+    .h2 {
+        background: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/purpose/img/bg_h2.png") no-repeat left;
+        padding: 0 0 0 20px;
+    }
+
+    .h3:before {
+        height: 30px;
+        border-left: 5px solid #28364f;
+    }
+
+    .firgure-area {
+        background: #e5ecf0;
+        padding: 30px 20px;
+        margin: 40px 0 0 0;
+    }
+
+    .firgure-area__row {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .firgure-area__row__col {
+        width: 50%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+        .firgure-area__row__col:first-child {
+            padding-right: 15px;
+        }
+
+        .firgure-area__row__col:last-child {
+            padding-left: 15px;
+        }
+
+    .firgure-area__row--3column .firgure-area__row__col {
+        width: 33.333%;
+    }
+
+    .firgure-area-contet {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .firgure-area-contet__caption {
+        text-align: center;
+        border-top: 1px solid #c3c9d1;
+        padding: 20px 0 0 0;
+    }
+
+    .firgure-area-contet__list li {
+        background-size: 15px;
+    }
+
+    .service-content__table {
+        border-bottom: 1px solid #c3c9d1;
+        font-size: 16px;
+        margin: 20px 0 0 0;
+    }
+
+        .service-content__table tr th {
+            font-weight: normal;
+            width: 296px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-top: 1px solid #c3c9d1;
+        }
+
+        .service-content__table tr td {
+            padding: 15px 20px;
+            font-size: 14px;
+            border-top: 1px solid #c3c9d1;
+        }
+
+            .service-content__table tr td:last-child {
+                width: 100px;
+            }
+
+                .service-content__table tr td:last-child a {
+                    background: url(https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/service/img/bg_service-arrow.png) no-repeat left 3px;
+                    padding: 3px 0 3px 25px;
+                }
+
+    .catalog-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .catalog-row__col {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        box-sizing: border-box;
+        margin-right: 35px;
+    }
+
+        .catalog-row__col:nth-of-type(3n) {
+            margin-right: 0px;
+        }
+
+    .catalog-row__col__img {
+        min-height: 0%;
+        margin: 0;
+        min-height: 200px;
+        box-sizing: border-box;
+    }
+
+    .catalog-row__col__btn {
+        margin-top: auto;
+        margin-bottom: 0;
+        padding: 30px 0 0 0;
+    }
+
+    .help-desk {
+        height: 360px;
+        text-align: center;
+        background-image: url("https://www.konicaminolta.com/web-contents/kmj/assets/it-guardians/helpdesk/img/bg_index.jpg"), linear-gradient(to right, #ffffff 0%, #ffffff 50%, #535e72 50%, #535e72 100%);
+        background-repeat: no-repeat, repeat;
+        background-position: center, center;
+        background-size: auto 360px;
+    }
+
+    .help-desk img {
+        height: 360px;
+    }
+}
