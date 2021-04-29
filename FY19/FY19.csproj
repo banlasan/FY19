@@ -1289,6 +1289,7 @@
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Controllers\SystemController.cs" />
     <Compile Include="Controllers\TeleworkController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UTMServiceController.cs" />
     <Compile Include="Controllers\Widgets\KMJ_ImageWidgetController.cs" />
     <Compile Include="Controllers\XPointCloudController.cs" />
