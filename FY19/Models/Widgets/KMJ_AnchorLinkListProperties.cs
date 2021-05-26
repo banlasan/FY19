@@ -91,6 +91,7 @@ namespace FY19.Models.Widgets
         [StringLength(1000, ErrorMessage = "Limit 1000 characters")]
         public string Url9 { get; set; }
 
+       
         [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 18, Label = "Link 10 text")]
         [EditingComponentProperty(nameof(TextAreaProperties.Name), "")]
         [StringLength(1000, ErrorMessage = "Limit 200 characters")]
@@ -100,7 +101,9 @@ namespace FY19.Models.Widgets
         [StringLength(1000, ErrorMessage = "Limit 1000 characters")]
         public string Url10 { get; set; }
 
+
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 20, Label = "Id")]
+        [RegularExpression(@"^\S*$", ErrorMessage = "No white space allowed")]
         public string Id { get; set; }
 
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 21, Label = "Class")]

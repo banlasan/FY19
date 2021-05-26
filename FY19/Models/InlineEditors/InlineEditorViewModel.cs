@@ -3,5 +3,6 @@
     public abstract class InlineEditorViewModel
     {
         public string PropertyName { get; set; }
+        public string PropertyWidget { get; set; }
     }
 }

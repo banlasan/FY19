@@ -7,13 +7,13 @@
 
             var divname = 'quill-editor-' + editor.dataset.divid;
 
-            console.log('div id - ' + editor.dataset.divid);
+          // console.log('div id - ' + editor.dataset.divid);
 
             if (editor.dataset.divid === null || editor.dataset.divid === undefined) { return; }
 
             var getDiv = document.getElementsByClassName(divname)[0];
 
-            console.log('div name - ' + getDiv);
+         //   console.log('div name - ' + getDiv);
 
             var toolbarOptions = [
                 ['bold', 'italic', 'underline', 'strike'],        // toggled buttons

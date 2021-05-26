@@ -40,15 +40,15 @@
 
 @if (Context.Kentico().PageBuilder().EditMode)
 {
-    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    Html.RenderPartial("InlineEditors/HeaderEditor", new TextEditorViewModel
     {
         PropertyName = "TextContent",
-        Text = bodyText,
+        Text = Model.Properties.TextContent,
         Class = Model.Properties.Class,
         Id = Model.Properties.Id
     });
 }
 else
 {
-    <p class="textRead @Model.Properties.Class" id="@Model.Properties.Id">@bodyText</p>
+<p class="textRead @Model.Properties.Class" id="@Model.Properties.Id">@Html.Raw(Model.Properties.TextContent)</p>
 }

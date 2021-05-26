@@ -1,6 +1,7 @@
 ﻿(function () {
     window.kentico.pageBuilder.registerInlineEditor("text-editor", {
         init: function (options) {
+        
             var editor = options.editor;
             var config = {
                 toolbar: {
@@ -18,6 +19,8 @@
             }
 
             var mediumEditor = new MediumEditor(editor, config);
+
+           // console.log('My Idea', mediumEditor.getContent);
 
             mediumEditor.subscribe("editableInput", function () {
                 var event = new CustomEvent("updateProperty", {

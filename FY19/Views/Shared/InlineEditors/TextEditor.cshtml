@@ -8,9 +8,11 @@
 @using (Html.Kentico().BeginInlineEditor("text-editor", Model.PropertyName,
     new
     {
+     
         @class = "text-editor " + Model.Class,
         data_enable_formatting = Model.EnableFormatting.ToString()
     }))
 {
     @Html.Raw(Model.Text)
+    
 }

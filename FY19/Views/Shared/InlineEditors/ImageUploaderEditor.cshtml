@@ -1,5 +1,5 @@
 ﻿@using FY19.Models.InlineEditors
-@using FY19.Helpers
+
 @model ImageUploaderEditorViewModel
 
 @{
@@ -36,6 +36,7 @@
         data_file_type = Model.ImageType == ImageTypeEnum.MediaFile ? "media" : "attachment"
     }))
 {
+   
     <div class="@GetContainerClass()">
         <div class="uploader">
             <div class="dz-message @GetMessagePositionClass()">

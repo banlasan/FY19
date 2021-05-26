@@ -49,14 +49,15 @@
     Type propType = typeof(KMJ_TextContentProperties);
     System.Reflection.PropertyInfo pInfo = propType.GetProperty("TextContent");
 
-    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    Html.RenderPartial("InlineEditors/HeaderEditor", new TextEditorViewModel
     {
+        PropertyWidget = "H3",
         PropertyName = "Heading_Text",
-        Text = headText,
+        Text = Model.Properties.Heading_Text,
         Class = "h3 " + Model.Properties.Class
     });
 }
 else
 {
-    <h3 class="h3 @Model.Properties.Class" id="@Model.Properties.Id">@headText</h3>
+<h3 class="h3 @Model.Properties.Class" id="@Model.Properties.Id" style="word-wrap: break-word">@Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Heading_Text))</h3>
 }

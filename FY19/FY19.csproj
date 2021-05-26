@@ -720,6 +720,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="FY19\media\FY19\" />
+    <Folder Include="media\FY19\" />
+    <Folder Include="media\Graphics\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\atlas\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\moono\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\ocean\" />
@@ -752,6 +755,7 @@
     <Content Include="Content\InlineEditors\QuillEditor\quill-editor.js" />
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\css\medium-editor.css" />
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\css\themes\default.css" />
+    <Content Include="Content\InlineEditors\TextEditor\medium-editor\header-editor.js" />
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\js\medium-editor.js" />
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\text-editor.js" />
     <Content Include="Content\InlineEditors\TextEditor\medium-editor\TextEditor.css" />
@@ -1257,6 +1261,7 @@
     <Content Include="Views\Catalog\Index.cshtml" />
     <Content Include="Views\Shared\PageTemplates\Sitemaps\KMJ_ITGSitemap.cshtml" />
     <Content Include="Views\ITG_Sitemap\Index.cshtml" />
+    <Content Include="Views\Shared\InlineEditors\HeaderEditor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ApplicationConfig.cs" />
@@ -1313,6 +1318,7 @@
     <Compile Include="Library\Helpers\HtmlHelperExtensions.cs" />
     <Compile Include="Library\MVC Helpers\KMVCAuthorization.cs" />
     <Compile Include="Library\MVC Helpers\NonSortedBundle.cs" />
+    <Compile Include="Models\CustomValidations\StringLengthValidation.cs" />
     <Compile Include="Models\EditableAreaViewModel.cs" />
     <Compile Include="Models\InlineEditors\EditableTextViewModel.cs" />
     <Compile Include="Models\InlineEditors\ImageUploaderEditor\ImageTypeEnum.cs" />

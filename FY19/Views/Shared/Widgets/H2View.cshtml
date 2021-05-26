@@ -19,10 +19,11 @@
         //Decode html specific characters
         text = System.Net.WebUtility.HtmlDecode(text);
         //Remove tag whitespace/line breaks
-        text = tagWhiteSpaceRegex.Replace(text, "><");
+        //  text = tagWhiteSpaceRegex.Replace(text, "><");
         //Replace <br /> with line breaks
-        text = lineBreakRegex.Replace(text, Environment.NewLine);
+        //  text = lineBreakRegex.Replace(text, Environment.NewLine);
         //Strip formatting
+        // text = text.Replace(System.Environment.NewLine, "<br>");
         text = stripFormattingRegex.Replace(text, string.Empty);
 
         return text;
@@ -48,14 +49,17 @@
     Type propType = typeof(KMJ_TextContentProperties);
     System.Reflection.PropertyInfo pInfo = propType.GetProperty("TextContent");
 
-    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    Html.RenderPartial("InlineEditors/HeaderEditor", new TextEditorViewModel
     {
+        PropertyWidget = "H2",
         PropertyName = "Heading_Text",
-        Text = headText,
+        Text = Model.Properties.Heading_Text,
         Class = "h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 " + Model.Properties.Class
     });
 }
 else
 {
-    <h2 class="h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 @Model.Properties.Class" id="@Model.Properties.Id">@headText</h2>
+    
+    <br />
+    <h2 class="h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 @Model.Properties.Class" id="@Model.Properties.Id" style="word-wrap: break-word">@Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Heading_Text))</h2>
 }

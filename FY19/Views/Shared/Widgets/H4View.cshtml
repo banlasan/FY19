@@ -46,14 +46,15 @@
 @if (Context.Kentico().PageBuilder().EditMode)
 {
 
-    Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
+    Html.RenderPartial("InlineEditors/HeaderEditor", new TextEditorViewModel
     {
+        PropertyWidget = "H4",  
         PropertyName = "Heading_Text",
-        Text = headText,
+        Text = Model.Properties.Heading_Text,
         Class = "h4 " + Model.Properties.Class
     });
 }
 else
 {
-    <h4 class="h4 @Model.Properties.Class" id="@Model.Properties.Id">@headText</h4>
+<h4 class="h4 @Model.Properties.Class" id="@Model.Properties.Id" style="word-wrap: break-word">@Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Heading_Text))</h4>
 }

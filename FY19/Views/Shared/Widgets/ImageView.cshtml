@@ -14,6 +14,7 @@
 }
 else
 {
+   
     <div class="imgBlock @Model.Properties.Image_class" id="@Model.Properties.Id">
         <div class="hidden-sm"><img src="@Url.Content(MediaLibraryHelper.GetDirectUrl(MediaFileInfoProvider.GetMediaFileInfo(Model.Properties.Image.FirstOrDefault().FileGuid, SiteContext.CurrentSiteName)))" alt="@Model.Properties.Alt"></div>
         <div class="hidden-lg"><img src="@Url.Content(MediaLibraryHelper.GetDirectUrl(MediaFileInfoProvider.GetMediaFileInfo(Model.Properties.ImageSP.FirstOrDefault().FileGuid, SiteContext.CurrentSiteName)))" alt="@Model.Properties.Alt"></div>

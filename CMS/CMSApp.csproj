@@ -22202,6 +22202,8 @@
   <ItemGroup>
     <Folder Include="App_Data\CMSModules\WebAnalytics\MaxMind\" />
     <Folder Include="CorporateSite\media\VideoGallery\__thumbnails\" />
+    <Folder Include="FY19Mvc\media\FY19\" />
+    <Folder Include="FY19\media\FY19\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
