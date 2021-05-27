@@ -61,5 +61,6 @@ else
 {
     
     <br />
-    <h2 class="h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 @Model.Properties.Class" id="@Model.Properties.Id" style="word-wrap: break-word">@Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Heading_Text))</h2>
+    <h2 class="h2 mt-lg-80 mb-lg-40 mt-sm-50 mb-sm-20 @Model.Properties.Class" id="@Model.Properties.Id" style="word-wrap: break-word;
+        white-space: pre-wrap;">@Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Heading_Text))</h2>
 }

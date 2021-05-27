@@ -9,16 +9,15 @@
     new
     {
 
-        @class = "text-editor " + Model.Class,
+        @class = "header-editor text-editor " + Model.Class,
         data_enable_formatting = Model.EnableFormatting.ToString(),
         contenteditable = "true"
     }))
 {
 
     @Html.Raw(HttpUtility.HtmlDecode(Model.Text));
-    //   @Html.Raw(Model.Text)
-    <div class="source" >Try copying text from this box...</div>
-    <div class="target">...and pasting it into this one</div>
+   
+  
 
 }
 

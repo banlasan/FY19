@@ -1,4 +1,5 @@
-﻿.row {
+﻿
+.row {
     clear: both;
     overflow: hidden
 }
@@ -3636,4 +3637,6 @@ a:hover .img-responsive {
     .help-desk, .help-desk img {
         height: 360px
     }
+
+   
 }
