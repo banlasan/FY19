@@ -52,12 +52,21 @@
     Html.RenderPartial("InlineEditors/TextEditor", new TextEditorViewModel
     {
         PropertyName = "Heading_Text",
-        Text = headText
+        //old approach
+        //Text = headText
+        Text = Model.Properties.Heading_Text.Trim()
     });
 }
 else
 {
-    <head id="@Model.Properties.Id">
-        @headText
-    </head>
+    //old approach
+    @*<head id="@Model.Properties.Id">
+            @headText
+        </head>*@
+
+    //edit by von 11:24pm 6/02/2021
+<head id="@Model.Properties.Id">
+    @Html.Raw(HttpUtility.HtmlDecode(Model.Properties.Heading_Text))
+</head>
+  
 }

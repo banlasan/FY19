@@ -661,7 +661,8 @@ a:hover .img-responsive {
     color: #009e96;
     letter-spacing: .25em;
     font-weight: 400;
-    margin: 0
+    margin: 0;
+ 
 }
 .h3 {
     font-size: 18px;
@@ -2606,6 +2607,7 @@ a:hover .img-responsive {
     }
     .mt-lg-80 {
         margin-top: 5pc !important
+
     }
     .mb-lg-80 {
         margin-bottom: 5pc !important
@@ -3638,5 +3640,8 @@ a:hover .img-responsive {
         height: 360px
     }
 
+    .header-editor text-editor h2 {
+        white-space: pre-wrap;
+    }
    
 }

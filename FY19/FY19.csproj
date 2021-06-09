@@ -720,7 +720,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="FY19\media\FY19\" />
+    <Folder Include="FY19\media\" />
     <Folder Include="media\FY19\" />
     <Folder Include="media\Graphics\" />
     <Folder Include="Scripts\AlloyEditor\assets\css\skin\atlas\" />
@@ -1350,6 +1350,7 @@
     <Compile Include="Models\Widgets\KMJ_HeadHTMLProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_LinkButtonProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_LinkListProperties.cs" />
+    <Compile Include="Models\Widgets\KMJ_LinkSampleProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_ListProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_PlaceholderProperties.cs" />
     <Compile Include="Models\Widgets\KMJ_TextContentProperties.cs" />

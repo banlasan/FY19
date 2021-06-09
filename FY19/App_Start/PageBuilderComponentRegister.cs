@@ -23,6 +23,8 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 [assembly: RegisterWidget("FY19.Table", "Table", typeof(CKEditor4_WysiwygWidgetProperties), "Widgets/TableView", IconClass = "icon-l-header-text")]
 [assembly: RegisterWidget("FY19.Placeholder", "Placeholder", typeof(KMJ_PlaceholderProperties), "Widgets/PlaceholderView", Description = "Placeholder", IconClass = "icon-l-header-text")]
 
+
+
 //Sections
 [assembly: RegisterSection("FY19.SingColSec", "Single Column", typeof(SingleSectionProperties), "Sections/_SingleColumnView")]
 [assembly: RegisterSection("FY19.IndexSection", "Index Section", typeof(IndexSectionProperties), "Sections/_IndexSectionView", IconClass = "icon-i-circle")]

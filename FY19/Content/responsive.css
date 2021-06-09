@@ -860,6 +860,8 @@ a:hover .img-responsive {
     letter-spacing: 0.25em;
     font-weight: normal;
     margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .h3 {

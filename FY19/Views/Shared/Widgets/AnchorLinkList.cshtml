@@ -365,41 +365,112 @@
 }
 else
 {
-<b>Model.Properties.Text2</b>
-<ul class="listInternalLink @className @Model.Properties.Class" id="@Model.Properties.Id">
-    <li>
-        <a href="https://@url1" target="_blank">@text1</a>
-    </li>
-    @if (Model.Properties.Text2 == "" || Model.Properties.Text2 == null)
-    {
-        <li>
-            <a href="https://@url2" target="_blank">@text2</a>
-        </li>
-    }
 
-    <li>
-        <a href="https://@url3" target="_blank">@text3</a>
-    </li>
-    <li>
-        <a href="https://@url4" target="_blank">@text4</a>
-    </li>
-    <li>
-        <a href="https://@url5" target="_blank">@text5</a>
-    </li>
-    <li>
-        <a href="https://@url6" target="_blank">@text6</a>
-    </li>
-    <li>
-        <a href="https://@url7" target="_blank">@text7</a>
-    </li>
-    <li>
-        <a href="https://@url8" target="_blank">@text8</a>
-    </li>
-    <li>
-        <a href="https://@url9" target="_blank">@text9</a>
-    </li>
-    <li>
-        <a href="https://@url10" target="_blank">@text10</a>
-    </li>
-</ul>
+  <b>@text2</b>
+  <ul class="listInternalLink @className @Model.Properties.Class" id="@Model.Properties.Id">
+      <li>
+          <a href="https://@url1" target="_blank">@text1</a>
+      </li>
+      @if (text2 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url2" target="_blank">@text2</a>
+          </li>
+
+      }
+
+      @if (text3 == null || text3 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url3" target="_blank">@text3</a>
+          </li>
+      }
+      @if (text4 == null || text4 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url4" target="_blank">@text4</a>
+          </li>
+      }
+      @if (text5 == null || text5 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url5" target="_blank">@text5</a>
+          </li>
+      }
+      @if (text6 == null || text6 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url6" target="_blank">@text6</a>
+          </li>
+      }
+      @if (text7 == null || text7 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url7" target="_blank">@text7</a>
+          </li>
+      }
+      @if (text8 == null || text8 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url8" target="_blank">@text8</a>
+          </li>
+      }
+      @if (text9 == null || text9 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url9" target="_blank">@text9</a>
+          </li>
+      }
+      @if (text10 == null || text10 == "")
+      {
+
+      }
+      else
+      {
+          <li>
+              <a href="https://@url10" target="_blank">@text10</a>
+          </li>
+      }
+
+
+
+
+
+
+
+
+
+  </ul>
 }

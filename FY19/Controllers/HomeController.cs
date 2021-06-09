@@ -20,32 +20,33 @@ namespace FY19.Controllers
         public ActionResult Index()
         {
 
+            var folderName = "FY19";
 
+            var sss = MediaLibraryInfoProvider.GetMediaLibraryInfo(folderName, SiteContext.CurrentSiteName);
 
-            //var sss = MediaLibraryInfoProvider.GetMediaLibraryInfo("NewLibrary", SiteContext.CurrentSiteName);
+            // Gets the media library
+            MediaLibraryInfo library = MediaLibraryInfoProvider.GetMediaLibraryInfo(folderName, SiteContext.CurrentSiteName);
 
-            //// Gets the media library
-            //MediaLibraryInfo library = MediaLibraryInfoProvider.GetMediaLibraryInfo("NewLibrary", SiteContext.CurrentSiteName);
+            if (library != null)
+            {
+                // Creates the "NewFolder" folder within the media library
+               // MediaLibraryInfoProvider.CreateMediaLibraryFolder(SiteContext.CurrentSiteName, library.LibraryID, "NewFolder");
+            }
+            else
+            {
+                // Creates a new media library object
+                MediaLibraryInfo newLibrary = new MediaLibraryInfo();
 
-            //if (library != null)
-            //{
-            //    // Creates the "NewFolder" folder within the media library
-            //    MediaLibraryInfoProvider.CreateMediaLibraryFolder(SiteContext.CurrentSiteName, library.LibraryID, "NewFolder");
-            //}
-            //// Creates a new media library object
-            //MediaLibraryInfo newLibrary = new MediaLibraryInfo();
-
-            //// Sets the library properties
-            //newLibrary.LibraryDisplayName = "New library";
-            //newLibrary.LibraryName = "NewLibrary";
-            //newLibrary.LibraryDescription = "This media library was created through the API.";
-            //newLibrary.LibraryFolder = "NewLibrary";
-            //newLibrary.LibrarySiteID = SiteContext.CurrentSiteID;
-
-
-
-            //// Saves the new media library to the database
-            //MediaLibraryInfoProvider.SetMediaLibraryInfo(newLibrary);
+                // Sets the library properties
+                newLibrary.LibraryDisplayName = folderName;
+                newLibrary.LibraryName = folderName;
+                newLibrary.LibraryDescription = "This media library was created through the API.";
+                newLibrary.LibraryFolder = folderName;
+                newLibrary.LibrarySiteID = SiteContext.CurrentSiteID;
+                // Saves the new media library to the database
+                MediaLibraryInfoProvider.SetMediaLibraryInfo(newLibrary);
+            }
+       
             TreeNode page = DocumentHelper.GetDocuments().Path("/business/service/it-guardians/Home").OnCurrentSite().TopN(1).FirstOrDefault();
             if (page == null)
             {

@@ -12,7 +12,7 @@ namespace FY19.Models.InlineEditors
     /// </summary>
     public class ImageUploaderEditorViewModel : InlineEditorViewModel
     {
-        private const string MEDIA_LIBRARY_NAME = "NewLibrary";
+        private const string MEDIA_LIBRARY_NAME = "FY19";
 
 
         /// <summary>
